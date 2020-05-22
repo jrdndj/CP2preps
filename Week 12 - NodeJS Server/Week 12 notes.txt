@@ -1,0 +1,85 @@
+
+we use node js to deploy a server
+server is a program that handles the request of your clients
+today we will setup our local node js server
+we are going to use localhost
+we will setup something that can receive requests from the clients
+part of the clients will be discussed next week 
+setup server
+he teach it on how to handle requests over the internet
+
+local computer > files
+world wide web > files
+
+var http = require('http');
+^ variable  ^ require() this is a nodejs function 
+     ^ http is the name of the variable
+>> if you have to contact the server then it should have http
+>> if I use https it's not gonna work 
+
+http.createServer( function here { } ).listen(8080);
+^ this creates a server and has a port that listens to port 8080
+
+res.writeHead(200, {'Content-Type': 'text/html'});
+ ^ give a response, write it in the Header, 
+ 200 is ok, content of html
+	res.end('Hello World!');
+
+
+To test the server and turn it on
+Go to terminal/command prompt
+go to the current location of your file (and nodejs)
+C:/Users/Jordan/
+cd C:\Users\Jordan
+
+Users/Jordan
+
+To test your server and to test node js
+
+node <filename.js>
+node test.js
+
+To turn off your server 
+
+one way is to Ctrl C 
+
+What happened here:
+Node JS ran the script found in test.js
+It happens that test.js should "display" some text in a webpage
+
+Your server is up and running
+
+HTTP = hypertext transfer protocol
+this allows the transfer and display of webpages over the internet
+
+GET vs POST form names pass these values using nodejs because of the http
+
+Query (queries) = requests
+
+
+http.createServer(function(req, res){
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	var q = url.parse(req.url, true).query;
+	var txt = q.name + " " + q.date;
+	res.end(txt);
+}).listen(8080);
+
+//to test this code 
+//turn on server and enter the url below in the browser
+//http://localhost:8080/?year=2020&month=May
+// from the GET method in the HTML probably from a previous page 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
