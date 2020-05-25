@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>First page</title>
+	<meta charset = "UTF-8">
+	<link href = "https://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet">
+	<style type = "text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family: Roboto;
+		}
+
+		nav {
+			background-color: rgb(30, 160, 240);
+			color: rgb(250, 250, 250);
+			float: left;
+			width: 50%;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+
+		article {
+			color: rgb(120, 135, 145);
+		}
+		
+		input {
+			border-radius: 6px;
+			border: none;
+		}
+
+		button {
+			background-color: rgb(255, 255, 255);
+			border-radius: 4px;
+			border: none;
+		}
+
+		select {
+			border: none;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		textarea {
+			color: rgb(120, 135, 145);
+			font-family: Roboto;
+		}
+
+		.genderClass {
+			float: left;
+			text-align: left;
+			width: 70%;
+		}
+
+		.ageClass {
+			float: left;
+			text-align: left;
+			width: 30%;
+		}
+
+		.mealChoiceClass {
+			float: left;
+			text-align: left;
+			width: 50%;
+			margin-bottom: 50px;
+		}
+
+		.favoriteColorClass {
+			float: left;
+			text-align: center;
+			width: 49%;
+			margin-bottom: 50px;
+		}
+
+		.cvClass {
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	
+	<form action = "secondPage.html" method = "GET" target = "_blank">
+		<header>
+			<!-- Name and password -->
+			<nav>
+				<label for ="username">Enter Username: </label>
+				<br>
+				<input type = "text" name = "username" id = "username" size = "35">
+				<br><br>
+				<label for = "pword">Enter Password: </label>
+				<br>
+				<input type = "password" name = "password" id = "pword" size = "35">
+				<br><br><br>
+			</nav>
+
+			<!-- Demographic -->
+			<nav>
+				<fieldset>
+					<legend align = "center">Demographic</legend>
+
+					<!-- Gender and Birthday -->
+					<div class = "genderClass">
+						Gender:
+						<br>
+						<input type = "radio" id = "male" name = "gender" value = "male">
+						<label for = "male">Male</label>
+						<br>
+						<input type = "radio" id = "female" name = "gender" value = "female">
+						<label for =" female">Female</label>
+						<br><br>
+						<label for = "birthday">Birthday:</label>
+						<input type = "date" id = "birthday" name = "birthday">
+						<br>
+					</div>
+
+					<!-- Age group -->
+					<div class = "ageGroupClass">
+						What is your age group?
+						<br>
+						<select id = "agegroup" name = "agegroup" size = "1">
+							<option selected disabled>Choose ...</option>
+							<option value = "kids">0 to 10</option>
+							<option value = "teens">13 to 19</option>
+							<option value = "youngadult">20 to 35</option>
+							<option value = "mature">36 to 60</option>
+							<option value = "senior">61 and above</option>
+						</select>
+						<br><br><br>
+						<button type = "button" onclick = "alert('Wonderful age to start brainstorming new ideas!')">Know my age!</button>
+						<br>
+					</fieldset>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<article>
+				<fieldset class = "mealChoiceClass">
+					<br>
+					<legend align = "center">Meal Choice</legend>
+					<h2>What do you like to eat?</h2>
+					<input type = "checkbox" id = "choice" name = "eatchoice" value = "chicken">
+					<label for = "choice">Chicken</label>
+					<br>
+					<input type = "checkbox" id = "choice" name = "eatchoice" value = "beef">
+					<label for = "choice">Beef</label>
+					<br>
+					<input type = "checkbox" id = "choice" name = "eatchoice" value = "no to animals!">
+					<label for = "choice">No to Animals!</label>
+				</fieldset>
+				<fieldset class = "favoriteColorClass">
+					<br>
+					<legend align = "center">Favourite Color</legend>
+					<h2>What is your favourite color?</h2>
+					<label for = "favcolor">Select your favorite color:</label>
+					<input type = "color" id = "favcolor" name = "favcolor">
+					<br><br><br>
+				</fieldset>
+			</article>
+
+			<!-- Textarea -->
+			<article>
+				<h2>Why do you want to join?</h2>
+				<textarea style = "display: block; margin-left: auto; margin-right: auto; text-align: center; margin-bottom: 20px;" name = "whyJoin" rows = "10" cols = "80" ontype = "clear">Type your message here ...</textarea>
+				
+				<!-- CV -->
+				<div class = "cvClass">
+					<p>Upload Your CV</p>
+					<label for = "myfile">Select a file:</label>
+					<input style = "border: none; font-family: Roboto; width: 400px;" type = "file" id = "cv" name = "cv">
+				</div>
+			</article>
+		</section>
+
+		<!-- Submit -->
+		<input style = "display: block; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; width: 300px; height: 30px;" type = "submit" name = "submit" value = "Send money now!">
+		</form>
+
+</body>
+</html>

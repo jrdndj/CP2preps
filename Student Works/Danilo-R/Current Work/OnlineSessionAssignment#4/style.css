@@ -1,0 +1,28 @@
+ * {
+	font-family: Roboto;
+}
+
+header {
+	background-color: #AAB2BD;
+	color: white;
+	text-align: center;
+	padding: 50px;
+}
+
+.blank {
+	height: 60px;
+	background-color: #CCD1D9;
+	width: 100%;
+}
+
+article {
+	text-align: center;
+	color: #AAB2BD;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	border-top: 2px solid #AAB2BD;
+	color: #AAB2BD;
+}

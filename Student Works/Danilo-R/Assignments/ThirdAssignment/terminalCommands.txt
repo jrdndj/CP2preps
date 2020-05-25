@@ -1,0 +1,18 @@
+pwd
+ls
+cd Desktop/
+ls
+mkdir ThirdAssignment
+touch homepage
+mv homepage homepage.html
+mv homepage.html ThirdAssignment
+touch whatAreMemes
+mv whatAreMemes whatAreMemes.html
+mv whatAreMemes.html ThirdAssignment
+touch gallery
+mv gallery gallery.html
+mv gallery.html ThirdAssignment
+ls
+
+Some of the commands I would have been using in terminal.
+I apologize for not doing so, since this assignment has been done not on class PC, but on my laptop (which does not have Ubuntu). 

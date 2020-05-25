@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Memory Game - Explore</title>
+	<link href = "https://fonts.googleapis.com/css?family=Fredoka+One" rel = "stylesheet">
+	<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+
+	<style>
+
+		/* Typeface used:
+			Headers, strong and important words -> Fredoka One
+			Paragraphs, stats -> Open Sans */
+
+
+		/* Elements of the website should have padding calculated in their total width and height values.
+		Therefore, 'box-sizing' is used */
+		* {
+			box-sizing: border-box;
+			font-family: Open Sans;
+		}
+
+		/* Full height of website, disabled scroll (aesthetic) */
+		body {
+			height: 94vh;
+			overflow: hidden;
+		}
+
+		/* Top part of the website */
+		.top-part {
+			height: 25%;
+		}
+
+		/* Style of elements of top part */
+		.top-part h1 {
+			font-family: Fredoka One;
+			color: #737373;
+			text-align: center;
+			padding-top: 30px;
+		}
+
+		.top-part p {
+			color: #505050;
+			text-align: center;
+		}
+		/* End of top part block */
+
+
+		/* Middle part of the website */
+		.middle-part {
+			height: 70%;
+			width: 40%;
+			/* A container that would hold 'div' elements with cards */
+			display: flex;
+			/* In case element have no space to show up, wrap them */
+			flex-wrap: wrap;
+			/* center the elements */
+			margin: auto;
+			background-color: #efefef;
+			border-radius: 8px;
+		}
+
+		/* Score panel (number of moves, pairs matched, score) */
+		.score-panel {
+			width: 140px;
+			height: 2px;
+			color: #d3af37;
+			background: none;
+			border: none;
+			font-family: Fredoka One;
+			font-size: 20px;
+			visibility: hidden;
+			text-align: center;
+		}
+
+		/* Panel, shown after all pairs have been matched */
+		.game-completed {
+			width: 40%;
+			height: 66%;
+			position: absolute;
+			background-color: #fefefe;
+			border: 2px solid #eeeeee;
+			border-radius: 8px;
+			text-align: center;
+			color: #737373;
+			opacity: 0.97;
+			visibility: hidden;
+		}
+
+		/* Style of 'Congratulations!' message */
+		.congratulations {
+			font-family: Fredoka One;
+			font-size: 24px;
+		}
+
+		/* Style of final score, shown in 'game-completed' panel */
+		#final-score {
+			position: relative;
+			color: #505050;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		/* Style of button that enables the user to play the game again, shown in 'game-completed' panel */
+		#play-again {
+			background-color: #505050;
+			color: white;
+			border: none;
+			border-radius: 8px;
+			font-family: Fredoka One;
+			height: 50px;
+			width: 200px;
+			cursor: pointer;
+		}
+
+		/* Style of the aforementioned button (when hovered with mouse) */
+		#play-again:hover {
+			background-color: #ffffff;
+			color: #505050;
+			border: 1px solid #505050;
+			transition-duration: 0.2s;
+		}
+
+		/* A section that contains front and back of the card (2 'img' elements) */
+		.cards {
+			/* A formula that calculates the width and height, based on percentage it would take from 'div' */
+			width: calc(20% - 8px);
+			height: calc(25% - 8px);
+			/* Cards would be absolutely positioned, relatively to the 'div' element */ 
+			position: relative;
+			margin: 4px;
+			cursor: pointer;
+		}
+
+		/* A section, shown after the 'eventListener' gets triggered (hides the visibility) */
+		.show {
+			width: calc(20% - 8px);
+			height: calc(25% - 8px);
+			position: relative;
+			margin: 4px;
+			cursor: pointer;
+			visibility: hidden;
+		}
+
+		/* Style of cards. Absolute positioning has been used, in order to stack two 'img' elements onto each other */
+		.front-of-the-card,
+		.back-of-the-card
+		{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			padding: 8px;
+		}
+
+		/* Style of front of the card, shown When back of the card gets hidden */
+		.front-of-the-card {
+			visibility: visible;
+		}
+		/* End of middle part block */
+
+
+		/* Bottom part of the website */
+		.bottom-part {
+			height: 5%;
+		}
+
+		/* Style of elements of bottom part */
+		.bottom-part p {
+			color: #737373;
+			text-align: center;
+			animation: fading 2s infinite;
+		}
+
+		/* Simple animation, linked to paragraph in bottom part (endless fading) */
+		@keyframes fading {
+			0% {opacity: 1;}
+			50% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		/* End of bottom part block */
+
+
+		/* Style of button that enables the user to toggle between light and dark theme */
+		#theme-mode {
+			margin-left: 930px;
+			margin-right: 400px;
+			width: 140px;
+			color: #018786;
+			background: none;
+			border: none;
+			font-family: Fredoka One;
+			font-size: 16px;
+			/* Hidden by default */
+			visibility: hidden;
+			text-align: center;
+			cursor: pointer;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- Section - Top part of the website -->
+	<div class = "top-part">
+		<!-- Welcoming message -->
+		<h1 id = "top-part-header">Memory Game - Explore</h1>
+		<!-- Short 'about' paragraph -->
+		<p id = "top-part-paragraph">Match the pair of cards. Inspired by European remarkable monuments!</p>
+		<button id = "theme-mode" onclick = "themeMode()">Theme: light</button>
+		<br>
+		<button class = "score-panel" id = "moves" style = "margin-left: 450px">Moves: 0</button>
+		<button class = "score-panel" id = "pairs">0 / 10</button>
+		<button class = "score-panel" id = "time"></button>
+		<button class = "score-panel" id = "score" style = "margin-left: 40px;">Score: 0</button>
+	</div>
+
+	<!-- Section - Middle part of the website (Game board). 
+	Contains 12 subsections ('div' elements), each of which contains a card. 
+	Images in subsection are positioned absolutely -->
+	<div id = "board" class = "middle-part">
+		<div class = "cards" data-monument = "Atomium">
+			<img src = "Images/Atomium.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg"  class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Atomium">
+			<img src = "Images/Atomium.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Belem-Tower">
+			<img src = "Images/Belem-Tower.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Belem-Tower" value = "Belem-Tower">
+			<img src = "Images/Belem-Tower.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Big-Ben">
+			<img src = "Images/Big-Ben.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Big-Ben">
+			<img src = "Images/Big-Ben.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Brandenburg-Gate">
+			<img src = "Images/Brandenburg-Gate.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Brandenburg-Gate">
+			<img src = "Images/Brandenburg-Gate.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Eiffel-Tower">
+			<img src = "Images/Eiffel-Tower.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Eiffel-Tower">
+			<img src = "Images/Eiffel-Tower.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Leaning-Tower-of-Pisa">
+			<img src = "Images/Leaning-Tower-of-Pisa.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Leaning-Tower-of-Pisa">
+			<img src = "Images/Leaning-Tower-of-Pisa.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Sagrada-Familia">
+			<img src = "Images/Sagrada-Familia.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Sagrada-Familia">
+			<img src = "Images/Sagrada-Familia.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Tower-of-Ejer-Bavnehoj">
+			<img src = "Images/Tower-of-Ejer-Bavnehoj.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Tower-of-Ejer-Bavnehoj">
+			<img src = "Images/Tower-of-Ejer-Bavnehoj.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Walled-Obelisk">
+			<img src = "Images/Walled-Obelisk.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "Walled-Obelisk">
+			<img src = "Images/Walled-Obelisk.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "White-Tower-of-Thessaloniki">
+			<img src = "Images/White-Tower-of-Thessaloniki.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<div class = "cards" data-monument = "White-Tower-of-Thessaloniki">
+			<img src = "Images/White-Tower-of-Thessaloniki.jpg" class = "front-of-the-card">
+			<img src = "Images/Back-of-the-card.jpg" class = "back-of-the-card">
+		</div>
+
+		<!-- Panel, shown after all pairs have been matched (hidden by default) -->
+		<div class = "game-completed">
+			<p class = "congratulations">Congratulations!</p>
+			<p id = "message"></p>
+			<p id = "final-score"></p>
+			<button id = "play-again" onclick = "restartGame()">Play Again</button>
+			<!-- test ............................................................ -->
+			<p id = "hiiigh">(Highest: )</p>
+			<!-- test ............................................................ -->
+		</div>
+	</div>
+
+	<!-- Section - Bottom part of the website -->
+	<div class = "bottom-part">
+		<!-- Paragraph - Advises the user to go to fullscreen mode (visible until the user starts playing game) -->
+		<p id = "bottom-part-paragraph">For better experience, use headphones</p>
+	</div>
+
+	<script>
+
+		var cardsArray = document.getElementsByClassName('cards');
+		var anyCardClicked = false;
+		var timeToWait = false;
+		var darkTheme = false;
+		var firstCard;
+		var secondCard;
+		var pairs = 0;
+		var moves = 0;
+		var score = 0;
+		var condition = 0;
+		var seconds = 0;
+		var minutes = 0;
+		var timeToStart = false;
+		var startTimer = setInterval(timer, 1000);
+		// test -------
+		var highest = 0;
+
+		// Sound effects
+		var click = new Audio("Sound-Effects/click.mp3");
+		var correct = new Audio("Sound-Effects/correct.mp3");
+		var incorrect = new Audio("Sound-Effects/incorrect.mp3");
+
+		shuffleCards();
+		startAndStopTimer();
+
+		function showCard() {
+			showScorePanel();
+			if (timeToWait == true) {
+				return;
+			}
+			if (this == firstCard) {
+				return;
+			}
+			this.classList.add("show");
+			if (anyCardClicked == false) {
+				firstCard = this;
+				click.play();
+				anyCardClicked = true;
+				return;
+			} else {
+				secondCard = this;
+				anyCardClicked = false;
+				if (firstCard.dataset.monument == secondCard.dataset.monument) {
+					firstCard.removeEventListener('click', showCard);
+					secondCard.removeEventListener('click', showCard);
+					correct.play();
+					condition++;
+					if (condition == 3) {
+						score = score + 200;
+						condition = 0;
+					}
+					startValue();
+					pairMatched();
+					movesMade();
+				} else {
+					incorrect.play();
+					timeToWait = true;
+					setTimeout(notPairOfCards, 1000);
+					movesMade();
+					condition = 0;
+				}
+			}
+		}
+
+		function notPairOfCards() {
+			firstCard.classList.remove('show');
+			secondCard.classList.remove('show');
+			timeToWait = false;
+			startValue();
+		}
+
+		function startValue() {
+			anyCardClicked = false;
+			timeToWait = false;
+			firstCard = null;
+			secondCard = null;
+		}
+
+		function shuffleCards() {
+			for (var i = 0; i < cardsArray.length; i++) {
+				var position = Math.floor(Math.random() * 12);
+				cardsArray[i].style.order = position;
+			}
+		}
+
+		for (var i = 0; i < cardsArray.length; i++) {
+			cardsArray[i].addEventListener('click', showCard);
+		}
+
+		function showScorePanel() {
+			var scorePanel = document.getElementsByClassName('score-panel');
+			for (var i = 0; i < scorePanel.length; i++) {
+				scorePanel[i].style.visibility = 'visible';
+			}
+			document.getElementById('theme-mode').style.visibility = 'visible';
+			document.getElementById('top-part-header').style.visibility = 'hidden';
+			document.getElementById('top-part-paragraph').style.display = 'none';
+			document.getElementById('bottom-part-paragraph').style.visibility = 'hidden';
+		}
+
+		function pairMatched() {
+			var x = document.getElementById('pairs');
+			var y = document.getElementById('score');
+			var z = document.getElementById('final-score');
+			var message = document.getElementById('message');
+			pairs++;
+			x.innerHTML = pairs + " / 10";
+			if (moves <= 20) {
+				score = score + 300;
+				message.innerHTML = "Your score has reached the peak!";
+			} else if (moves > 20 && moves <= 25) {
+				score = score + 200;
+				message.innerHTML = "Your score is pretty impressive.";
+			} else {
+				score = score + 100;
+				message.innerHTML = "It's quite a good score."
+			}
+			y.innerHTML = "Score: " + score;
+			// test ------------------
+			if (score > highest) {
+				highest = score;
+				if (parseInt(localStorage.getItem('highestScore')) > highest) {
+					highest = parseInt(localStorage.getItem('highestScore'));
+				}
+				var highestScoreString = highest.toString();
+				localStorage.setItem('highestScore', highestScoreString);
+				document.getElementById('hiiigh').innerHTML = "(Highest: " + localStorage.getItem('highestScore') + ")";
+			} else {
+				highest = highest;
+				document.getElementById('hiiigh').innerHTML = "(Highest: " + highest + ")";
+			}
+			// test ------------------
+			if (pairs == 10) {
+				timeToStart = false;
+				showGameStatus();
+				z.innerHTML = score;
+			}
+		}
+
+		function movesMade() {
+			var x = document.getElementById('moves');
+			var y = document.getElementById('score');
+			moves++;
+			x.innerHTML = "Moves: " + moves;
+			if (moves == 1) {
+				timeToStart = true;
+			}
+		}
+
+		function themeMode() {
+			var x = document.body;
+			var y = document.getElementsByClassName('score-panel');
+			var z = document.getElementById('board');
+			var display = document.getElementById('theme-mode');
+			var endGame = document.getElementsByClassName('game-completed');
+			var score = document.getElementById('final-score');
+			var playAgain = document.getElementById('play-again');
+
+			if (darkTheme == false) {
+				for (var i = 0; i < y.length; i++) {
+					y[i].style.color = '#bb86fc';
+					y[i].style.transitionDuration = '0.5s';
+				}
+				for (var i = 0; i < endGame.length; i++) {
+					endGame[i].style.backgroundColor = "#212121";
+					endGame[i].style.color = '#ffffff';
+					endGame[i].style.border = 'none';
+				}
+				x.style.backgroundColor = '#121212';
+				x.style.transitionDuration = '0.5s';
+				z.style.backgroundColor = '#424242';
+				z.style.transitionDuration = '0.5s';
+				display.style.color = '#03dac6';
+				display.style.transitionDuration = '0.5s';
+				score.style.color = '#ffffff';
+				playAgain.style.backgroundColor = '#ffffff';
+				playAgain.style.color = '#505050';
+				display.innerHTML = 'Theme: dark';
+				darkTheme = true;
+			} else {
+				for (var i = 0; i < y.length; i++) {
+					y[i].style.color = '#d3af37';
+					y[i].style.transitionDuration = '0.5s';
+				}
+				for (var i = 0; i < endGame.length; i++) {
+					endGame[i].style.backgroundColor = '#fefefe';
+					endGame[i].style.border = '2px solid #eeeeee';
+					endGame[i].style.color = '#737373';
+					endGame[i].transitionDuration = '0.5s';
+				}
+				x.style.backgroundColor = 'white';
+				x.style.transitionDuration = '0.5s';
+				z.style.backgroundColor = '#efefef';
+				z.style.transitionDuration = '0.5s;'
+				display.style.color = '#018786';
+				display.style.transitionDuration = '0.5s';
+				score.style.color = "#505050";
+				playAgain.style.backgroundColor = '#505050';
+				playAgain.style.color = '#ffffff';
+				display.innerHTML = 'Theme: light';
+				darkTheme = false;
+			}
+		}
+
+		function showGameStatus() {
+			var x = document.getElementsByClassName('game-completed');
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.visibility = 'visible';
+			}
+		}
+
+		function timer() {
+			var x = document.getElementById('time');
+			var totalScore = document.getElementById('score');
+			var totalTime = (minutes * 60) + seconds;
+			if (timeToStart == true) {
+				seconds++;
+				if (seconds == 60) {
+					minutes++;
+					seconds = 0;
+				}
+			}
+			x.innerHTML = minutes + "m " + seconds + "s";
+		}
+
+		function startAndStopTimer() {
+			if (timeToStart == true) {
+				setInterval(timer, 1000);
+			} else if (timeToStart == false) {
+				clearInterval(timer);
+			}
+		}
+
+		function restartGame() {
+			shuffleCards();
+			startValue();
+			pairs = 0;
+			moves = 0;
+			score = 0;
+			condition = 0;
+			seconds = 0;
+			minutes = 0;
+			var x = document.getElementById('pairs');
+			var y = document.getElementById('moves');
+			var z = document.getElementById('score');
+			var time = document.getElementById('time');
+			var panel = document.getElementsByClassName('game-completed');
+			for (var i = 0; i < panel.length; i++) {
+				panel[i].style.visibility = 'hidden';
+			}
+			for (var i = 0; i < cardsArray.length; i++) {
+				cardsArray[i].classList.remove('show');
+				cardsArray[i].addEventListener('click', showCard);
+			}
+			x.innerHTML = pairs + " / 10";
+			y.innerHTML = "Moves: " + moves;
+			z.innerHTML = "Score: " + score;
+			time.innerHTML = minutes + "m " + seconds + "s";
+		}
+
+	</script>
+
+</body>
+</html>

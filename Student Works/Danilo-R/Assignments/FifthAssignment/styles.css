@@ -1,0 +1,236 @@
+/* This block of code is used for styling : everything */
+* {
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+/* This block of code is used for styling : top part of the page, where navigation bar is placed */
+nav {
+	float: center;
+	background-image: linear-gradient(-90deg, #2a7886, #79bac1);
+	color: #f1f3f4;
+	text-align: right;
+	vertical-align: center;
+	height: 70px;
+	position: sticky;
+	top: 0px;
+}
+
+body {
+	background-color: #f1f3f4;
+	color: #512b58;
+	height: 100%;
+}
+
+/* This block of code is used for styling : upper-middle part of the page, where title is placed */
+header {
+	float: center;
+	margin-top: 80px;
+	text-align: center;
+}
+
+/* This block of code is used for styling : hyperlinks */
+a {
+	text-decoration: none;
+}
+
+/* This block of code is used for styling : table and its components (header, row, column) */
+table, th, tr, td {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 80%;
+	border: 0.5px solid #512b58;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+/* This block of code is used for styling : column (additional styling) */
+td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* This block of code is used for styling : fieldset and its components */
+fieldset {
+	float: center;
+	width: 25%;
+	height: 400px;
+	color: rgb(40, 50, 60);
+	margin-bottom: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+/* This block of code is used for styling : label and input banner, area where text is inserted, and option to choose */
+legend, input, label, select, textarea {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* This block of code is used for styling : label (additional styling) */
+label {
+	color: rgb(40, 50, 60);
+}
+
+/* This block of code is used for styling : input and its alignment */
+input {
+	border: 0.5px solid #512b58;
+	border-radius: 16px;
+	margin-bottom: 20px;
+}
+
+/* This block of code is used for styling : option to choose (the size and border color) */
+select {
+	border: 0.5px solid #512b58;
+	width: 180px;
+}
+
+footer {
+	background-color: #1d4d4f;
+	color: white;
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* This class is used for styling : navigation bar */
+.navigationBarClass {
+	background: none;
+	border: none;
+	color: #e5dfdf;
+	margin: 20px;
+	cursor: pointer;
+}
+
+/* This class is used for styling : navigation bar of current page (different from other bar pages) */
+.currentPageClass {
+	background: none;
+	border: none;
+	color: #e5dfdf;
+	margin: 20px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* This class is used for styling : button (linked to other page) */
+.registerNowClass {
+	width: 300px;
+	height: 50px;
+	background-color: #512b58;
+	color: #f1f3f4;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
+	display: block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.registerNowClass:hover {
+	background-image: linear-gradient(-90deg, #2a7886, #79bac1);
+}
+
+/* This class is used for styling : column that holds name of meme */
+.memeNameClass {
+	background-color: rgb(235, 235, 235);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.memeNameClass:hover {
+	cursor: default;
+	color: hotpink;
+}
+
+/* This class is used for styling : image responsiveness and size */
+.responsiveClass {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* This class is used for styling : position of rate of meme */
+.rateClass {
+	margin-top: 16px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: none;
+	border: 1px solid #79bac1;
+}
+
+/* This class is used for styling : rate of meme */
+.rateDesignClass {
+	color: rgb(130, 140, 145);
+}
+
+/* This class is used for styling : available options for rate */
+.rateMemeClass {
+	text-align: center;
+	background: none;
+	width: 75px;
+	height: 30px;
+	border: 0.5px solid #512b58;
+	color: rgb(10, 40, 45);
+	cursor: pointer;
+}
+
+/* This class is used for styling : button that confirms the submission */
+.submitClass {
+	width: 300px;
+	height: 50px;
+	background-color: #512b58;
+	color: #f1f3f4;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+/* This class is used for styling : hover effect of submit button */
+.submitClass:hover {
+	background-image: linear-gradient(-90deg, #2a7886, #79bac1);
+}
+
+.ulClass {
+	margin-top: 100px;
+}
+
+.namesClass {
+	color: rgb(190, 190, 190);
+}
+
+/* This class is used for styling : list of employees */
+ul li {
+	list-style-type: none;
+	display: inline;
+	margin-left: 30px;
+	padding: 44px;
+	overflow: hidden;
+}
+
+/* This id is used for styling : block that invites the user to upload meme */
+#uploadMeme {
+	background: none;
+	border: 0.5px solid #512b58;
+	width: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+   float: left;
+  }

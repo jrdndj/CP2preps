@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>Upload Meme Page</title>
+	<meta charset = "UTF-8">
+	<link href = "https://fonts.googleapis.com/css?family=Work Sans" rel = "stylesheet">
+	<style type = "text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family: Work Sans;
+		}
+
+		nav {
+			float: center;
+			text-align: right;
+			padding: 40px;
+		}
+
+		header {
+			float: center;
+			margin-top: 80px;
+			color: rgb(40, 50, 60);
+			text-align: center;
+		}
+
+		fieldset {
+			float: center;
+			width: 25%;
+			height: 300px;
+			color: rgb(40, 50, 60);
+			margin-bottom: 50px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+		legend, input, label, textarea {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		label {
+			color: rgb(40, 50, 60);
+			margin-top: 10px;
+		}
+
+		input {
+			border: 0.5px solid rgb(165, 160, 175);
+			border-radius: 16px;
+			margin-bottom: 20px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		#uploadMeme {
+			background: none;
+			border: 0.5px solid rgb(165, 160, 175);
+			width: 180px;
+		}
+
+		.navigationBarClass {
+			background: none;
+			border: none;
+			color: rgb(130, 140, 145);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.currentPageClass {
+			background: none;
+			border: none;
+			color: rgb(10, 40, 45);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.submitClass {
+			width: 300px;
+			height: 50px;
+			background-color: rgb(10, 40, 45);
+			color: white;
+			border: none;
+			border-radius: 16px;
+			cursor: pointer;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<a href = "homePage.html"><button class = "navigationBarClass">Home page</button></a>
+		<a href = "registerAccountPage.html"><button class = "navigationBarClass">Register Account</button></a>
+		<button class = "currentPageClass">Upload meme</button>
+		<a href = "rateMemePage.html"><button class = "navigationBarClass">Rate meme</button></a>
+	</nav>
+	<header>
+		<h1>Upload your favorite meme!</h1>
+	</header>
+	<section>
+		<article>
+			<form action = "receivedSubmissionPage.html" method = "GET">
+				<fieldset>
+					<legend>Meme info</legend>
+					<label for = "memeName">Meme name</label>
+					<input type = "text" id = "memeName">
+					<label for = "uploadMeme">Upload meme photo</label>
+					<input type = "file" id = "uploadMeme">
+					<label for = "describeMeme">Describe this meme</label>
+					<textarea id = "describeMeme" rows = "5" cols = "20">Type here to describe this meme ...</textarea>
+				</fieldset>
+				<input class = "submitClass" type = "submit" value = "Submit">
+			</form>
+		</article>
+	</section>
+	
+</body>
+</html>
