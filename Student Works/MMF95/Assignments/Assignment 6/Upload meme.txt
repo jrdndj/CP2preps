@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload meme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Upload meme.html.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<section>
+
+  <nav>
+   <ul class="nav nav-pills flex-column">
+     <li class="nav-item">
+          <a class="nav-link active" href="Homepage.html">Homepage</a>
+       
+       </li>
+        <li class="nav-item">
+          <a class="nav-link" href="what.html">What are the memes</a>
+        </li>
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" ="#">Forms</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Register account.html">Register account</a>
+        <a class="dropdown-item" href="Upload meme.html">Upload meme</a>
+
+</div>
+</li>
+
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Rate meme.html">Rate meme</a>
+        </li>
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" ="gallery.html">Gallery</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Gallery.html">Gallery memes</a>
+        <a class="dropdown-item" href="Meme 1.html">Meme 1</a>
+</div>
+</li>
+  
+  </ul>
+   
+
+        </nav>
+
+<h2> Upload meme</h2>
+
+
+   <form action="submit.html" method=<?php echo print_r($_GET) ?>
+
+ <div class="container">
+ 
+    <p>Please fill and upload the meme</p>
+    <hr>
+      <label for="name">Name & title of the meme:</label>
+      <input type="text" name="ntname" id="ntname">
+       <br>
+      description for this meme<br>
+<textarea name="whyessay" rows="20" cols="30">type something here..</textarea><br>
+ upload a file photo of the meme<br>
+<label for"myfile">Select a file:</label>
+<input type="file" id="filememe" name="filememe"><br>
+<input type="submit" name="submit" value="Submit">
+ 
+</form>
+
+</body>

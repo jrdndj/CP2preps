@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>How To Play</title>
+   
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/how.css">
+
+</head>
+<body>
+
+    
+          
+<!--Navebar-->
+
+<!--fixedup= that fix navabar upwards--> 
+<!--bg light=for add light background-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="Home.html">Hello Gamers</a>
+<!-- for use with our collapse plugin and other navigation toggling behaviors-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home.html">Home 
+<!--Hide an element to all devices except screen readers with .sr-only-->
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Play.html">Play</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<!--jumbotron-fluid,container-fluid=for make the jumbotron full width, and without rounded corners-->
+ <!--bg light=for add light background-->
+
+<!--Frame-->
+
+<header class="jumbotron jumbotron-fluid">
+<div class="container-fluid text-center"> 
+       <h1 class="display-3">How To Play</h1>
+    </div>
+</header>
+
+
+
+<!--Responsive grid system-->
+<!--The grid consists of rows and columns that divide the page-->
+<!--A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options-->
+<!--card component-->
+
+<section id="How to play" class="container">
+   
+   
+   <div class="row text-center">
+<!--Applies to medium, large and very large grids-->
+      <div class="col-md-4 mb-4">
+<!--for measurement tool is that you can use it on any element,This class adjusts the height of each card by 100%.--> 
+         <div class="card h-100">
+            <img class="card-img-top" src="1.jpg" >
+ <!--a padded section within a card-->
+            <div class="card-body">
+               
+               <p class="card-text">Draw the board. First, you have to draw the board, which is made up of a 3 x 3 grid of squares. This means it has three rows of three squares. Some people play with a 4 x 4 grid, but that is for more advanced players, and we will focus on the 3 x 3 grid here.</p>
+
+            </div>
+         </div>
+      </div>
+
+
+
+      
+      <div class="col-md-4 mb-4">
+<!--Applies to medium, large and very large grids-->
+         <div class="card h-100">
+<!--for measurement tool is that you can use it on any element,This class adjusts the height of each card by 100%.--> 
+            <img class="card-img-top" src="2.jpg" >
+            <div class="card-body">
+            
+                  <p class="card-text">Have the first player go first. Though traditionally, the first player goes with "X", you can allow the first player to decide whether he wants to go with "X"s or "O"s. These symbols will be placed on the table, in the attempt to have three of them in a row. If you're going first, then the best move you can make is to move into the center. This will maximize your chances of winning, since you'll be able to create a row of three "X"s or "O"s in more combinations this way than if you chose a different square.</p>
+
+            </div>
+         </div>
+      </div>
+
+
+      
+      <div class="col-md-4 mb-4">
+<!--Applies to medium, large and very large grids-->
+         <div class="card h-100">
+<!--for measurement tool is that you can use it on any element,This class adjusts the height of each card by 100%.--> 
+            <img class="card-img-top" src="3.jpg" >
+            <div class="card-body">
+         
+               <p class="card-text">Have the second player go second. After the first player goes, then the second player should put down his symbol, which will be different from the symbol of the first player. The second player can either try to block the first player from creating a row of three, or focus on creating his or her own row of three. Ideally, the player can do both</p>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+ 
+      
+      <div class="col-md-4 mb-4">
+         <div class="card h-100">
+            <img class="card-img-top" src="4.jpg" >
+            <div class="card-body">
+         
+               <p class="card-text">Keep alternating moves until one of the players has drawn a row of three symbols or until no one can win. The first player to draw three of his or her symbols in a row, whether it is horizontal, vertical, or diagonal, has won tic-tac-toe. However, if both players are playing with optimal strategy, then there's a good chance that no one will win because you will have blocked all of each other's opportunities to create a row of three.</p>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+<!--Register-->
+
+
+<section class="container-fluid text-center py-4 mt-4" id="Register">
+   <h2 class="display-4 pb-4 my-4">Register</h2>
+   <a href="Register.html" class="btn btn-primary btn-lg mb-4" role="button">Register</a>
+</section>
+
+
+
+
+
+
+<!--footer-->
+
+<footer class="py-3 bg-light">
+   <div class="container">
+      <p class="text-center">Copyright &copy; 2020</p>
+   </div>
+</footer>
+
+</body>
+
+
+
+ </html>

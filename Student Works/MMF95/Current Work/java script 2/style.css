@@ -1,0 +1,1 @@
+div {    float: left;    width: 200px;    height: 200px;    /*background: yellow;*/    margin: 10px;  }  table {    margin: 10px;    clear: left;    border-collapse: collapse;    border: 1px solid black;  }  td {    border: 1px solid black;  }  button {    float: left;    clear: left;    margin: 10px;  }

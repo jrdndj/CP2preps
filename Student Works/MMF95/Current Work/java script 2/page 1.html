@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Sample 2</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+  </style>
+
+
+  <script>
+
+  var ctr= 1;
+
+
+function on_event(who, what) {   
+ var table_1 = document.getElementById('table_events');  
+  var row = table_1.insertRow();     
+var cell1 = row.insertCell(0);   
+ var cell2 = row.insertCell(0);    var cell3 = row.insertCell(0);   
+ cell1.innerHTML = what;   
+ cell2.innerHTML = who;   
+ cell3.innerHTML = ctr.toString();   
+ ctr++;  
+}
+
+
+
+
+function clear_table() { 
+   var table_1 = document.getElementById('table_events');   
+ for (var i = 1; i < ctr; i++) {  
+    table_1.deleteRow(1);  
+}
+
+ctr = 1
+
+  }
+
+  </script>
+<head>
+<body>
+
+<img src="struggle.jpg" height=300>
+<br>
+<div onclick="on_event('nut',' click')"
+	onmouseover="on_event(' nut ', '  over ' )"
+	onmouseout="on_event(' nut ', ' out ')">
+	<img src="Nut.jpg" height="200">
+
+</div>
+
+
+<div onclick="on_event('nut',' click')"
+	onmouseover="on_event(' yeet ', ' over' )"
+	onmouseout="on_event(' yeet ', 'out')">
+	<img src="yeet.jpg" height="200">
+
+</div>
+
+<div onclick="on_event('nut',' click')"
+	onmouseover="on_event(' bruh ', ' over' )"
+	onmouseout="on_event(' bruh ', 'out')">
+	<img src="bruh.jpg" height="200">
+
+</div>
+
+
+<p>
+
+<button onclick="clear_table()">Clean up my mess</button>
+</p>
+<p>
+<table id="table_events">
+<tr>
+<td>Sequence No.</td>
+<td>choice</td>
+<td>Event</td>
+</tr>
+
+</table>
+</p>
+</body>
+</html>
+
+

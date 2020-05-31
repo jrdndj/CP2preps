@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload meme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+</style>
+</head>
+<body>
+
+ <div style="overflow:auto">
+  <div class="menu">
+    <nav>
+    <ul>
+      <li><a href="Homepage.html">Homepage</a></li>
+      <li><a href="what.html">What are the memes</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+
+    </ul>
+ </div>
+
+   <form action="submit.html" method=<?php echo print_r($_GET) ?>
+
+ <div class="container">
+    <h1>Upload meme</h1>
+    <p>Please fill and upload the meme</p>
+    <hr>
+      <label for="name">Name & title of the meme:</label>
+      <input type="text" name="ntname" id="ntname">
+       <br><br>
+      description for this meme<br>
+<textarea name="whyessay" rows="20" cols="30">type something here..</textarea><br><br>
+ upload a file photo of the meme<br><br>
+<label for"myfile">Select a file:</label>
+<input type="file" id="filememe" name="filememe"><br><br>
+<input type="submit" name="submit" value="Submit">
+ 
+</form>
+
+</body>
+</html>

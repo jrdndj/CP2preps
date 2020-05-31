@@ -1,0 +1,188 @@
+* {
+	
+box-sizing: border-box;
+
+}
+
+
+
+
+body {
+	
+background: white;
+
+	outline: 2px dotted tomato;
+
+}
+
+
+
+header {
+	border-bottom: 2px solid tomato;
+
+	font-family: sans-serif;
+
+	padding-left: 10px;
+
+                  padding-top: 10px;
+
+	margin: auto;
+
+	height: 15%;
+
+}
+
+
+
+h1 {
+
+	font-size: 35px;
+
+	letter-spacing: 15px;
+
+		
+	word-spacing: 20px;
+
+	
+	line-height: 40px;
+	
+	
+	text-shadow: 3px 2px orange;
+
+	}
+
+
+
+h2 {
+	font-size: 20px;
+
+	font-style: italic;
+
+	text-decoration: line-through;
+
+	text-shadow: 2px 1px dodgerBlue;
+
+}
+
+
+section{
+	height: 70%;
+}
+
+
+
+nav {
+	float: left;
+
+	border-right: 2px solid tomato;
+
+	width: 30%;
+
+	height: 100%;
+
+}
+
+
+
+a {
+	
+color: hotpink;
+
+	
+text-decoration: none;
+
+}
+
+
+a:hover {
+
+	color: orange;
+
+}
+
+ul {
+
+	background: #ff9999;
+	
+list-style-image: url("https://phoneky.co.uk/thumbs/screensavers/down/abstract/poring_rbjz4fhl.gif");
+	
+list-style-position: inside;
+	
+margin-left: 40;
+	
+padding: 0;
+	
+font-size: 25px;
+	
+overflow: auto;
+
+}
+
+
+ul li {
+
+background: #ffe5e5;
+
+}
+
+li a {
+	
+display: block;
+
+}
+
+
+{
+	
+background-color: white;
+
+}
+
+
+article {
+	
+float: left;
+	
+width: 70%;
+	
+height: 100%;
+	
+background-image: url("https://gifimage.net/wp-content/uploads/2017/11/fried-chicken-gif-2.gif");
+	
+background-repeat: repeat;
+
+	background-attachment: scroll;
+
+	overflow: auto;
+
+}
+
+
+article.background-image{
+	
+opacity: 0.2;
+
+}
+p.image {
+	
+text-align: center;
+
+}
+
+
+img:hover {
+
+	opacity: 0.5;
+
+}
+
+
+footer {
+	
+border-top: 2px solid tomato;
+
+	height: 15%;
+
+}
+
+
