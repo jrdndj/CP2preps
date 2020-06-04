@@ -1,0 +1,3 @@
+C:\Users\ttv\Desktop\Enter\Uni\Erasmus Semester 2\Computer Practicuum\ISaidIt\NodeJS\ISaidItExpress\ISaidItExpress\obj\Debug\ISaidItExpress.njsproj.CoreCompileInputs.cache
+C:\Users\ttv\Desktop\Enter\Uni\Erasmus Semester 2\Computer Practicuum\ISaidIt\NodeJS\ISaidItExpress\ISaidItExpress\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\ttv\Desktop\Enter\Uni\Erasmus Semester 2\Computer Practicuum\ISaidIt\NodeJS\ISaidItExpress\ISaidItExpress\obj\Debug\ISaidItExpress.njsprojAssemblyReference.cache
