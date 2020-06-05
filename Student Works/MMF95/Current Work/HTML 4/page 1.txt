@@ -1,0 +1,17 @@
+<html>
+   <head>
+
+<title>page 1</title>
+
+   </head>
+
+<body>
+<form>
+
+<input type="text" name="username">
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<html>
+<body>
+
+
+<head>
+
+<title> Register </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+ <link rel="stylesheet" href="css/register.css">
+
+</head>
+<br>
+<div class="inner register">
+
+                <!-- Form Area -->
+
+                <div class="register-form">
+
+                    <!-- Form -->
+
+                    <form id="contact-us" method="post" action="#">
+
+                        <!-- Left Inputs -->
+
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+
+                            <!-- Name -->
+
+                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+
+                            <!-- Email -->
+
+                            <input type="Email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+
+                            <!--password-->
+
+                            <input type="password" name="password" id="mail" required="required" class="form" placeholder="Enter password" />
+
+
+
+                        </div><!-- End Left Inputs -->
+
+                        <!-- Right Inputs -->
+
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+
+                            <!-- Message -->
+
+                            <textarea name="comment" id="comment" class="form textarea"  placeholder="Comment"></textarea>
+
+                        </div><!-- End Right Inputs -->
+
+                        <!-- Bottom Submit -->
+
+                        <div class="relative fullwidth col-xs-12">
+
+                            <!-- Submit Button -->
+
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Submit</button> 
+
+                        </div><!-- End Bottom Submit -->
+
+
+                    </form>
+
+                    
+
+</body>
+</html>

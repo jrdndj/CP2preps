@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    font-family: Sans-serif;
+    font-weight: bold;
+}
+
+#desc {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    margin: 0;
+
+}
+
+#menu{
+
+    background-color: lightgray;
+    padding-top: 2%;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+#horizontal-list{
+
+    list-style: none;
+    padding-top: 0px;
+    margin: 3px;
+}
+
+#horizontal-list li{
+
+    display: inline;
+    margin: 0;
+}
+#hyperlink1 {
+    background-color: gray;
+    color: white;
+    padding: 10px 35px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+
+img {
+    padding-top: 10px;
+    margin-left: 40px;
+    width: 867px;
+    height: 500px;
+}
+.listpart{
+    display: table;
+    margin: 5 auto;
+    text-align: center;
+}
+
+#imgdesc {
+    font-size: 10px;
+    text-align: center;
+    margin: 2px;
+}
+
+#listpart{
+    text-align: center;
+}
+
+#wiki{
+    color: lightseagreen;
+}
+.menu {
+    display: table;
+    margin: 0 auto;
+}

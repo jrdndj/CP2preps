@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Memes Gallery</title>
+    <meta name="description" content="Memes gallery" />
+    <meta name="author" content="mkljun" />
+    <meta name="keywords" content="memes, gallery" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BOpad7VEUVeEMCNnPLn_hL8DQ7a9bN5EU8LSh05zOo2AMDhgvHWSnE2PNZZPchhXx8XzrXDUuoAIumKh5oBIAeyTw0JQfha6RQ6grugFca4" charset="UTF-8"></script><style>
+      * {
+      box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #ffffff;
+      }
+     
+      /* Container for flexboxes */
+      section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .column1 {
+        flex: 1;
+        flex-direction: column;
+      }
+      
+      .column2 {
+        flex: 7;
+        flex-direction: column;
+      }
+      
+   
+      nav {
+        background: #ffffff;
+        margin: 40px auto;
+      }
+
+      nav ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 130px;
+      }
+
+      nav ul li {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        background-color: orange;
+      }
+
+      nav ul li a {
+        display: block;
+        margin: 0 auto;
+        padding: 5px 5px;
+        color: white;
+        background-color: grey;
+        text-decoration: none;
+        width: 80%;
+      }
+
+      /* section */
+      header {
+        padding: 0 10px;
+        text-align: left;
+        font-size: 20px;
+        color: orange;
+      }
+
+      article {
+        padding: 0 10px;
+        color: grey;
+      }
+
+      /* Style the footer */
+      footer {
+        padding: 0 10px;
+        color: grey;
+      }
+
+      .largecomic {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 55px;
+        font-style: italic;
+        font-weight: bold;
+        color: green;
+        margin: 0;
+        padding: 0 10;
+      }
+     
+      (inside the section) sit on top of each other instead
+      of next to each other */
+      @media (max-width: 600px) {
+         section {
+            flex-direction: column;
+         }
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <section>
+
+      <div class="column1"> 
+        <nav>
+      	  <ul>
+      	    <li><a href="index.html">Home page</a></li>
+      	    <li><a href="what.html">What are memes?</a></li>
+      	    <li><a href="gallery.html">Gallery</a></li>
+          
+      	  </ul>
+        </nav>
+      </div>
+
+      <div class="column2">
+        <header>
+          <h1>Meme Gallery</h1>
+        </header>   
+      
+        <article> 
+   	  <p class="largecomic">The largest collection of memes in the interwebs</p>
+	  <p>In this site, we allow you check out diferent memes that have been featured accross history.</p>
+	  <p>To know more about memes, click What are memes.<br />
+             To see the memes, check out Gallery.
+	  </p>
+        </article>
+
+        <footer>
+          <p>&copy; MMF</p>
+        </footer>
+      </div>
+ 
+   </section>
+
+
+
+  </body>
+</html>

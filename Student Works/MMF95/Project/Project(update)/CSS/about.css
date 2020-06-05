@@ -1,0 +1,65 @@
+
+
+body {
+    padding-top: 56px;
+}
+
+
+.jumbotron {
+    background: url("../img/14.png") no-repeat center;
+}
+
+
+
+
+.BG {
+  width: 1005px;
+  height: 405px;
+  margin-left: -500px;
+  position: absolute;
+  background: url("../img/16.jpg");
+  border-top:  1px solid #9f9f9f;
+  border-right:  1px solid #9f9f9f; 
+  border-left:  1px solid #9f9f9f; 
+  border-bottom: 1px solid #9f9f9f;  
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+
+
+
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}
+
+
+
+
+
+
+#Register {
+    background: url("../img/9.jpg") no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
