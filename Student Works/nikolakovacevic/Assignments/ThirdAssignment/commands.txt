@@ -1,0 +1,1000 @@
+ 1000  ./array2
+ 1001  ./pointer
+ 1002  make pointer
+ 1003  ./pointer
+ 1004  make patternprinting
+ 1005  ./patternprinting 
+ 1006  make patternprinting
+ 1007  ./patternprinting 
+ 1008  make patternprinting
+ 1009  ./patternprinting 
+ 1010  make patternprinting
+ 1011  ./patternprinting 
+ 1012  make patternprinting
+ 1013  ./patternprinting 
+ 1014  make robotpath
+ 1015  ./robotpath
+ 1016  make robotpath
+ 1017  ./robotpath
+ 1018  make robotpath
+ 1019  ./robotpath
+ 1020  make robotpath
+ 1021  ./robotpath
+ 1022  make robotpath
+ 1023  ./robotpath
+ 1024  touch robotpath1.c
+ 1025  make robotpath1.c
+ 1026  make robotpath1
+ 1027  ./robotpath1
+ 1028  make robotpath1
+ 1029  ./robotpath1
+ 1030  make robotpath1
+ 1031  ./robotpath1
+ 1032  make robotpath1
+ 1033  ./robotpath1
+ 1034  make robotpath1
+ 1035  ./robotpath1
+ 1036  make robotpath1
+ 1037  ./robotpath1
+ 1038  make robotpath1
+ 1039  ./robotpath1
+ 1040  make robotpath1q
+ 1041  make robotpath1
+ 1042  ./robotpath1
+ 1043  make robotpath1
+ 1044  ./robotpath1
+ 1045  make robotpath1
+ 1046  ./robotpath1
+ 1047  make robotpath1
+ 1048  cd BashScripts/
+ 1049  nano practice.sh
+ 1050  nano practice.sh 
+ 1051  ./practice.sh
+ 1052  chmod u+x practice.sh
+ 1053  ./practice.sh 
+ 1054  ./practice.sh ime 733
+ 1055  ls
+ 1056  nano practice.sh 
+ 1057  chmod u+x practice.sh 
+ 1058  ./practice.sh 
+ 1059  ls
+ 1060  cd ime/
+ 1061  ..
+ 1062  cd ..
+ 1063  ./practice.sh name 733
+ 1064  ls
+ 1065  rm ime
+ 1066  rmdir ime
+ 1067  ls
+ 1068  rmdir name
+ 1069  ./practice.sh name 733
+ 1070  ./practice.sh ime 733
+ 1071  ls
+ 1072  wd
+ 1073  pwd
+ 1074  nano touch.sh
+ 1075  chmod u+x touch.sh
+ 1076  ./touch.sh
+ 1077  ls
+ 1078  cd comp
+ 1079  ls
+ 1080  cd ..
+ 1081  rm comp
+ 1082  rmdir comp
+ 1083  rm -r comp
+ 1084  ls
+ 1085  nano touch.sh
+ 1086  ./touch.sh
+ 1087  ls
+ 1088  cd comp
+ 1089  lss
+ 1090  ls
+ 1091  cd ..
+ 1092  rm -r comp
+ 1093  ls
+ 1094  ./touch.sh
+ 1095  nano touch1.sh
+ 1096  chmod u+x touch1.sh
+ 1097  ls
+ 1098  cd comp
+ 1099  ls
+ 1100  cd ..
+ 1101  ls
+ 1102  ./touch1.sh
+ 1103  ls
+ 1104  cd comp
+ 1105  ls
+ 1106  cd ..
+ 1107  rmdir comp
+ 1108  ./touch.sh
+ 1109  nano touch2.sh
+ 1110  cd comp
+ 1111  nano file25.txt
+ 1112  cd ..
+ 1113  grep1.sh
+ 1114  nano grep1.sh
+ 1115  chmod u+x grep1.sh
+ 1116  ./grep1.sh 
+ 1117  cd comp
+ 1118  nano file25.txt 
+ 1119  cd BashScripts/
+ 1120  ls
+ 1121  nano triangletask.sh 
+ 1122  nano OddNumbers.sh 
+ 1123  ls
+ 1124  nano FILENAME.sh 
+ 1125  ./FILENAME.sh 
+ 1126  nano conditionalexample.sh
+ 1127  nano arguments.sh 
+ 1128  ./arguments.sh 
+ 1129  ./arguments.sh 5 6
+ 1130  ./arguments.sh 6 6
+ 1131  ls
+ 1132  ./forloopexample.sh 
+ 1133  nano forloop
+ 1134  ls
+ 1135  nano forloopexample.sh 
+ 1136  nano forlooptasks1.sh 
+ 1137  nano whileloopexample.sh 
+ 1138  ls
+ 1139  cd BashScripts/
+ 1140  ls
+ 1141  nano grep1.sh 
+ 1142  ls
+ 1143  cd 'C - Assigments'
+ 1144  make robotpath1
+ 1145  ./robotpath
+ 1146  ./robotpath1
+ 1147  make robotpath1
+ 1148  ./robotpath1
+ 1149  make robotpath1
+ 1150  ./robotpath1
+ 1151  make robotpath1
+ 1152  ./robotpath1
+ 1153  make robotpath1
+ 1154  ./robotpath1
+ 1155  ruulul
+ 1156  ./robotpath1
+ 1157  make robotpath1
+ 1158  ./robotpath1
+ 1159  make robotpath1
+ 1160  ./robotpath1
+ 1161  make robotpath1
+ 1162  ls
+ 1163  cd Desktop/
+ 1164  ls
+ 1165  nano Question1a.sh
+ 1166  chmod u+x Question1a.sh 
+ 1167  ./Question1a.sh 
+ 1168  nano Question1a.sh 
+ 1169  chmod u+x Question1a.sh 
+ 1170  ./Question1a.sh 
+ 1171  nano Question1a.sh 
+ 1172  ls
+ 1173  cd Downloads/
+ 1174  cd ..
+ 1175  ls
+ 1176  cd Downloads/
+ 1177  ls
+ 1178  cd Mock
+ 1179  cd Mock_ExamI
+ 1180  ls
+ 1181  cd Mock_ExamI/
+ 1182  ls
+ 1183  cd Resources/
+ 1184  ls
+ 1185  cp docs
+ 1186  cp --help
+ 1187  cp docs home
+ 1188  cp -r docs home
+ 1189  cp -r docs /Desktop
+ 1190  d
+ 1191  cd ..
+ 1192  cd .. .. ..
+ 1193  cd ..
+ 1194  cd Desktop/
+ 1195  ls
+ 1196  ./Question1a.sh 
+ 1197  cd ..
+ 1198  cd BashScripts/
+ 1199  ls
+ 1200  nano OddNumbers.sh 
+ 1201  cd ..
+ 1202  cd Desktop/
+ 1203  ls
+ 1204  cd docs
+ 1205  ls
+ 1206  cd txt
+ 1207  ls
+ 1208  cd ..
+ 1209  ls
+ 1210  cd ..
+ 1211  ls
+ 1212  cd pictures/
+ 1213  ls
+ 1214  cd ..
+ 1215  cd docs
+ 1216  ls
+ 1217  cd ..
+ 1218  ls
+ 1219  nano Question1b.sh 
+ 1220  chmod u+x Question1b.sh
+ 1221  ./Question1b.sh
+ 1222  cd pictures/
+ 1223  ls
+ 1224  cd ..
+ 1225  ls
+ 1226  nano Question2.sh
+ 1227  ls
+ 1228  cd Desktop/
+ 1229  ls
+ 1230  cd Exam\ Practice/
+ 1231  ls
+ 1232  cd MockUp2
+ 1233  ls
+ 1234  cd Resources/
+ 1235  ls
+ 1236  cd ..
+ 1237  ls
+ 1238  nano Question1c.sh
+ 1239  chmod x+u Question1c.sh
+ 1240  chmod u+x Question1c.sh
+ 1241  chmod u+x Question1c.s
+ 1242  chmod u+x Question1c.sh
+ 1243  ./Question1c.sh 
+ 1244  nano Question1c.sh
+ 1245  chmod u+x Question1c.sh
+ 1246  ./Question1c.sh 
+ 1247  ls
+ 1248  nano Question1c.sh
+ 1249  chmod u+x Question1c.sh
+ 1250  ./Question1c.sh 
+ 1251  ssh 89191035@student.famnit.upr.si
+ 1252  ssh 89191015@student.famnit.upr.si
+ 1253  clear
+ 1254  ls
+ 1255  cd Desktop/
+ 1256  ls
+ 1257  cd Exam\ Practice/
+ 1258  ls
+ 1259  cd MockUp
+ 1260  cd MockUp1
+ 1261  ls
+ 1262  nano Question.txt
+ 1263  ls
+ 1264  nano Question2.sh
+ 1265  chmod x+u Question2.sh
+ 1266  chmod u+x Question2.sh
+ 1267  ./Question2.sh
+ 1268  nano Question3.c
+ 1269  make Question3
+ 1270  ./Question3
+ 1271  nano Question3.c
+ 1272  ./Question3
+ 1273  nano Question3.c
+ 1274  make Question3
+ 1275  nano Question3.c
+ 1276  make Question3
+ 1277  ./Question3
+ 1278  nano Question3.c
+ 1279  make Question3
+ 1280  nano Question3.c
+ 1281  make Question3
+ 1282  ./Question3
+ 1283  nano Question3.c
+ 1284  nano Question4.c
+ 1285  make Question4
+ 1286  nano Question4.c
+ 1287  make Question4
+ 1288  nano Question4.c
+ 1289  make Question4
+ 1290  ./Question4
+ 1291  ./Question4 aba
+ 1292  nano Question4.c
+ 1293  cd Desktop/
+ 1294  cd Exam\ Practice/
+ 1295  ls
+ 1296  cd MockUp2
+ 1297  ls
+ 1298  cd Res
+ 1299  cd Resources/
+ 1300  ls
+ 1301  cd tools
+ 1302  ls
+ 1303  ls -F
+ 1304  cd ../../..
+ 1305  cd ../..
+ 1306  ls
+ 1307  nano Add.txt
+ 1308  rm Add.txt 
+ 1309  ls
+ 1310  nano a.out 
+ 1311  cd Project\ -\ Chat\ App/
+ 1312  ls
+ 1313  cd ..
+ 1314  ls
+ 1315  cd Project\ -\ Chat\ App/
+ 1316  ls
+ 1317  nano chatApp.c
+ 1318  pwd
+ 1319  cd Desktop/
+ 1320  cd Exam\ Practice/
+ 1321  cd MockUp2
+ 1322  ls
+ 1323  ls -F
+ 1324  ls -F minions
+ 1325  cd Resources/
+ 1326  ls -F minions
+ 1327  ls
+ 1328  nano Question1a.sh
+ 1329  chmod u+x Question1a.sh
+ 1330  ./Question1a.sh 
+ 1331  ls
+ 1332  clear
+ 1333  ls
+ 1334  cd ..
+ 1335  ls
+ 1336  nano Question1b.sh
+ 1337  ls
+ 1338  nano Question1b.sh
+ 1339  ls
+ 1340  chmod u+x Question1b.sh
+ 1341  ./Question1b.sh
+ 1342  ls
+ 1343  nano Question1b.sh
+ 1344  chmod u+x Question1b.sh
+ 1345  ./Question1b.sh
+ 1346  nano Question1b.sh
+ 1347  chmod u+x Question1b.sh
+ 1348  ./Question1b.sh
+ 1349  nano Question1b.sh
+ 1350  chmod u+x Question1b.sh
+ 1351  ./Question1b.sh
+ 1352  ls
+ 1353  nano Question1c.sh
+ 1354  chmod u+x Question1c.sh
+ 1355  ./Question1c.sh M
+ 1356  ls
+ 1357  ./Question1c.sh K
+ 1358  nano Question2.sh
+ 1359  chmod u+x Question2.sh
+ 1360  ./Question2.sh
+ 1361  ./Question2.sh 2
+ 1362  ./Question2.sh 2asf
+ 1363  nano Question2.sh
+ 1364  chmod u+x Question2.sh
+ 1365  ./Question2.sh 2asf
+ 1366  ./Question2.sh
+ 1367  nano Question2.sh
+ 1368  chmod u+x Question2.sh
+ 1369  ./Question2.sh
+ 1370  ./Question2.sh  3
+ 1371  cd ..
+ 1372  cd MockUp1
+ 1373  ls
+ 1374  nano Question4.c
+ 1375  make Question4
+ 1376  ls
+ 1377  make Question3
+ 1378  ./Question3 
+ 1379  make Question3
+ 1380  ./Question3 
+ 1381  ls
+ 1382  cd Downloads/
+ 1383  ls
+ 1384  cd Mock_ExamI
+ 1385  ls
+ 1386  cd Mock_ExamI/
+ 1387  cd Answers/
+ 1388  ls
+ 1389  nano Question3.c
+ 1390  make Question3.c
+ 1391  make Question3
+ 1392  nano Question3.c
+ 1393  make Question3
+ 1394  nano Question3.c
+ 1395  make Question3
+ 1396  nano Question3.c
+ 1397  make Question3
+ 1398  nano Question3.c
+ 1399  ls
+ 1400  rm Question3.c
+ 1401  ls
+ 1402  nano Question3.c
+ 1403  make Question3
+ 1404  nano Question3.c
+ 1405  ls
+ 1406  rm Question3.c
+ 1407  ls
+ 1408  make Question3.c
+ 1409  make Question3
+ 1410  ./Question3 
+ 1411  make Question4
+ 1412  clear
+ 1413  ls
+ 1414  clear
+ 1415  cd ..
+ 1416  ls
+ 1417  cd BashScripts/
+ 1418  clear
+ 1419  bash Question2.sh 
+ 1420  bash Question2.sh forloopexample.sh 
+ 1421  bash Question2.sh functest.sh 
+ 1422  bash Question2.sh NewCalculator.sh
+ 1423  NAME="John"
+ 1424  echo NAME
+ 1425  echo $NAME
+ 1426  echo "$NAME"
+ 1427  echo '$NAME'
+ 1428  echo "I'm in $(pwd)"
+ 1429  gnome - terminal
+ 1430  gnome-terminal
+ 1431  ls
+ 1432  cd Project\ -\ Chat\ App/
+ 1433  ls
+ 1434  gnome-terminal-./beginChat.sh
+ 1435  gnome-terminal ./beginChat.sh
+ 1436  gnome-terminal ./beginChat.sh 
+ 1437  gnome-terminal ./beginChat.sh 
+ 1438  gnome-terminal -e ./beginChat.sh 
+ 1439  gnome-terminal -- ./beginChat.sh 
+ 1440  ./beginChat.sh
+ 1441  sudo ./beginChat.sh
+ 1442  ls
+ 1443  chmod u+x beginChat.sh 
+ 1444  ./beginChat.sh 
+ 1445  cd ..
+ 1446  cd Desktop/
+ 1447  ls
+ 1448  cd ..
+ 1449  ls
+ 1450  cd Project\ -\ Chat\ App/
+ 1451  ls
+ 1452  make chatApp
+ 1453  ./chatApp
+ 1454  make chatApp
+ 1455  ./chatApp
+ 1456  make chatApp
+ 1457  ./chatApp
+ 1458  make chatApp
+ 1459  cd Project\ -\ Chat\ App/
+ 1460  make chatApp
+ 1461  ./chatApp
+ 1462  cd Project\ -\ Chat\ App/
+ 1463  ls
+ 1464  make chatApp
+ 1465  ./chatApp
+ 1466  chmod u+c publishMessage.sh 
+ 1467  chmod u+x publishMessage.sh 
+ 1468  chmod u+x beginChat.sh 
+ 1469  make chatApp
+ 1470  ./chatApp 
+ 1471  make chatApp
+ 1472  ./chatApp
+ 1473  ./chatApp 
+ 1474  ./chatApp
+ 1475  sudo lsof -i -P -n | grep LISTEN 
+ 1476  clear
+ 1477  cd Project\ -\ Chat\ App/
+ 1478  nano publishMessage.sh 
+ 1479  nano beginChat.sh 
+ 1480  chmod u+x beginChat.sh 
+ 1481  nano publishMessage.sh 
+ 1482  chmod u+x publishMessage.sh 
+ 1483  ls
+ 1484  cd Project\ -\ Chat\ App/
+ 1485  ls
+ 1486  make chatApp
+ 1487  ./chatApp
+ 1488  clear
+ 1489  ls
+ 1490  nano publishMessage.sh 
+ 1491  chmod u+x publishMessage.sh 
+ 1492  clear
+ 1493  make chatApp
+ 1494  ./chatApp
+ 1495  make chatApp
+ 1496  ./chatApp
+ 1497  make chatApp
+ 1498  ./chatApp
+ 1499  make chatApp
+ 1500  ./chatApp
+ 1501  clear
+ 1502  make chatApp
+ 1503  ./chatApp
+ 1504  nano beginChat.sh 
+ 1505  ./chatApp
+ 1506  clear
+ 1507  nano beginChat.sh 
+ 1508  nano publishMessage.sh 
+ 1509  ./chatApp
+ 1510  make chatApp
+ 1511  ./chatApp
+ 1512  make chatApp
+ 1513  ./chatApp
+ 1514  make chatApp
+ 1515  ./chatApp
+ 1516  clear
+ 1517  make chatApp
+ 1518  ./chatpp
+ 1519  ./chatApp
+ 1520  make chatApp
+ 1521  ./chatApp
+ 1522  .chatApp
+ 1523  ./chatApp
+ 1524  make chatApp
+ 1525  ./chatApp
+ 1526  make chatApp
+ 1527  ./chatApp
+ 1528  make chatApp
+ 1529  ./chatApp
+ 1530  make chatApp
+ 1531  ./chatApp
+ 1532  eclaer
+ 1533  clear
+ 1534  make chatApp
+ 1535  ./chatapp
+ 1536  ./chatApp
+ 1537  make chatApp
+ 1538  ./chatApp
+ 1539  make chatApp
+ 1540  ./chatApp
+ 1541  clear
+ 1542  make chatApp
+ 1543  ./chatApp
+ 1544  clear
+ 1545  make chatApp
+ 1546  ./chatApp
+ 1547  make chatApp
+ 1548  ./chatApp
+ 1549  make chatApp
+ 1550  ./chatApp
+ 1551  make chatApp
+ 1552  ./chatAPp
+ 1553  ./chatAp
+ 1554  ./chatApp
+ 1555  ./chatAp
+ 1556  make chatApp
+ 1557  ./chatApp
+ 1558  make chatApp
+ 1559  ./chatApp
+ 1560  nano publishMessage.sh 
+ 1561  make chatApp
+ 1562  ./chatApp
+ 1563  cd Project\ -\ Chat\ App/
+ 1564  ls
+ 1565  make chatApp
+ 1566  ./chatApp
+ 1567  make chatApp
+ 1568  ./chatApp
+ 1569  make chatApp
+ 1570  ./chatApp
+ 1571  make chatApp
+ 1572  ./chatApp
+ 1573  make chatApp
+ 1574  ./chatApp
+ 1575  make chatApp
+ 1576  ./chatApp
+ 1577  make chatApp
+ 1578  ./chatApp
+ 1579  make chatApp
+ 1580  ./chatApp
+ 1581  make chatApp
+ 1582  ./chatApp
+ 1583  nano publishMessage.sh 
+ 1584  chmod u+x publishMessage.sh 
+ 1585  make chatApp
+ 1586  ./chatApp
+ 1587  nano publishMessage.sh 
+ 1588  chmod u+x publishMessage.sh 
+ 1589  make chatApp
+ 1590  ./chatApp
+ 1591  clear
+ 1592  make chatApp
+ 1593  ./chatApp
+ 1594  make chatApp
+ 1595  ./chatApp
+ 1596  make chatApp
+ 1597  ./chatApp
+ 1598  make chatApp
+ 1599  ./chatApp
+ 1600  make chatApp
+ 1601  ./chatApp
+ 1602  make chatApp
+ 1603  ./chatApp
+ 1604  make chatApp
+ 1605  ./chatApp
+ 1606  make chatApp
+ 1607  cd Project\ -\ Chat\ App/
+ 1608  make chatApp
+ 1609  ./chatApp
+ 1610  clear
+ 1611  make chatAPp
+ 1612  make chatApp
+ 1613  ./chatApp
+ 1614  make chatApp
+ 1615  ./chatApp
+ 1616  make chatApp
+ 1617  ./chatApp
+ 1618  make chatApp
+ 1619  ./chatApp
+ 1620  clear
+ 1621  make chatApp
+ 1622  gcc chatApp.c -o chatApp
+ 1623  ./chatApp
+ 1624  chmod u+x beginChat.sh 
+ 1625  ./chatApp
+ 1626  chmod u+x publishMessage.sh 
+ 1627  make chatApp
+ 1628  ./chatApp
+ 1629  chmod u+x beginChat.sh 
+ 1630  chmod u+x publishMessage.sh 
+ 1631  make chatApp
+ 1632  ./chatApp
+ 1633  make chatApp
+ 1634  ./chatApp
+ 1635  shc publishMessage.sh 
+ 1636  sudo apt install shc
+ 1637  shc publishMessage.sh 
+ 1638  shc -f publishMessage.sh 
+ 1639  shc -f beginChat.sh 
+ 1640  clear
+ 1641  make chatApp
+ 1642  ./chatApp
+ 1643  gcc ChatProject.c -o ChatProject
+ 1644  ./ChatProject 
+ 1645  gcc ChatProject.c -o ChatProject
+ 1646  ./ChatProject 
+ 1647  chmod u+x beginChat.sh 
+ 1648  chmod u+x publishMessage.sh 
+ 1649  make chatApp
+ 1650  make ChatProject
+ 1651  ./ChatProject 
+ 1652  make ChatProject
+ 1653  ./ChatProject 
+ 1654  nano beginChat.sh 
+ 1655  nano publishMessage.sh 
+ 1656  make ChatProject
+ 1657  ./ChatProject 
+ 1658  make ChatProject
+ 1659  ./ChatProject 
+ 1660  nano beginChat.sh 
+ 1661  nano publishMessage.sh 
+ 1662  ./ChatProject 
+ 1663  make ChatProject
+ 1664  ./ChatProject 
+ 1665  make ChatProject
+ 1666  ./ChatProject 
+ 1667  make ChatProject
+ 1668  ./ChatProject 
+ 1669  make ChatProject
+ 1670  ./ChatProject 
+ 1671  make ChatProject
+ 1672  ./ChatProject 
+ 1673  make ChatProject
+ 1674  ./ChatProject 
+ 1675  make ChatProject
+ 1676  ./ChatProject 
+ 1677  make ChatProject
+ 1678  ./ChatProject 
+ 1679  make ChatProject
+ 1680  ./ChatProject 
+ 1681  make ChatProject
+ 1682  ./ChatProject 
+ 1683  make ChatProject
+ 1684  ./ChatProject 
+ 1685  make ChatProject
+ 1686  ./ChatProject 
+ 1687  cd Project\ -\ Chat\ App/
+ 1688  make ChatProject
+ 1689  ./ChatProject 
+ 1690  make ChatProject
+ 1691  ./ChatProject 
+ 1692  make ChatProject
+ 1693  ./ChatProject 
+ 1694  make ChatProject
+ 1695  ./ChatProject 
+ 1696  make ChatProject
+ 1697  ./ChatProject 
+ 1698  ls 
+ 1699  clear
+ 1700  ls
+ 1701  cd Project\ -\ Chat\ App/
+ 1702  ls
+ 1703  make ChatProject
+ 1704  ./ChatProject 
+ 1705  make ChatProject
+ 1706  ./ChatProject 
+ 1707  make ChatProject
+ 1708  ./ChatProject 
+ 1709  make ChatProject
+ 1710  ./ChatProject 
+ 1711  make ChatProject
+ 1712  ./ChatProject 
+ 1713  make ChatProject
+ 1714  ./ChatProject 
+ 1715  make ChatProject
+ 1716  ./ChatProject 
+ 1717  make ChatProject
+ 1718  ./ChatProject 
+ 1719  make ChatProject
+ 1720  ./ChatProject 
+ 1721  make ChatProject
+ 1722  ./ChatProject 
+ 1723  make ChatProject
+ 1724  ./ChatProject 
+ 1725  make ChatProject
+ 1726  ./ChatProject 
+ 1727  make ChatProject
+ 1728  ./ChatProject 
+ 1729  make ChatProject
+ 1730  ./ChatProject 
+ 1731  make ChatProject
+ 1732  ./ChatProject 
+ 1733  make ChatProject
+ 1734  ./ChatProject 
+ 1735  make ChatProject
+ 1736  ./ChatProject 
+ 1737  make ChatProject
+ 1738  ./ChatProject 
+ 1739  make ChatProject
+ 1740  ./ChatProject 
+ 1741  make ChatProject
+ 1742  ./ChatProject 
+ 1743  make ChatProject
+ 1744  ./ChatProject 
+ 1745  make ChatProject
+ 1746  ./ChatProject 
+ 1747  make ChatProject
+ 1748  ./ChatProject 
+ 1749  make ChatProject
+ 1750  ./ChatProject 
+ 1751  make ChatProject
+ 1752  ./ChatProject 
+ 1753  make ChatProject
+ 1754  ./ChatProject 
+ 1755  make ChatProject
+ 1756  ./ChatProject 
+ 1757  make ChatProject
+ 1758  ./ChatProject 
+ 1759  make ChatProject
+ 1760  ./ChatProject 
+ 1761  make ChatProject
+ 1762  ./ChatProject 
+ 1763  make ChatProject
+ 1764  ./ChatProject 
+ 1765  cd Project\ -\ Chat\ App/
+ 1766  make ChatProject
+ 1767  ./ChatProject 
+ 1768  make ChatProject
+ 1769  ./ChatProject 
+ 1770  make ChatProject
+ 1771  ./ChatProject 
+ 1772  make ChatProject
+ 1773  ./ChatProject 
+ 1774  make ChatProject
+ 1775  ./ChatProject 
+ 1776  ls
+ 1777  cd Project\ -\ Chat\ App/
+ 1778  nano beginChat.sh 
+ 1779  nano publishMessage.sh 
+ 1780  clear
+ 1781  make ChatProject
+ 1782  ./ChatProject 
+ 1783  make ChatProject
+ 1784  ./ChatProject 
+ 1785  gnome-terminal --
+ 1786  cd Project\ -\ Chat\ App/
+ 1787  ls
+ 1788  make ChatProject
+ 1789  ./ChatProject 
+ 1790  make ChatProject
+ 1791  ./ChatProject 
+ 1792  make ChatProject
+ 1793  ./ChatProject 
+ 1794  make ChatProject
+ 1795  ./ChatProject 
+ 1796  nano beginChat.sh 
+ 1797  cd Project\ -\ Chat\ App/
+ 1798  make ChatProject
+ 1799  ./ChatProject
+ 1800  ls
+ 1801  cd Project\ -\ Chat\ App/
+ 1802  make ChatProject
+ 1803  ./ChatProject 
+ 1804  cd Project\ -\ Chat\ App/
+ 1805  ./ChatProject 
+ 1806  cd Project\ -\ Chat\ App/
+ 1807  make ChatProject
+ 1808  ./ChatProject 
+ 1809  cd Project\ -\ Chat\ App/
+ 1810  ./ChatProject 
+ 1811  make passing4
+ 1812  ./passing4
+ 1813  ./passing5
+ 1814  ./shoppingcart 
+ 1815  ssh 89191015@student.famnit.upr.si
+ 1816  cd BashScripts/
+ 1817  nano grep1.sh 
+ 1818  make thirdTask
+ 1819  ./thirdTask 
+ 1820  make thirdTask
+ 1821  ./thirdTask 
+ 1822  make thirdTask
+ 1823  ./thirdTask 
+ 1824  make thirdTask
+ 1825  ./thirdTask 
+ 1826  make thirdTask
+ 1827  ./thirdTask 
+ 1828  make thirdTask
+ 1829  ./thirdTask 
+ 1830  make thirdTask
+ 1831  ./thirdTask 
+ 1832  make thirdTask
+ 1833  ./thirdTask 
+ 1834  make thirdTask
+ 1835  make thirdTask
+ 1836  ./thirdTask 
+ 1837  make thirdTask
+ 1838  ./thirdTask 
+ 1839  clear
+ 1840  make thirdTask
+ 1841  ./thirdTask
+ 1842  make thirdTask
+ 1843  ./thirdTask
+ 1844  make thirdTask
+ 1845  ./thirdTask
+ 1846  cd Desktop/
+ 1847  cd Exam\ Practice/
+ 1848  make fourthTask
+ 1849  ./fourthTask 
+ 1850  make fourthTask
+ 1851  make filewriting
+ 1852  ./filewriting
+ 1853  ls
+ 1854  cd Desktop/
+ 1855  mk FirstAssignment
+ 1856  mkdir FirstAssignment
+ 1857  cd FirstAssignment/
+ 1858  nano FirstPage.html
+ 1859  nano FirstPoem.html
+ 1860  nano SecondPoem.html
+ 1861  nano FirstPage.html
+ 1862  nano FirstPoem.html
+ 1863  nano SecondPoem.html
+ 1864  mv FirstPoem.html thespecialone.html
+ 1865  mv SecondPoem.html changingthepast.html
+ 1866  mv time-alan_cleaver_foter_cc_by.jpg secondpoem.jpg
+ 1867  mv index.jpeg firstpoem.jpg
+ 1868  rm FirstPoem.html 
+ 1869  rm SecondPoem.html 
+ 1870  ls
+ 1871  history
+ 1872  ls
+ 1873  cd Desktop/
+ 1874  cd FirstAssignment/
+ 1875  ls
+ 1876  history > commandsused.html
+ 1877  ls
+ 1878  cd Desktop/
+ 1879  cd FirstAssignment/
+ 1880  cd ..
+ 1881  tar -cvzf backup.tgz /Desktop/FirstAssignment
+ 1882  tar -cvzf backup.tgz /Desktop/FirstAssignment$
+ 1883  tar -cvzf backup.tgz /Desktop
+ 1884  help tar
+ 1885  man -k tar
+ 1886  -cvzf backup.tgz /Desktop/FirstAssignment
+ 1887  backup.tgz /Desktop/FirstAssignment
+ 1888  tar -cvzf backup.tar.gz /Desktop/FirstAssignment
+ 1889  tar -cvzf backup.tar.gz /Desktop/'FirstAssignment'
+ 1890  tar -cvzf backup.tar.gz FirstAssignment
+ 1891  cd Desktop/
+ 1892  tar -cvzf backup.tar.gz FirstAssignment
+ 1893  ls
+ 1894  tar -cvzf backup.tgz FirstAssignment
+ 1895  tar -cvzf FirstAssignment.tgz FirstAssignment
+ 1896  tar -cvzf naloga.tgz FirstAssignment
+ 1897  cd Desktop/
+ 1898  cd FirstAssignment/
+ 1899  mkdir Images
+ 1900  mv firstpoem.jpg Images
+ 1901  mv secondpoem.jpg Images
+ 1902  cd Images/
+ 1903  pwd
+ 1904  ls
+ 1905  mv firstpoem.jpg firstpoem1.jpg 
+ 1906  mv secondpoem.jpg secondpoem1.jpg 
+ 1907  ls
+ 1908  mv publishwall_resized_1483009267_7289922.jpg secondpoem2.jpg 
+ 1909  ls
+ 1910  mv Special-Messages-for-Friends.jpg firstpoem2.jpg 
+ 1911  ls
+ 1912  cd ..
+ 1913  history > commandsused.html 
+ 1914  cd ..
+ 1915  tar -czvf naloga.tgz FirstAssignment
+ 1916  tar -czvf FirstAssignment.tgz FirstAssignment
+ 1917  ls
+ 1918  tar -czvf FirstAssignment.tgz FirstAssignment
+ 1919  cd Desktop/
+ 1920  tar -czvf FirstAssignment.tgz FirstAssignment
+ 1921  cd Desktop/
+ 1922  tar -czvf FirstAssignment.tgz FirstAssignment
+ 1923  cd Desktop/
+ 1924  mkdir Exercise_Cat
+ 1925  cd Desktop/
+ 1926  mkdir SecondAssignment
+ 1927  mv SecondAssignment.html SecondAssignment
+ 1928  history
+ 1929  tar -czvf FirstAssignment.tgz FirstAssignment
+ 1930  cd Desk
+ 1931  cd Desktop/
+ 1932  tar -czvf SecondAssignment.tgz SecondAssignment/
+ 1933  quit
+ 1934  shutdown
+ 1935  ocaml
+ 1936  ls
+ 1937  cd Programming\ 2/
+ 1938  cd OCaml/
+ 1939  touch helloworld.ml
+ 1940  ocaml
+ 1941  cd ..
+ 1942  ls
+ 1943  cd Programming\ 2/
+ 1944  cd OCaml/
+ 1945  ocamlc -o helloworld helloworld.ml
+ 1946  ./helloworld 
+ 1947  ocamlc -o helloworld helloworld.ml
+ 1948  ./helloworld 
+ 1949  ocamlc -o helloworld helloworld.ml
+ 1950  ./helloworld 
+ 1951  sudo apt-get install ocaml
+ 1952  sudo apt-get install opam
+ 1953  opam depext conf-gtksourceview.2
+ 1954  opam install ocaml-top
+ 1955  opam init
+ 1956  ls
+ 1957  cd snap/
+ 1958  ls
+ 1959  cd code/
+ 1960  ls
+ 1961  cd .. .. ..
+ 1962  cd ../../..
+ 1963  ls
+ 1964  cd nikola/
+ 1965  l
+ 1966  ls
+ 1967  opam install ocaml-top
+ 1968  opam depext conf-m4.1
+ 1969  opam depext conf-pkg-config.1.1
+ 1970  opam detext conf-gtksourceview.2
+ 1971  opam depext conf-gtksourceview.2
+ 1972  opam install merlin
+ 1973  opam install ocp-indent
+ 1974  ls
+ 1975  cd Computer\ Practicum\ II
+ 1976  ls
+ 1977  tar czvf SecondAssignment.tgz SecondAssignment
+ 1978  ls
+ 1979  cd Computer\ Practicum\ II
+ 1980  ls
+ 1981  cd Exercise_02
+ 1982  touch harambe.html
+ 1983  touch stats.html
+ 1984  touch story.html
+ 1985  ls
+ 1986  cd Computer\ Practicum\ II
+ 1987  ls
+ 1988  mkdir ThirdAssignment
+ 1989  cd ThirdAssignment/
+ 1990  touch homepage.html
+ 1991  touch what.html
+ 1992  touch gallery.html
+ 1993  ls
+ 1994  cd Computer\ Practicum\ II
+ 1995  ls
+ 1996  tar czvf ThirdAssignment.tgz ThirdAssignment
+ 1997  tar czvf Exercise_03.tgz Exercise_03
+ 1998  touch commands.txt
+ 1999  history > commands.txt 

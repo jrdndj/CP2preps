@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Homepage</title>
+		<style type="text/css">
+
+
+			body {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+
+			/*First header*/
+			#header1 {
+				font-size: 35px;
+				color: #FF9933;
+				font-weight: 800;
+			}
+
+			/*Second header*/
+			#header2 {
+				font-size: 40px;
+				font-style: italic;
+				color: #009900;
+				font-family: "Brush Script MT";
+			}
+
+			/*The style of the nav-bar*/
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			nav {
+				float: left;
+				height: 1080px;
+			}	
+
+
+			nav li a {
+				display: block;
+				width: 100px;
+				padding: 8px 16px;
+				margin: 10px;
+				text-decoration: none;
+				background-color: gray;
+				border-right: 20px solid #FF9933;
+				border-left: 20px solid #FF9933;
+				color: white;
+				font-weight: bold;
+			}
+
+			/*Description*/
+			article {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+			/*The end text and copyrights*/
+			footer {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+			@media (max-width: 1080px) {
+				nav, article {
+					width: 100%;
+				    height: auto;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Nav-Bar -->
+		<nav>
+			<ul>
+				<li><a href="homepage.html">Current page</a></li>
+				<li><a href="what.html">What are memes?</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul> 
+		</nav>
+
+		<!-- Main Page -->
+		
+		<header>
+			<h1 id="header1">Meme Gallery</h1>
+		</header>
+
+		<div id="header2">
+			<h2>The largest collection of memes in<br> the interwebs</h2>	
+		</div>
+
+		<article>
+			<p>On this site, you can see all the memes that made an impact on history of human population.</p>
+			<p>To find out more about memes, click <q>What are memes?</q>,<br>To see the memes, check out <q>Gallery</q>.</p>
+		</article>
+
+		<!-- Footer -->
+
+		<footer>
+			<p>&copy;Copyright 2020. Kovacevic Nikola.</p>
+		</footer>
+
+	</body>
+</html>

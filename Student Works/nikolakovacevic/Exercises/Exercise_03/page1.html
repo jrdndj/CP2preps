@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Page 1</title>
+        <style type="text/css">
+            body {
+                background-color: #FF9933;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+            }
+
+            fieldset {
+                color: blue;
+            }
+
+            .info {
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="page2.html" method="POST">
+            <label class="info" for="username">Enter Username: </label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label class="info" for="pword">Enter Password: </label>
+            <input type="Password" name="password" id="pword">
+            <br>
+            <fieldset>
+                    <legend>Demographic</legend>
+                Gender: 
+                <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="male">
+                <label for="female">Female</label>
+                <br>
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthday">
+                <br>
+                What is your age group?
+                <br>
+                <select id="agegroup" name="agegroup" size="3" multiple>
+                    <option value="kids">0 to 10</option>
+                    <option value="teens">13 to 19</option>
+                    <option value="youngadult">20 to 35</option>
+                    <option value="mature">36 to 60</option>
+                    <option value="senior">61 and above</option>
+                </select>
+                <br>
+                <button type="button" onclick="alert('haha old!')">Know my age!</button>
+            </fieldset>    
+            <br>
+            <fieldset>
+                <legend>Meal Choice</legend>
+                What do you like to eat?
+                    <br>
+                    <input type="checkbox" id="choice" name="eatchoice" value="chicken">
+                    <label for="choice">Chicken</label>
+                    <br>
+                    <input type="checkbox" id="choice" name="eatchoice" value="beef">
+                    <label for="choice">Beef</label>
+                    <br>
+                    <input type="checkbox" id="choice" name="eatchoice" value="peta">
+                    <label for="choice">No to Animals!</label>
+            </fieldset>
+
+            <br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br>
+
+            Why do you want to join?
+            <br>
+            <textarea name="whyessay" rows="20" cols="30">I wanna be the very best, like no one ever was.</textarea>
+            <br>
+
+            Upload your CV
+            <label for="cv">Select a file</label>
+            <input type="file" id="cv" name="cv">
+            <br>
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+            
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first time with JavaScript</title>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			var name = prompt("Enter your name: ");
+			var age = parseInt(prompt("How old are you?", 10));
+			document.write("Hello " + name + " you look great!");
+			if (age < 18) {
+				document.write(" <img src=image1.png height=400> ");
+			} else if (age >= 18 && age < 28) {
+				document.write(" <img src=image2.png height=400> ");
+			} else {
+				document.write(" <img src=image3.png height=400> ");
+			}
+
+
+
+			/*while (age > 0) {
+				document.write(" <img scr=Images/image3.png> 	");
+			}*/
+
+			/*document.write("<br> Oh you are " + age + " years old.");
+			age = age + 5;
+			document.write("<br> You will be " + age + ", 5 years from now.");*/
+		</script>
+		
+
+
+	</body>
+</html>

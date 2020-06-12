@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	outline: 2px dotted tomato;
+}
+
+header {
+	border-bottom: 2px solid tomato;
+	font-family: sans-serif;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin: auto;
+	height: 18%;
+}
+
+h1 {
+	font-size: 35px;
+	letter-spacing: 15px;
+	/* spaces in between letters */
+	word-spacing: 20px;
+	/* spaces in between words */
+	line-height: 40px;
+	/* the space in between two lines of text */
+	text-shadow: 3px 2px orange;
+	/* horizontal shadow, vertical, then color 8*/
+}
+
+h2 {
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: line-through;
+	text-shadow: 2px 1px dodgerBlue;
+}
+
+section {
+	height: 70%;
+}
+
+nav {
+	float: left;
+	border-right: 2px solid tomato;
+	width: 30%;
+	height: 100%;
+}
+
+a {
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+}
+/* pseudo element */
+
+ul {
+	background: #ff9999;
+	list-style-image: url("https://phoneky.co.uk/thumbs/screensavers/down/abstract/poring_rbjz4fhl.gif");
+	list-style-position: inside;
+	margin-left: 40;
+	padding: 0;
+	font-size: 25px;
+	overflow: auto;
+}
+
+
+ul li {
+	background: #ffe5e5;
+}
+
+li a {
+	display: block;
+}
+/* instead of text, the clickable part is now the whole block */
+
+li a:hover {
+	background-color: white;
+}
+/*makes the entire block hoverable*/
+
+article {
+	float: left;
+	width: 70%;
+	height: 100%;
+	background-image: url("https://gifimage.net/wp-content/uploads/2017/11/fried-chicken-gif-2.gif");
+	background-repeat: repeat;
+	background-position: left;
+	background-attachment: scroll; 
+	overflow: auto;
+}
+
+article.background-image {
+	opacity: 0.2;
+}
+
+p.image {
+	text-align: center;
+}
+
+footer {
+	border-top: 2px solid tomato;
+	height: 15%;
+}

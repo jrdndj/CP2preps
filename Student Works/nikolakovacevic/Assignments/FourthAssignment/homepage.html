@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Homepage</title>
+		<style type="text/css">
+
+
+			body {
+				background-color: #b3d9ff;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+
+			/*First header*/
+			#header1 {
+				font-size: 35px;
+				color: #FF9933;
+				font-weight: 800;
+			}
+
+			/*Second header*/
+			#header2 {
+				font-size: 40px;
+				font-style: italic;
+				color: #009900;
+				font-family: "Brush Script MT";
+			}
+
+			/*The style of the nav-bar*/
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			nav {
+				float: left;
+				height: 1080px;
+			}	
+
+
+			nav li a {
+				display: block;
+				width: 100px;
+				padding: 8px 16px;
+				margin: 10px;
+				text-decoration: none;
+				background-color: gray;
+				color: white;
+				font-weight: bold;
+				border-right: 20px solid #FF9933;
+				border-left: 20px solid #FF9933;
+			}
+
+			/*Description*/
+			article {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+			/*The end text and copyrights*/
+			footer {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+			@media (max-width: 1080px) {
+				nav, article {
+					width: 100%;
+				    height: auto;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Nav-Bar -->
+		<nav>
+			<ul>
+				<li><a href="homepage.html">Current page</a></li>
+				<li><a href="register.html">Register Your Account</a></li>
+				<li><a href="registerconfirmation.html">Account confirmation</a></li>
+				<li><a href="upload.html">Upload your Meme</a></li>
+				<li><a href="uploadconfirmation.html">Meme confirmation</a></li>
+				<li><a href="ratememe.html">Rate a Meme</a></li>
+			</ul> 
+		</nav>
+
+		<!-- Header-Main Title -->
+		<header>
+			<h1 id="header1">Meme Gallery</h1>
+		</header>
+
+		<div id="header2">
+			<h2>The largest collection of memes in<br> the interwebs</h2>	
+		</div>
+
+		<article>
+			<p>On this site, you can see all the memes that made an impact on history of human population.</p>
+			<p>To make an account, click <q>Register Your Account</q>.<br>To upload your own memes, check out <q>Upload your Meme</q>.<br>And to rate memes of our community, go to <q>Rate a Meme</q></p>
+		</article>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy;Copyright 2020. Kovacevic Nikola.</p>
+		</footer>
+
+	</body>
+</html>

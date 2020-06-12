@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<title>Register Page</title>
+	</head>
+
+	<body>
+
+		<section>
+			<div class="navbar">
+			<!-- Nav-Bar -->
+				<nav>
+					<ul>
+						<li><a href="homepage.html">Homepage</a></li>
+						<li><a href="register.html" class="active">Register Your Account</a></li>
+						<li><a href="registerconfirmation.html">Account confirmation</a></li>
+						<li><a href="upload.html">Upload your Meme</a></li>
+						<li><a href="uploadconfirmation.html">Meme confirmation</a></li>
+						<li><a href="ratememe.html">Rate a Meme</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul> 
+				</nav>
+			</div>
+
+			<div class="second-part">
+				<!-- Header-Main Title -->
+				<header>
+					<h1>Register an Account</h1>
+				</header>
+
+				<article>
+					<div class="complete-box">
+						<!-- Fieldsets, inputs and labels -->
+						<p class="description">Fill out the boxes below!</p>
+						<div class="form">
+							<form action="registerconfirmation.html" method="POST">
+					            <fieldset>
+					                <fieldset>
+					                    <legend>Personal Info</legend>
+						                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+						                    <br>
+						                    <br>
+						                    <input type="text" name="middlename" id="middlename" placeholder="Middle Name">
+						                    <br>
+						                    <br>
+						                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+						                    <br>
+						                    <br>
+						                    <label for="birthday">Enter your birthday:</label>
+						                    <input type="date" class="inputs" name="birthday">
+						                    <br>
+						                    <br>
+						                    <input type="text" name="placeofbirth" id="placeofbirth" placeholder="Place of birth">
+						                    <br>
+						                    <br>
+						                <legend>Demographic Info</legend>
+						                    <input type="radio" id="male" name="gender" value="male">
+						                    <label for="male">Male</label>
+						                    <input type="radio" id="female" name="gender" value=female>
+						                    <label for="female">Female</label>
+					                </fieldset>
+					                <br>
+					                <br>
+					                <fieldset>
+					                    <legend>Login Info</legend>
+						                    <input type="text" name="username" id="username" placeholder="Enter your username">
+						                    <br>
+						                    <br>
+						                    <input type="Password" name="password" id="pword" placeholder="Enter your password">
+						                    <br>
+						                    <br>
+						                    <input type="Password" name="password" id="pword" placeholder="Confirm your password">
+						                    <br>
+						                    <br>
+						                    <input type="text" name="email" id="email" placeholder="Enter your email address">
+						                    <br>
+						                    <br>
+						                    <input type="text" name="email" id="email" placeholder="Confirm your email address">
+					                </fieldset>
+					                <br>
+					                <br>
+					                <fieldset>
+					                    <legend>Other</legend>
+						                    <textarea name="reasons" rows="10" cols="30" placeholder="Reasons for joining this Meme-page."></textarea>
+						                    <br>
+						                    <br>
+						                    <label for="fav">Select your favorite color:</label>
+						                    <input type="color" id="fav" name="fav">
+						                    <br>
+					                </fieldset>
+					                <br>
+					                <br>
+					                <fieldset>
+					                	<legend>If you want to add something more</legend>
+						                	<textarea name="special" rows="10" cols="30" placeholder="Write about whatever you want."></textarea>
+						                    <br>
+						                    <br>
+					                </fieldset>
+
+					                <input type="submit" name="submit" value="Submit" ?php echo print_r($_POST) ?>
+
+					            </fieldset>
+				        	</form>
+						</div>
+
+						<div class="register-image">
+							<img src=Images/join.png alt="Join the Community" height="400" width="400">
+						</div>
+
+						<footer>
+								<p>&copy;Copyright 2020. Kovacevic Nikola.</p>
+						</footer>
+					</div>
+				</article>
+			</div>
+		</section>
+
+	</body>
+</html>
