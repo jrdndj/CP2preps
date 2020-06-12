@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+<title>Tic Tac Toe</title>
+
+<link rel="stylesheet" href="css/play.css">
+
+<script type="text/javascript" src="tictac.js"></script>
+
+</head>
+
+<body>
+
+
+<br>
+<br>
+
+<!--board-->
+
+<center>
+<form name=game>
+<table border=0>
+<td>
+<table border=1>
+<tr>
+<td><a href="javascript:playerChoice('A')"><img src="blank.jpg" border=0 height=100 width=100 name=A alt="Top-Left"></a></td>
+<td><a href="javascript:playerChoice('B')"><img src="blank.jpg" border=0 height=100 width=100 name=B alt="Top-Center"></a></td>
+<td><a href="javascript:playerChoice('C')"><img src="blank.jpg" border=0 height=100 width=100 name=C alt="Top-Right"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:playerChoice('D')"><img src="blank.jpg" border=0 height=100 width=100 name=D alt="Middle-Left"></a></td>
+<td><a href="javascript:playerChoice('E')"><img src="blank.jpg" border=0 height=100 width=100 name=E alt="Middle-Center"></a></td>
+<td><a href="javascript:playerChoice('F')"><img src="blank.jpg" border=0 height=100 width=100 name=F alt="Middle-Right"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:playerChoice('G')"><img src="blank.jpg" border=0 height=100 width=100 name=G alt="Bottom-Left"></a></td>
+<td><a href="javascript:playerChoice('H')"><img src="blank.jpg" border=0 height=100 width=100 name=H alt="Bottom-Center"></a></td>
+<td><a href="javascript:playerChoice('I')"><img src="blank.jpg" border=0 height=100 width=100 name=I alt="Bottom-Right"></a></td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<!--Table for score-->
+<tr><td><input type=text size=5 name=player></td><td>Player</td></tr>
+<tr><td><input type=text size=5 name=server></td><td>Server</td></tr>
+<tr><td><input type=text size=5 name=ties></td><td>Ties</td></tr>
+</table>
+</td>
+</table>
+<br>
+<br>
+<input type=button value="Play Again" onClick="playAgain();">
+</form>
+</div>
+<!--button for back to Homepage-->
+<form action="Home.html">
+<input type="submit" value="Return to Homepage">
+</form>
+</center>
+</body>
+</html>

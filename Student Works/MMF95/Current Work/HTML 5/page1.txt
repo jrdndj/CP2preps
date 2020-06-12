@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+<title>GIFS Galore</title>
+<link rel="stylesheet" type="text/css" href="rick.css">
+</head>
+<body>
+<header>
+<h1> The best GIFs of this millenia</h1>
+<h2>Showing you the best that have change history</h2> 
+</header>
+<section>
+
+<nav>
+<ul>
+      <li><a href="page1.html">home</a></li>
+      <li><a href="page2.html">GIF of the day</a></li>
+      <li><a href ="page3.html">Be a voluteer!</a></li>
+
+
+</nav>
+<article>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5wZBnKjo_97e0efNJOnlvRiILt2ucCFMgNzLn6BCu9FVaYpbE">
+<p> some lyrics of the never gonna give you up song goes here</p>
+</article>
+</section>
+<footer>
+<p>&copy: Copyrigt 9GAG.com</p>
+</footer>
+</body>
+
+</html>

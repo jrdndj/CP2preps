@@ -1,0 +1,26 @@
+HTML Forms
+just take 2 hours max (including breaks)
+
+forms are meant to recreate our physical forms
+the goal of html forms is for us to input data
+forms are as well submitted
+
+
+by the end of todays session
+we will have two pages
+one page with html form
+and another page where "you submit your data"
+
+this is basically our preview for PHP
+PHP is a scripting technology that allows us to receive, process and display data from forms
+
+
+the early days of facebook were created in php
+input type text has default 20 characters
+
+Form method
+GET - to make bookmarks
+POST - to make secure confidential or private data 
+
+
+

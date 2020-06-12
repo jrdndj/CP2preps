@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Register account</title>
+<link rel="stylesheet" type="text/css" href="Register account.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<section>
+
+  <nav>
+   <ul class="nav nav-pills flex-column">
+     <li class="nav-item">
+          <a class="nav-link active" href="Homepage.html">Homepage</a>
+       
+       </li>
+        <li class="nav-item">
+          <a class="nav-link" href="what.html">What are the memes</a>
+        </li>
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" ="#">Forms</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Register account.html">Register account</a>
+        <a class="dropdown-item" href="Upload meme.html">Upload meme</a>
+
+</div>
+</li>
+
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Rate meme.html">Rate meme</a>
+        </li>
+
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" ="gallery.html">Gallery</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Gallery.html">Gallery memes</a>
+        <a class="dropdown-item" href="Meme 1.html">Meme 1</a>
+</div>
+</li>
+  
+  </ul>
+   
+
+        </nav>
+
+
+
+<h2>Form of personal info</h2>
+    <?php session_start(); ?>
+
+ <form action="/action_page.php" method="get">
+    
+
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr><br><br>
+<form action="/action_page.php" class="was-validated">
+<div class="form-group">
+    
+<label for="username">Username:</label>
+ <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button><br>
+<fieldset><legend>Personal info</legend>
+   <label for="fname">First name:</label>
+      <input type="text" name="fname" id="fname">
+       <br>
+       <label for="mname">middle name: </label>
+       <input type="text" name="midllename" id="mname">
+       <br>
+<label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br>
+<label for="birthday">Date of Birth:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+<filedset><legend>Demographic:</legend><br>
+Gender:
+<br>
+</filedset>
+<input type="radio" id="male" name="gender" 
+value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" 
+value="female">
+<label for="female">Female</label><br><br>
+<label for="pbirthday">palce of Birth:</label>
+  <input type="text" id="pbirthday" name="pbirthday"><br>
+ <label for="username">Enter Username:</label>
+      <input type="text" name="username" id="uname">
+       <br>
+<label for="pword">Enter Password: </label>
+       <input type="Password" name="Password" id="Pword">
+       <br>
+       <label for="email">Email address: </label>
+       <input type="email" name="email" id="email">
+ <label for="cemail">confirm email address: </label>
+       <input type="cemail" name="cemail" id="cemail">
+<br><br>
+<fieldset><legend>Other Info</legend>
+        Nearest country: 
+        <select id="nearcountry" name="nmearcountry">
+          <option value="ita">Italy</option>
+          <option value="slo" selected="select">Slovenia</option>
+          <option value="cro">Croatia</option>
+        </select><br /><br />
+        Hobbies: <input type="checkbox" name="hriding" id="hriding"><label for="hriding">Riding</label>
+        <input type="checkbox" name="hcycling" id="hcycling"><label for="hcycling">Cycling</label>
+        <input type="checkbox" name="hswimming" id="hswimming"><label for="hswimming">Swimming</label>
+        <input type="checkbox" name="hcollecting" id="hcollecting"><label for="hcollecting">Collecting stamps</label>
+        <br /><br />
+        Fruit you like: <br />
+        <select id="ffruit" name="ffruit" multiple="multiple">
+           <option value="ffstrawberries">Strawberries</option>
+           <option value="ffbananas" selected="select">Bananas</option>
+           <option value="ffmango">Mango</option>
+           <option value="ffothr">Other</option>
+        </select><br /><br />
+
+Reason for joining this Meme-page <br>
+<textarea name="whyessay" rows="20" cols="30">type something here..</textarea>
+<br><br>
+<label for="favcolor"> Select your favourit 
+<input type="color" id="favcolor" name="favcolor" ><br><br>
+<input type="submit" name="submit" value="Register">
+ 
+</form>
+
+</body>
+</html>

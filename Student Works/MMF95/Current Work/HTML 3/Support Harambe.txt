@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>The story of his Untimely Death</title>
+<style type="text/css">
+header {
+background-color: #666;
+padding: 30px;
+text-align: center;
+text-size: 35px;
+font-size: 15;
+color: white;
+}
+nav {
+     float: left;
+     width: 30%;
+     height: 300px;
+     background: #CCC;
+      padding: 20px;
+}
+
+article {
+             float: left;
+             padding: 20px;
+           width: 70%;
+          background-color: #f1f1f1;
+           height: 300px;
+}
+
+section: after {
+                    content: "";
+                    display: table;
+                     clear: both;
+}
+
+footer {
+background-color: #666;
+padding: 30px;
+text-align: center;
+color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>why did Harambe die?</h1>
+</header>
+<section>
+<nav>
+<ul>
+
+<li><a href="harambestats.html">Harambe Stats</a></li>
+<li><a href="harambekillling.html">Harambe Killing</a></li>
+<li><a href="harambesupport.html">Support Harambe</a></li>
+</ul>
+</nav>
+<article>
+<p>On May 28, 2016, a three-year-old boy climbed into a gorilla enclosure at the Cincinnati Zoo and Botanical Garden and was grabbed and dragged by Harambe, a 17-year-old western lowland gorilla. Fearing for the boy's life, a zoo worker shot and killed Harambe. The incident was recorded on video and received broad international coverage and commentary, including controversy over the choice to kill Harambe. A number of primatologists and conservationists wrote later that the zoo had no other choice under the circumstances, and that it highlighted the danger of zoo animals near humans and the need for better standards of care.</p>
+
+</article>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+
+
+
+
+
+Harambe {
+
+background-color: lightgrey;
+text-align: center;
+margin-left: 350px;
+margin-right: 350px;
+font-size: 25;
+border: 2px solid blue;
+
+}
+hr {
+color: Tomato;
+}
+
+
+
+
+p{
+background-color: black;
+font-family: Courier;
+font-size: 15;
+color: darkGray;
+}
+
+@media (max-width: 600px) {
+
+ img {
+width: 188%;
+height: auto;
+}
+}
+</style>
+</head>
+<body>
+
+<img src="https://static-38.sinclairstoryline.com/resources/media/9afa9a5c-5f2d-41ba-af19-0508589a19a3-large16x9_harambe.PNG?1559068479557">
+
+
+
+<div style="Harambe";
+<h2>Harambe</h2>
+<p>On May 28, 2016, a three-year-old boy climbed into a gorilla enclosure at the Cincinnati Zoo and Botanical Garden and was grabbed and dragged by Harambe, a 17-year-old western lowland gorilla. Fearing for the boy's life, a zoo worker shot and killed Harambe</p>
+
+</div>
+<footer>
+  <p>@copyright 2020"</a>.</p>
+</footer>
+</body>
+</html>

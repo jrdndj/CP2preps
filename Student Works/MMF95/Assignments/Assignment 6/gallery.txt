@@ -1,0 +1,224 @@
+<html>
+<head>
+<title> Gallery </title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<style>
+
+header {
+  background-color:Orange;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: gray;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:60%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+h1 {
+    text-align: center;
+    font-family: Sans-serif;
+    font-size: 30px;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  height: 300px; 
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: gray;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+.checked {
+  color: orange;
+}
+</style>
+</head>
+
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+
+<header>
+  <h2>Rate meme</h2>
+</header>
+
+<div style="overflow:auto">
+  <div class="menu">
+<nav>
+<ul>
+     <li><a href="Homepage.html">Homepage</a></li>
+      <li><a href="Register account.html">Register account</a></li>
+      <li><a href="Upload meme.html">Upload meme</a></li>
+      <li><a href="Rate meme.html">Rate meme</a></li>
+</ul><br>
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+
+
+  </div>
+  <button type="button" onclick="alert('successful vot')">Vote</button><br>
+
+
+
+  </nav>
+   </div>
+
+   </div>
+
+
+
+
+
+
+
+
+<table style="width:70%">
+  <tr>
+    <td style= "color: Orange;">Image</td>
+ <td style="color: Orange;">Name and Description</td>
+<td></td>
+     </tr>
+  <tr>
+ <td><img src="
+<table style="width:70%">
+  <tr>
+    <td style= "color: Orange;">Image</td>
+ <td style="color: Orange;">Name and Description</td>
+<td></td>
+     </tr>
+  <tr>
+ <td><img src="https://i.pinimg.com/236x/3a/6d/22/3a6d22a915999212cf7dde21b3c6fac1--nurse-meme-nursing-memes.jpg"></td>
+   <th style="color: Green;">One does not simply</th>
+
+"></td>
+   <th style="color: Green;">One does not simply</th>
+<td>"One Does Not Simply Walk into Mordor" (snowclone: "One Does Not Simply X into Mordor") is a memorable quote from the 2001 fantasy epic film Lord of the Rings: The Fellowship of the Ring. Variants of the phrase are often used in image macros featuring Mordor, a fictional location from The Lord of the Rings franchise, or the character Boromir, who originally says the line in the film.</td>
+
+  <tr>
+  <td><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/912/336/58c.png" ></td>
+<th style="color: Green;">Is this pigeon?</th>
+<td>"Is this a pigeon?" is a memorable quote said by the protagonist character from the 1990s Japanese anime TV series The Brave Fighter of Sun Fighbird in a scene wherein the humanoid character erroneously identifies a butterfly as a pigeon. On Tumblr, the quote, along with a reaction image of the scene featuring the English-translated subtitle, is widely used to express utter confusion</td>
+  </tr>
+
+
+
+
+
+</table>
+ 
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<html>
+
+
+
+
+
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="Meme 5.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+<table style="width:70%">
+
+<tr>
+<td><img src="https://i.imgflip.com/1jgu2g.jpg"><td>
+</tr>
+
+<tr>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH6To28GIL9Q6-yKE4CmQW1vKtXjNYqQjkphYuUbKE43TYzpYe"></td>
+</tr>
+
+<tr>
+<td><img src="https://pics.me.me/thumb_hello-is-it-me-youre-recruiting-for-memegonerator-net-nurse-53843207.png"></td>
+</tr>
+
+<tr>
+<td><img src="https://miro.medium.com/max/1200/1*WGlFIGvqXH7QFGlZpnZ4Fw.jpeg"></td>
+</tr>
+
+
+
+</table>
+
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="gallery.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="Meme 1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="Meme 2.html">2</a></li>
+    <li class="page-item "><a class="page-link" href="Meme 3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="Meme 4.html">4</a></li>
+    <li class="page-item active"><a class="page-link" href="Meme 5.html">Next</a></li>
+  </ul>
+
+
+
+</body>
+</html>
+
+
+
+
