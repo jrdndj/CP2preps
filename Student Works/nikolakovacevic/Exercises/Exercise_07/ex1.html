@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<style>
+
+	div {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*background: yellow;*/
+		margin: 10px;
+	}
+
+	table {
+		margin: 10px;
+		clear: left;
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+
+	td {
+		border: 1px solid black;
+	}
+
+	button {
+		float: left;
+		clear: left;
+		margin: 10px;
+	}
+
+	</style>
+
+	<script>
+		var ctr = 1; //ctr = counter
+
+		function on_event (who, what) {
+			var table_1 = document.getElementById('events');
+			var row = table_1.insertRow();
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(0);
+			var cell3 = row.insertCell(0);
+			cell1.innerHTML = what;
+			cell2.innerHTML = who;
+			cell3.innerHTML = ctr.toString();
+			ctr++;
+		}
+
+		function clear_table () {
+			var table_1 = document.getElementById('events');
+
+			for (var i = 1; i < ctr; i++) {
+				table_1.deleteRow(1);
+			}
+
+			ctr = 1;
+		}
+	</script>
+	<body>
+
+		<img src="Images/struggle.jpg" height="300">
+		<br>
+
+		<div onclick="on_event('nut', 'click')"
+			 onmouseover="on_event('nut', 'over')"
+			 onmouseout="on_event('nut', 'out')">
+			 <img src="Images/nut.jpg" height="200">
+		</div>
+
+		<div onclick="on_event('yeet', 'click')"
+			 onmouseover="on_event('yeet', 'over')"
+			 onmouseout="on_event('yeet', 'out')">
+			 <img src="Images/yeet.jpg" height="200">
+		</div>
+
+		<div onclick="on_event('bruh', 'click')"
+			 onmouseover="on_event('bruh', 'over')"
+			 onmouseout="on_event('bruh', 'out')">
+			 <img src="Images/bruh.jpg" height="200">
+		</div>
+
+		<p>
+			<button onclick="clear_table()">Clear</button>
+		</p>
+
+		<p>
+			<table id="events">
+				<tr>
+					<td>Number</td>
+					<td>What we choose</td>
+					<td>What happened</td>
+				</tr>
+			</table>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Register Page</title>
+		<style type="text/css">
+			
+			body {
+				background-color: #b3d9ff;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+
+			header {
+				font-size: 35px;
+				color: #FF9933;
+				font-weight: 800;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			nav {
+				float: left;
+				height: 1080px;
+			}	
+
+
+			nav li a {
+				display: block;
+				width: 100px;
+				padding: 8px 16px;
+				margin: 10px;
+				text-decoration: none;
+				background-color: gray;
+				color: white;
+				font-weight: bold;
+				border-right: 20px solid #FF9933;
+				border-left: 20px solid #FF9933;
+			}
+
+			fieldset {
+	            width: 450px;
+	            float: left;
+	            border-color: #F00;
+				border-style: solid;
+	        }
+
+			h1 {
+				font-size: 35px;
+				color: #FF9933;
+				font-weight: 800;
+			}
+
+			input[type="submit"] {
+				width: 80px;
+	            height: 32px;
+	            margin: 10px;
+	            border: none;
+	            border-radius: 2px;
+	            color: #fff;	
+	            background-color: #000;
+	            font-weight: 500;
+	            text-transform: uppercase;
+	            cursor: pointer;
+        	}
+
+			.description {
+				color: gray;
+			}
+
+			.form {
+				flex: 1 0 auto;
+			}
+
+			.register-image {
+				float: right;
+				margin-right: 200px;	
+				height: 400px; 
+				width: 400px;
+			}
+
+			#join {
+				margin-top: 200px;
+			}
+
+			.footer {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+
+			@media (max-width: 1080px) {
+				
+				nav, #join, .complete-box {
+					width: 100%;
+				    height: auto;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Nav-Bar -->
+		<nav>
+			<ul>
+				<li><a href="register.html">Current page</a></li>
+				<li><a href="homepage.html">Go back to Homepage</a></li>
+				<li><a href="registerconfirmation.html">Account confirmation</a></li>
+				<li><a href="upload.html">Upload your Meme</a></li>
+				<li><a href="uploadconfirmation.html">Meme confirmation</a></li>
+				<li><a href="ratememe.html">Rate a Meme</a></li>
+			</ul> 
+		</nav>
+
+		<!-- Header-Main Title -->
+		<header>
+			<h1>Register an Account</h1>
+		</header>
+
+		<article>
+			<p class="description">Fill out the boxes below!</p>
+		</article>
+
+		<div class="complete-box">
+			<!-- Fieldsets, inputs and labels -->
+			<div class="form">
+				<form action="registerconfirmation.html" method="POST">
+		            <fieldset>
+		                <fieldset>
+		                    <legend>Personal Info</legend>
+			                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+			                    <br>
+			                    <br>
+			                    <input type="text" name="middlename" id="middlename" placeholder="Middle Name">
+			                    <br>
+			                    <br>
+			                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+			                    <br>
+			                    <br>
+			                    <label for="birthday">Enter your birthday:</label>
+			                    <input type="date" class="inputs" name="birthday">
+			                    <br>
+			                    <br>
+			                    <input type="text" name="placeofbirth" id="placeofbirth" placeholder="Place of birth">
+			                    <br>
+			                    <br>
+			                <legend>Demographic Info</legend>
+			                    <input type="radio" id="male" name="gender" value="male">
+			                    <label for="male">Male</label>
+			                    <input type="radio" id="female" name="gender" value=female>
+			                    <label for="female">Female</label>
+		                </fieldset>
+		                <br>
+		                <br>
+		                <fieldset>
+		                    <legend>Login Info</legend>
+			                    <input type="text" name="username" id="username" placeholder="Enter your username">
+			                    <br>
+			                    <br>
+			                    <input type="Password" name="password" id="pword" placeholder="Enter your password">
+			                    <br>
+			                    <br>
+			                    <input type="Password" name="password" id="pword" placeholder="Confirm your password">
+			                    <br>
+			                    <br>
+			                    <input type="text" name="email" id="email" placeholder="Enter your email address">
+			                    <br>
+			                    <br>
+			                    <input type="text" name="email" id="email" placeholder="Confirm your email address">
+		                </fieldset>
+		                <br>
+		                <br>
+		                <fieldset>
+		                    <legend>Other</legend>
+			                    <textarea name="reasons" rows="10" cols="30" placeholder="Reasons for joining this Meme-page."></textarea>
+			                    <br>
+			                    <br>
+			                    <label for="fav">Select your favorite color:</label>
+			                    <input type="color" id="fav" name="fav">
+			                    <br>
+		                </fieldset>
+		                <br>
+		                <br>
+		                <fieldset>
+		                	<legend>If you want to add something more</legend>
+			                	<textarea name="special" rows="10" cols="30" placeholder="Write about whatever you want."></textarea>
+			                    <br>
+			                    <br>
+		                </fieldset>
+
+		                <input type="submit" name="submit" value="Submit" ?php echo print_r($_POST) ?>
+
+		            </fieldset>
+	        	</form>
+			</div>
+
+			<div class="register-image">
+				<img src=join.png alt="Join the Community" id="join" height="400" width="400">
+			</div>
+
+			<footer class="footer">
+					<p>&copy;Copyright 2020. Kovacevic Nikola.</p>
+			</footer>
+		</div>
+
+		
+
+	</body>
+</html>

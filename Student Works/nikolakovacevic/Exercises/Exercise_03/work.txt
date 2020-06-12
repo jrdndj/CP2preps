@@ -1,0 +1,8 @@
+2 hours:
+- html forms
+- php preview and basics
+
+- input type text has default 20 characters
+- form method:
+    - get (default) - to make bookmarks
+    - post - to make secure confidental or private data

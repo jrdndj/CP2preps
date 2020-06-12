@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Upload Page</title>
+		<style type="text/css">
+
+
+			body {
+				background-color: #b3d9ff;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+
+			header {
+				font-size: 20px;
+				color: #FF9933;
+				font-weight: 800;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			nav {
+				float: left;
+				height: 1080px;
+			}	
+
+			nav li a {
+				display: block;
+				width: 100px;
+				padding: 8px 16px;
+				margin: 10px;
+				text-decoration: none;
+				background-color: gray;
+				color: white;
+				font-weight: bold;
+				border-right: 20px solid #FF9933;
+				border-left: 20px solid #FF9933;
+			}
+
+			fieldset {
+	            width: 450px;
+	            float: left;
+	            border-color: #F00;
+				border-style: solid;
+	        }
+
+	        input[type="submit"] {
+				width: 80px;
+	            height: 32px;
+	            margin: 10px;
+	            border: none;
+	            border-radius: 2px;
+	            color: #fff;	
+	            background-color: #000;
+	            font-weight: 500;
+	            text-transform: uppercase;
+	            cursor: pointer;
+        	}
+
+			/*The end text and copyrights*/
+			footer {
+				font-size: 15px; 
+				float: left;
+				width: 60%;
+				color: grey;
+			}
+
+			@media (max-width: 1080px) {
+				nav, article {
+					width: 100%;
+				    height: auto;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Nav-Bar -->
+		<nav>
+			<ul>
+				<li><a href="upload.html">Current page</a></li>
+				<li><a href="homepage.html">Go back to Homepage</a></li>
+				<li><a href="register.html">Register Your Account</a></li>
+				<li><a href="registerconfirmation.html">Account confirmation</a></li>
+				<li><a href="uploadconfirmation.html">Upload confirmation</a></li>
+				<li><a href="ratememe.html">Rate a meme</a></li>
+			</ul> 
+		</nav>
+
+		<!-- Header-Main Title -->
+		<header>
+			<h1>Upload Your Meme</h1>
+		</header>
+
+		<!-- Upload Box-->
+		<div class="upload-box">
+	        <form action="uploadconfirmation.html" method="POST">
+				<fieldset>
+					<legend>Meme Details</legend>
+						<input type="text" name="memename" id="memename" placeholder="Name your meme">
+						<br>
+						<br>
+						<textarea name="why" rows="10" cols="50" placeholder="Description of the meme."></textarea>
+						<br>
+						<br>
+						Upload your Meme
+						<br>
+			            <label for="meme">Select a file</label>
+			            <input type="file" id="meme" name="meme">
+			            <br>
+					<input type="submit" name="submit" value="Submit" ?php echo print_r($_POST) ?>
+				</fieldset>
+			</form>
+     	</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy;Copyright 2020. Kovacevic Nikola.</p>
+		</footer>
+
+	</body>
+</html>
