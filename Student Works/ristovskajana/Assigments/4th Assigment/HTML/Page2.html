@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css" media="screen">
+        * {
+      box-sizing: border-box;
+        }
+        h1 { 
+            font-size:50px; 
+            color: #00b300; 
+            font-weight:bold; 
+            font-family: Cursive;
+            margin-left:10px; 
+        } 
+        h2 { 
+            font-size:30px; 
+            color: #ff9900;
+            margin-left:10px; 
+        } 
+        body { 
+            margin: 0 auto; 
+            background-position:center; 
+            background-size: contain; 
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        p{
+            margin-left: 20px;
+        }
+        section{
+            margin-left: 10px;
+
+        }
+        nav {
+            float: left;
+            width: 13%;
+            height: 300px;
+            background: white;
+            padding: 20px;          
+        }
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        div{
+            background:  #4d4d4d;
+            padding: 10px;
+        }
+        article {
+          float: left;
+          padding: 10px;
+          width: 87%;
+          background-color: white;
+          height: 300px; 
+        }
+        @media (max-width: 600px) {
+          nav, article {
+          width: 100%;
+          height: auto;
+         }
+    </style>
+</head>
+<body>
+    <section>
+    <nav>
+        <ul>
+            <div class="1">
+                <br>
+                <a href="Page1.html" title="Home Page" style="color:white">Home Page</a>
+                <br><br>
+            </div>
+            <br>
+            <div class="2">
+                <br>
+                <a href="Page5.html" title="What are Memes?" style="color:white">What are Memes?</a>
+                <br><br>
+            </div>
+            <br>
+            <div class="3">
+                <br>
+                <a href="Page4.html" title="Gallery" style="color:white">Gallery</a>
+                <br><br>
+            </div>
+            <br>
+            <div class="4">
+                <br>
+                <a href="Page2.html" title="Sign in" style="color:white">Sign in</a>
+                <br><br>
+            </div>
+            <br>
+            <div class="5">
+                <br>
+                <a href="Page3.html" title="Upload a meme" style="color:white">Upload a Meme</a>
+                <br><br>
+            </div>
+        </ul>
+    </nav>
+    <article>
+	 <h2>Form of personal info</h2>
+
+    <form action="form1.php" method="post">
+		<fieldset>
+		<legend>Personal info</legend>
+        First name:  <input type="text" id="fname" name="fname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$" required /><br /><br />
+        Middle name: <input type="text" id="mname" name="mname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$"  /><br /><br />
+        Last name:  <input type="text" id="lname" name="lname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$" required /><br /><br />
+        Date od birth: <input type="date" id="bdate" name="bdate" required /><br /><br />
+        Gender: <br />
+          <input type="radio" id="gmale" name="gender" value="male"><label for="gmale">Male</label><br />
+          <input type="radio" id="gfemale" name="gender" value="female"><label for="gfemale">Female</label><br />
+          <input type="radio" id="gothr" name="gender" value="other"><label for="gothr">Other</label><br /><br />
+        Place of Birth: <input type="text" id="pbirth" name="pbirth" required><br /><br />
+    	</fieldset>
+    	<fieldset>
+		<legend>More info</legend>
+        Email: <input type="email" id="email" name="email" required><br /><br />
+        Confirm Email addres: <input type="email" id="cemail" name="cemail" required><br /><br />
+        Username: <input type="text" id="username" name="username" required><br /><br />
+        Choose a password: <input type="password" id="passwd" name="passwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br /><br />
+        Upload your photo (optional): <input type="file" id="foto" name="foto"> <br />
+        </fieldset>
+        <fieldset>
+		<legend>About you</legend>
+        Favourite colour: <input type="color" id="fcolor" name="fcolor" required><br><br>
+        Favourite animal: <input type="text" id="fanimal" name="fanimal" required><br><br>
+        Describe yourself: <br />
+        <textarea name="desc" id="decs" rows="5" cols="30"></textarea>
+        <br /><br />
+        Reason for joining this meme page:<br> <textarea id="reason" rows="5" cols="30" name="reason" required></textarea><br /><br />
+        </fieldset>
+        <fieldset>
+        	<legend>Submit your info</legend>
+        <input type="submit" >
+        <input type="reset">
+    	</fieldset>
+   </form>
+</article>
+</section>
+</body>
+</html>

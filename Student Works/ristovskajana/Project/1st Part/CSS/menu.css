@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+  background-image: url("pattern-menu.png");
+  width: 100%;
+  height: 100%;
+  color: #333333;
+  font-family: 'Racing Sans One', cursive;
+  overflow-x: hidden; /*disable horizontal scroll */
+}
+
+header {
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  height: 18%;
+  font-size: 70px;
+  text-shadow: 5px 3px 1px #e6e6e6;  /*i've added some shadows so the title could be more visible from the background pattern */
+}
+
+article {
+  padding: 20px;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+
+.info {
+	background-color: #cccccc;
+	padding: 20px;
+    border:  4px solid #ffffff;
+    margin-left: 100px;
+    margin-right: 120px;
+    text-align: center;
+    font-size: 17px;
+}
+
+i {
+	cursor: pointer;
+}
+
+button {
+	height: 125px;
+	width: 245px;
+	color: #ffffff ;
+	font-weight: 700 ;
+	letter-spacing: 3px;
+	font-size: 20px;
+	font-family: 'Racing Sans One', cursive; /* here i put the google font previously imported in the html part */
+	text-transform: uppercase; /* all caps letters */
+	background: #494949;
+	padding: 20px;
+	border: 4px solid #ffffff;
+	transition: all 0.4s ease 0s;  /* the transition takes 0.4 seconds */
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+button:hover {
+	color: #404040;
+	font-weight: 700;
+	letter-spacing: 3px;
+	background: none;
+	box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57); /* creating a shadow when hovering over button , negative value of spread decreases the size of the shadow*/
+	transition: all 0.3s ease 0s; /* when mouse hovers over button the transition from one style to another takes 0.3seconds */
+}
+
+.aboutbuttons { /*since Im using the same css file for both the menu and about page here is how i distinguish the buttons from the two pages */
+	margin-left: 10px; 
+	margin-right: 20px;
+	margin-top: 20px;"
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  left: 0;
+  top: -70px; /*the positioning was to low so i brought it up */
+  width: 100%; 
+  height: 100%;   
+}
+
+.modal-content {
+  background-color: #cccccc;
+  margin: 15% auto; 
+  padding: 30px;
+  border:  4px solid #ffffff;
+  width: 80%; 
+  font-size: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active { /*disabeling link of the page we are on */
+	color: #0d0d0d;
+	pointer-events: none; 
+    cursor: default;
+}
+
+footer {
+	width: 100%;
+	height: 7%;
+	text-align: center;
+	position: fixed;
+    bottom: 0;
+}
+
+footer a {
+	color: #333333;
+}
+
+
+@media (max-width: 600px) {
+  header, article, footer{
+    width: 100%;
+    height: auto;
+  }
+  .modal {
+  	width: 100%;
+  	overflow-y: scroll; /* activating scrolling if the width of the page sizes down so the rules are readable */
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css-light.css" title="light">
+	<link rel="alternate stylesheet" type="text/css" href="css-dark.css" title="dark">  <!-- alternate stylesheet so we can change to dark mode-->
+	<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet"> <!-- google font-->
+	<script type="text/javascript">
+		function unblur()
+		{
+		    var tttblured=document.getElementById("tic-tac-toe-blured");
+		    tttblured.class="tic-tac-toe";   //changing class name so the div gets unblurred
+		    tttblured.className="tic-tac-toe";
+		    var button = document.getElementById("start-button");
+		    button.remove();  //then removing the start button
+
+		}
+	</script>
+	<!-- <script type="text/javascript">
+		function setActiveStyleSheet(title) {
+		   var i, a, main;
+		   HTMLLinkElement.getAttribute("rel").indexOf("style") != -1;
+		   HTMLListElement.getAttribute("title");
+		   for(i=0; (a = document.getElementsByTagName("link")<i>); i++) {
+		     if(a.getAttribute("rel").indexOf("style") != -1
+		        && a.getAttribute("title")) {
+		       a.disabled = true;
+		       if(a.getAttribute("title") == title) a.disabled = false;
+		     }
+		   }
+		}
+	</script> -->
+
+</head>
+<body>
+	<header>
+		<h1>Tic Tac Toe</h1>
+		<h2>Press Start to begin the game</h2>
+	</header>
+	<section>
+		<nav>
+			<ul class="main-ul">
+				<li>Change Difficulty:<hr>
+					<ul>
+						<li style="list-style-image: url('easy.png')">Easy</li>
+						<li style="list-style-image: url('medium.png')">Medium</li>
+						<li style="list-style-image: url('hard.png')">Hard</li>
+					</ul>
+				</li><br>
+				<li>Opponent Options:<hr>
+					<ul>
+						<li style="list-style-image: url('2players.png')">2 Players</li>
+						<li style="list-style-image: url('computer.png')">Against Computer</li>
+					</ul>
+				</li><br>
+				<li>Choose Mode:<hr>
+					<ul>
+						<li style="list-style-image: url('light.png')">Light Mode</li>
+						<li style="list-style-image: url('dark.png')"><a href="TicTacToeDark.html" class="mode">Dark Mode</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<article>
+			<div class="tic-tac-toe-blured" id="tic-tac-toe-blured">
+				<br>
+				<table>
+					<tr>
+						<td class="cell" id="0"></td>
+						<td class="cell" id="1"></td>
+						<td class="cell" id="2"></td>
+					</tr>
+					<tr>
+						<td class="cell" id="3"></td>
+						<td class="cell" id="4"></td>
+						<td class="cell" id="5"></td>
+					</tr>
+					<tr>
+						<td class="cell" id="6"></td>
+						<td class="cell" id="7"></td>
+						<td class="cell" id="8"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="center-button"><button class="start-button" id="start-button" onclick="unblur()">Start</button></div>
+			
+		</article>
+		<div class="leaderboard">
+			<table class="lead">
+				<caption>Leaderboard:</caption>
+				<tr>
+					<td class="name">Name</td>
+					<td class="score">Score</td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+				<tr>
+					<td class="name"></td>
+					<td class="score"></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<footer>
+		<a href="Start.html">Menu</a> |
+		<a href="TicTacToe.html" class="active">Game</a> |
+		<a href="About.html">About</a> 
+	</footer>
+</body>
+</html>

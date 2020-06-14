@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Start</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="menu.css" title="menu">
+	<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet"> <!-- google fonts-->
+</head>
+<body>
+<header>
+	TIC TAC TOE
+</header>
+<article>
+	<button onclick="location.href='TicTacToe.html'">Start Game</button><br>
+	<button id="myButton">How to play</button><br>
+	<div id="myModal" class="modal"> <!-- creating a modal (pop up) with the instructions on how to play the game in it -->
+	  <div class="modal-content">  <!-- this way there is no need for seperate page for rules of the game -->
+	    <span class="close">&times;</span>  <!-- close button-->
+	    <p>A player can play a perfect game of tic-tac-toe (to win or at least, draw) if each time it is their turn to play, they choose the first available move from the following list, as used in Newell and Simon's 1972 tic-tac-toe program.<br>
+
+		-Win: If the player has two in a row, they can place a third to get three in a row.<br>
+		-Block: If the opponent has two in a row, the player must play the third themselves to block the opponent.<br>
+		-Fork: Create an opportunity where the player has two ways to win (two non-blocked lines of 2).<br>
+		-Blocking an opponent's fork: If there is only one possible fork for the opponent, the player should block it. Otherwise, the player should block all forks in any way that simultaneously allows them to create two in a row. Otherwise, the player should create a two in a row to force the opponent into defending, as long as it doesn't result in them creating a fork.<br>
+		-Center: A player marks the center. (If it is the first move of the game, playing on a corner gives the second player more opportunities to make a mistake and may therefore be the better choice; however, it makes no difference between perfect players.)<br>
+		-Opposite corner: If the opponent is in the corner, the player plays the opposite corner.<br>
+		-Empty corner: The player plays in a corner square.<br>
+		-Empty side: The player plays in a middle square on any of the 4 sides.</p> 
+	  </div> 
+	</div>
+		<script>
+			var modal = document.getElementById("myModal");
+			var btn = document.getElementById("myButton");
+			var span = document.getElementsByClassName("close")[0];
+			btn.onclick = function() {
+			  modal.style.display = "block"; //form display: none we change to display: block so that the modal is visible
+			}
+			span.onclick = function() {
+			  modal.style.display = "none"; // the modal closes if the X sign is clicked
+			}
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+			    modal.style.display = "none";  // the modal is closed if any part of the window outside the modal is clicked
+			  }
+			}
+		</script>
+	<button onclick="location.href='About.html'">About</button><br>
+</article>
+<footer>
+		<a href="Start.html" class="active">Menu</a> |
+		<a href="TicTacToe.html">Game</a> |
+		<a href="About.html">About</a> 
+	</footer>
+</body>
+</html>
