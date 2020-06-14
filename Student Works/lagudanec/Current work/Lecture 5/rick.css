@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	outline: 2px dashed gray;
+}
+
+header {
+	border-bottom: 2px solid yellow;
+	font-family: sans-serif;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin: auto;
+	height: 20%;
+}
+
+h1 {
+	font-size: 35px;
+	letter-spacing: 15px;
+	/* spaces in between letters */
+	word-spacing: 20px;
+	/* spaces in between words */
+	line-height: 40px;
+	/* the space in between two lines of text */
+	text-shadow: 3px 2px orange;
+	/* horizontal shadow, vertical, then color 8*/
+}
+
+h2 {
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: line-through;
+	text-shadow: 2px 1px green;
+}
+
+section{
+	height: 70%;
+}
+
+nav {
+	float: left;
+	border-right: 2px solid tomato;
+	width: 30%;
+	height: 100%;
+}
+
+a {
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+} 
+/* a:hover is an example of a pseudo element */
+
+ul {
+	background: #ff9999;
+	list-style-image: url("https://phoneky.co.uk/thumbs/screensavers/down/abstract/poring_rbjz4fhl.gif");
+	list-style-position: inside;
+	margin-left: 30;
+	padding: 0;
+	font-size: 25px;
+	overflow: auto;
+}
+
+ul li {
+	background: #ffe5e5;
+}
+/* apply backgroun color on the entire list item which is a block */
+
+li a{
+	display: block;
+}
+/* instead of text, the clickabe is the entire block */
+
+li a:hover{
+	background-color: white;
+}
+/* makes the entire block hoverable */
+
+
+article {
+	float: left;
+	width: 70%;
+	height: 100%;
+	background-image: url("https://gifimage.net/wp-content/uploads/2017/11/fried-chicken-gif-2.gif");
+	background-repeat: repeat;
+	background-attachment: scroll;
+	overflow: auto;
+}
+
+article.background-image{
+	opacity: 0.2;
+}
+
+p.image {
+	text-align: center;
+}
+
+img:hover {
+	opacity: 0.5;
+}
+
+footer {
+	border-top: 2px solid tomato;
+	height: 15%;
+}
+
+
