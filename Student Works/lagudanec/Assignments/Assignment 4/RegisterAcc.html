@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Register Account Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+		* {
+        box-sizing: border-box;
+    }
+    fieldset{
+    	background-color: #FBFCFC ;
+    }
+    legend{background-color: #FBFCFC;
+    	font-size: 30px;
+    	font-style: bold;
+    	font-family: Times;}
+    body {
+				background-image: url(upfamnit.jpg);
+				background-position: cover;
+				font-family: Arial;	
+			}
+		header {
+				  background-color: #FBFCFC  ;
+  				text-align: center;
+  				float: right;
+          margin: 30px;
+   				width: 80%;
+  				color: #566573;
+        	font-size: 25px;
+		}
+		nav {	 
+        	float: left;
+  				width: 15%;
+  			  padding: 10px;
+  				}
+		article {
+          float: right;
+  			  width: 60%;
+  				margin: 30px;
+          padding: 60px;
+  				font-size: 26px;
+        	color: #212F3D;
+        	font-family: Times;	
+          text-align: center;
+          background-color: #FBFCFC ;
+        }
+    table {	
+				  margin: auto;
+				  margin-top: 10%; 
+				  border-collapse:separate; 
+          border-spacing: 0 15px;
+		    }
+		td {
+  				padding: 15px;
+  				background-color: lightblue;
+  				border: 10px solid gray;
+  				border-left-width: 30px;
+  				border-right-width: 30px;
+  				border-top-width: 0px;
+  				border-bottom-width: 0px;
+  				text-align: center;
+        }
+   .links{
+    		 	font-family: sans-serif;
+    		 	color: black;
+    		 	text-decoration-line: none;
+		    }
+		input{
+    		 	float: central;
+    		 	width: 600px;
+          		height: 30px;
+        }
+        footer {	
+  				padding: 10px;
+          margin: 80px;
+  				text-align: center;
+  				color: darkgray;
+  				float: right;
+  				width: 85%;
+          background-color: white;
+		    }
+		
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%; 
+    			height: auto;
+  				}
+        }
+	</style>
+	</head>
+	<body>
+	<header>
+    <h1>Please enter your infotmations below</h1>
+    </header>
+		<section>
+    	<nav>
+  		    <table>
+  		    	<tr>
+  		    		<td><b><a href="HomePage1.html" class="links">Home page</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RegisterAcc.html" class="links">Register</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="UploadMeme.html" class="links">Upload a Meme</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RateMeme.html" class="links">Rate a Meme</a></b></td></tr>
+  		    </table>
+    	</nav>
+    </section>
+		<form action="SubmissionPage.html" method="post">
+			<fieldset>
+				<legend>Demographic info</legend>
+					<label for="firstname">Enter your first name: </label>
+					<input type="text" name="fname" id="firstname">
+					<br>
+					<label for="middle">Enter your middle name: </label>
+					<input type="text" name="middlename" id="middle">
+					<br>
+					<label for="last">Enter your last name: </label>
+					<input type="text" name="lastname" id="last">
+					<br>
+					<label for="bday">Date of birth</label>
+					<input type="date" id="bday" name="bday">
+					<br>
+					Gender:
+					<br>
+					<input type="radio"  id="male" name="gender" value="male" >
+					<label for="male">Male</label>
+					<br>
+					<input type="radio"  id="female" name="gender" value="female" >
+					<label for="male">Female</label>
+					<br>
+					<label for="place">Enter your place of birth:</label>
+					<input type="text" name="birthplace" id="place">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Personal info</legend>
+					<label for="uname">Enter your username: </label>
+					<input type="text" name="username" id="uname">
+					<br>
+					<label for="pword">Enter the password:</label>
+					<input type="Password" name="password" id="pword">
+					<br>
+					<label for="confirmpword">Confirm the password:</label>
+					<input type="Password" name="password" id="confirmpword">
+					<br>
+					<label for="email">Enter your e-mail:</label>
+					<input type="email" name="email" id="email">
+					<br>
+					<label for="confirmemail">Confrim your e-mail</label>
+					<input type="email" name="email" id="confirmemail">
+					<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Other info</legend>
+				Write your reason(s) for joining FAMNIT Meme Club
+				<br>
+				<textarea name="reason" rows="25" cols="40"> Write here..</textarea>
+				<br>
+				<label for="favcolor">Choose your favourite color: </label>
+				<input type="color" name="favcolor" id="favcolor">
+				<br>
+			</fieldset>
+			<input type="submit" name="submit" value="Submit your registration">
+		</form>
+		<footer>
+    	&copy; FAMNIT Meme Club
+    	</footer>
+	</body>
+</html>
