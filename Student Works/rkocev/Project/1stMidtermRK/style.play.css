@@ -1,0 +1,161 @@
+* {
+    padding: 0px;     /* because default ones do not look good */
+    margin: 0px; 
+    box-sizing: border-box;  /* padding and borders included in the total width */
+}
+
+html {
+    background-image: url('back.png');   /* setting the background image to fit the screen wihout repeating while scrolling and zooming */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #282828;
+    width: 100%;
+}
+
+#navbar {
+    zoom: 1; 
+    width: auto;
+    background: black;
+    padding: 8px 0;
+}
+
+#navbar:before {    /* first do this */
+    content: '';     
+    display: block;   /* do not accept elements next to it  */ 
+}
+
+#navbar:after {     /* then do this */
+    content: ''; 
+    display: table;  /* lets the navbar to behave like table  */
+    clear: both; 
+}
+
+#navbar ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid green;
+    zoom: 1;
+}
+
+#navbar ul:before {
+    content: '';
+    display: block;
+}
+
+#navbar ul:after {
+    content: '';
+    display: table;
+    clear: both;   /* clear the floating elements from its left and right side */
+}
+
+#navbar li { 
+    display: block; /* no elements next to it */
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li a {
+    float: left;
+    color: lightgray;
+    text-decoration: none; /* to get rid of the blue underline */
+    height: 24px;
+    padding: 9px 15px 0;
+    font-weight: normal;
+}
+
+#navbar li:hover, #navbar .active {
+    text-decoration: none;   /* to get rid of the blie underline */
+    border-bottom: 2px solid green;  /* the underline in other words */
+}
+
+#navbar li:hover a { 
+    color: #fff;
+}
+
+#navbar .active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 55px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgba(0, 255, 127, 1);  
+    color: green;
+}
+
+.container {
+    width: 300px;
+    overflow: hidden; 
+    margin: 50px auto 0 auto;
+}
+
+.container span {                                   
+    font-family: Comic Sans MS, Comic Sans, cursive;  /* it will display player turns, who won, did the player set a new high score */
+    width: 100%;                                            /* when the game is functional */
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    background: black;
+}
+
+.container .box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    transition: all .25s ease-in-out;
+    font-family: sans-serif;
+    font-size: 85px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background: #282828;
+}
+
+.container .box:hover {
+    background: #def2f1;
+    color: #fff
+}
+
+.button {
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    font-size: 22px;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 9px 23px;
+    text-decoration: none;               /* the background of the button is gradient fitting the color scheme  */
+    background: #000000;
+    background: -moz-linear-gradient(-45deg, #000000 0%, #10800F 50%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #000000 0%, #10800F 50%, #000000 100%);
+    background: linear-gradient(135deg, #000000 0%, #10800F 50%, #000000 100%);
+}
+
+.button:hover {         /* in other words: when we hover over it it "lightens up"  */
+    background: #063406;
+    background: -moz-linear-gradient(45deg, #063406 0%, #49AE42 50%, #1ACD1A 100%);
+    background: -webkit-linear-gradient(45deg, #063406 0%, #49AE42 50%, #1ACD1A 100%);
+    background: linear-gradient(45deg, #063406 0%, #49AE42 50%, #1ACD1A 100%);
+}
+
+.button:active { /* it moves when clicked */
+    position: relative;
+    top: 5px;
+}

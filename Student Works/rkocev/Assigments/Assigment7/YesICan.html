@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assigment 7</title>
+</head>
+  <style>
+    body{
+      padding: 0px;
+      margin: 0px;
+    }
+    table {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      padding: 0px;
+    }
+    table, tr, td {
+      border: 0px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+<body height="100%" width="100%">
+  <div id="container">
+    <table id="myTable">
+    </table>
+  </div>
+  <script>
+    for (var i = 256; i > 0; i--) {
+      var row = document.createElement("tr");
+      for (var j = 256; j > 0; j--) {
+        var data = document.createElement("td");
+        data.style.backgroundColor = "rgb(" + 255 + ", " + i + "," + j + ")";
+        row.appendChild(data);
+        document.getElementById("myTable").appendChild(row);
+      }
+    }
+  </script>
+</body>
+</html>

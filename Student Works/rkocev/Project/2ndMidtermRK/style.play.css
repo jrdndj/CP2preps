@@ -1,0 +1,258 @@
+* {
+    padding: 0px;     /* because default ones do not look good */
+    margin: 0px; 
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    box-sizing: border-box;  /* padding and borders included in the total width */
+}
+
+html {
+    background-image: url('back.png');   /* setting the background image to fit the screen wihout repeating while scrolling and zooming */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #282828;
+    width: 100%;
+}
+
+#navbar {
+    zoom: 1; 
+    width: auto;
+    background: black;
+    padding: 8px 0;
+}
+
+#navbar:before {    /* first do this */
+    content: '';     
+    display: block;   /* do not accept elements next to it  */ 
+}
+
+#navbar:after {     /* then do this */
+    content: ''; 
+    display: table;  /* lets the navbar to behave like table  */
+    clear: both; 
+}
+
+#navbar ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid green;
+    zoom: 1;
+}
+
+#navbar ul:before {
+    content: '';
+    display: block;
+}
+
+#navbar ul:after {
+    content: '';
+    display: table;
+    clear: both;   /* clear the floating elements from its left and right side */
+}
+
+#navbar li { 
+    display: block; /* no elements next to it */
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li a {
+    float: left;
+    color: lightgray;
+    text-decoration: none; /* to get rid of the blue underline */
+    height: 24px;
+    padding: 9px 15px 0;
+    font-weight: normal;
+}
+
+#navbar li:hover, #navbar .active {
+    text-decoration: none;   /* to get rid of the blie underline */
+    border-bottom: 2px solid green;  /* the underline in other words */
+}
+
+#navbar li:hover a { 
+    color: #fff;
+}
+
+#navbar .active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+h1 {
+    background: transparent;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 55px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgba(0, 255, 127, 1);  
+    color: green;
+}
+
+body {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+
+}
+h3 {
+  font-size: 1.1em;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  padding: 0;
+  margin: 10px 0 2px 0;
+}
+table {
+  margin: 2% auto;
+  border-collapse: collapse;
+}
+#table_game {
+  position: relative;
+  font-size: 110px;
+  margin: 1% auto;
+  border-collapse: collapse;
+}
+.td_game {
+  border: 4px solid green;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #282828;
+}
+.fixed {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.td_list {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.th_list {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+
+}
+#restart {
+  font-size: 3em;
+  width: auto;
+  height: 0.9em;
+  cursor: pointer;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #fff;
+}
+.x {
+  color: white;
+  position: relative;
+  top: -8px;
+  font-size: 1.2em;
+  cursor: default;
+}
+.o {
+  color: white;
+  position: relative;
+  top: -7px;
+  font-size: 1.0em;
+  cursor: default;
+}
+
+/* modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if needed */
+  
+}
+
+/* modal content */
+.modal-content {
+  margin-top: 2000px;
+  background-color: #282828;
+
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+ 
+  margin: 30% auto;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 80%;
+}
+.modal-content p {
+  margin: 0;
+  padding: 0;
+}
+
+/* close button for modal dialog */
+.close {
+  color: rgb(170, 170, 170);
+  float: right;
+  position: relative;
+  top: -25px;
+  right: -10px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.win-color {
+  background-color: green;
+}
+
+#okBtn {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  box-shadow: 0px 6px 0px 0px #3dc21b;
+	background-color:#44c767;
+	border-radius:30px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-style: bold;
+	font-size:28px;
+	padding:20px 40px;
+	text-decoration: none;
+}
+#okBtn:hover {
+	background-color:#5cbf2a;
+}
+#okBtn:active {
+	position:relative;
+	top:1px;
+}

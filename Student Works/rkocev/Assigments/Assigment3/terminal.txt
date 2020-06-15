@@ -1,0 +1,14 @@
+  437  ls
+  438  cd Users/
+  439  ls
+  440  cd Asus/
+  441  ls
+  442  cd Desktop/
+  443  ls
+  444  cd RK.3rd.assigment/
+  445  ls
+  446  cd ..
+  447  tar -czvf RK.3rd.assigment.tar.gz //RK.3rsrsrrrasdvf
+  448  tar -czvf RK.3rd.assigment.tar.gz //RK.3rd.assigment
+  449  tar -czvf RK.3rd.assigment.tar.gz C:\\Users\\Asus\\Desktop\\RK.3rd.assigment
+  450  history

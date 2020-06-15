@@ -1,0 +1,99 @@
+body {
+
+	padding-top: 14px;
+	padding-bottom: 15px:
+	border: 2px solid white;
+	margin: 1px;
+}
+header {
+	background-color: #eee; 
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+h1 {
+	font-family: 'Arial Black';
+	font-weight: bold;
+	font-size: 40px;
+}
+p {
+	font-family: 'Arial';
+}
+main {
+	
+}
+main figure {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+	padding-top: 2%;
+	border-radius: 0px;
+}
+main figure section {
+	background: white;
+}
+main figure img {
+	width: 80%;
+	max-width: 1800px;
+}
+main figure figcaption {
+	font-family: 'Arial';
+	font-size: 18px;
+	width: 98%;
+	padding: 1% 0;
+	margin: 0 auto;
+}
+main section section{
+	background-color: #eee; 
+	width: 100%;
+
+	}
+
+main section section section {
+	
+	width: 40%;
+	margin: 0 auto;
+	}
+
+
+
+main section section section h2 {
+	font-family: 'Arial';
+	font-size: 20px;
+
+	text-align: center;
+	padding-top: 40px;
+
+
+
+
+}
+main section section section ul li {
+	font-family: 'Arial';
+	text-align: left;
+	margin: 15px 0;
+	line-height: 25px;
+
+}
+main section section section p {
+	font-family: 'Arial';
+	font-size: 15px;
+	line-height: 25px;
+	padding: 25px 0;
+	width: 95%;
+	text-align: left;
+	margin: 0 auto;
+
+}
+footer {
+	font-family: 'Arial Black';
+	text-align: center;
+	background-color: #eee; 
+	font-size: 21px;
+	font-weight: bolder;
+	border-radius: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Can You Do This? v2</title>
+  <style>
+    #timer {
+      font-size: 61px;
+      margin: 3px;
+      width: 300px;
+      padding: 5px;
+      text-align: center;
+    }
+    button {
+      width: 150px;
+      margin: 5px;
+    }
+    table {
+      width: 460px;
+      margin: 10px;
+      clear: left;
+      border-collapse: collapse;
+    }
+
+    td {
+      background-color: yellow;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+  </style>
+  <script>
+    var timerRunning = false;
+    var timer;
+    var counter = 1;
+    function increaseTimer() {
+      var timer = document.getElementById('timer');
+      var n = parseInt(timer.innerHTML);
+      n++;
+      timer.innerHTML = n.toString();
+      var mytable = document.getElementById('table_events');
+      var myrow = mytable.insertRow();
+      var mycell = myrow.insertCell(0);
+      mycell.innerHTML = counter.toString();
+      counter++;
+      for (var i = 0; i < counter; i++) {
+        mycell.style.backgroundColor = "white";
+      }
+    }
+
+    function onOrOff() {
+      var button = document.getElementById('startstop');
+      if (timerRunning) {
+        window.clearInterval(timer);
+        button.innerHTML = "Start";
+        timerRunning = false;
+      } else {
+        timer = window.setInterval(increaseTimer, 1000);
+        button.innerHTML = "Stop";
+        timerRunning = true;
+      }
+    }
+
+    function resetBttn() {
+      var timer = document.getElementById('timer');
+      var mytable = document.getElementById('table_events');
+      for (var i = 1; i < counter; i++) {
+        mytable.deleteRow(1);
+      }
+      counter = 1;
+    }
+
+    function fold() {
+      var fold = 0;
+      var mytable = document.getElementById('table_events');
+      for (var i = 1; i < counter; i++) {
+        mytable.deleteRow(1);
+        fold += i;
+        var myrow = mytable.insertRow();
+      }
+      var mycell = myrow.insertCell(0);
+      mycell.innerHTML = fold.toString();
+    }
+
+  </script>
+</head>
+<body>
+  <input type="hidden" id="timer"></input>
+  <button id="startstop" onclick="onOrOff()">Start</button>
+  <button onclick="resetBttn()">Reset</button>
+  <button onclick="fold()">Fold</button>
+  
+    <table id="table_events">
+      <tr><td>Numbers</td></tr>
+    </table>
+  
+</body>
+</html>

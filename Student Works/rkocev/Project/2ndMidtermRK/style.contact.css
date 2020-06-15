@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #282828;
+    width: 100%;
+}
+
+#navbar {
+    zoom: 1;
+    width: auto;
+    background: black;
+    padding: 8px 0;
+}
+
+#navbar:before {
+    content: '';
+    display: block;
+}
+
+#navbar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#navbar ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid green;
+    zoom: 1;
+}
+
+#navbar ul:before {
+    content: '';
+    display: block;
+}
+
+#navbar ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#navbar li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li a {
+    float: left;
+    color: lightgray;
+    text-decoration: none;
+    height: 24px;
+    padding: 9px 15px 0;
+    font-weight: normal;
+}
+
+#navbar li:hover, #navbar .active {
+    text-decoration: none;
+    border-bottom: 2px solid green;
+}
+
+#navbar li:hover a {
+    color: #fff;
+}
+
+#navbar .active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 55px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgba(0, 255, 127, 1);
+    color: green;
+}
+
+h2 {
+    margin: auto;
+    width: 90%;
+    padding: 2px;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px 1px rgba(0, 255, 127, 1);
+    color: green;
+}
+
+b {
+    color: green;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 1);
+}
+
+p {
+    margin: auto;
+    width: 90%;
+    padding: 5px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    margin: auto;
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: grey;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px black;
+}

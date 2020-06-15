@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memes 101</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesdirectory/uploadstyle.css">  <!-- directories created and added, bootstrap added  --> 
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html"> Homepage</a></li>
+            <li><a href="whatarememes.html"> What are memes?</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a>Upload meme</a></li> <!-- acive link element disabled  --> 
+        </ul>
+    </nav>
+
+    <section>
+        <header>
+            <h1>Upload new meme xD</h1>
+        </header>
+
+        <article>
+            <p>Fill these fields in order to upload a meme and at the same time giving us more info about your meme. 
+            </p>
+            <form action="page5.html" method="post">
+              <fieldset>
+            <label for="title">Input a name/title of the meme</label>
+            <input type="text" id="title" name="title_of_meme">
+
+             <label for="description">Input a paragraph description for this meme</label>
+            <textarea id="description " name="description_for_the_meme"></textarea>
+
+                <label for="photo">Upload a file photo of the meme</label>
+                <input type="file" id="photo" name="photo">
+        </fieldset>
+        <a href="submission.html" class="myButton">Upload</a>
+        </form>
+        </article>
+        </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+
+<body>
+    <form action="page2.html" method="get">
+        <label for="uname">Enter Username: </label>
+        <input type="text" name="username" id="uname">
+        <br>
+        <label for="pword">Enter Password: </label>
+        <input type="Password" name="password" id="pword">
+        <br>
+        <fieldset>
+            <legend>Demographic:</legend>
+            Gender:
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="male">Female</label><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+
+            What is your age group?
+            <br>
+            <select id="agegroup" name="agegroup" size="2" multiple>
+                <option value="kids">0 to 12</option>
+                <option value="teens">13 to 19</option>
+                <option value="youngadult">20 to 35</option>
+                <option value="mature">36 to 69</option>
+                <option value="senior">70 and above</option>
+            </select>
+            <br>
+            <button type="button" onclick="alert('Boomer!!')">Know my Age</button>
+            <br>
+            What do you eat? <br>
+            <input type="checkbox" id="choice" name="eatchoice" value="chicken">
+            <label for="choice">Chicken</label><br>
+            <input type="checkbox" id="choice" name="eatchoice" value="beef">
+            <label for="choice">Beef</label><br>
+            <input type="checkbox" id="choice" name="eatchoice" value="peta">
+            <label for="choice">Other</label>
+        </fieldset>
+        <br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+
+        What do you eat? <br>
+        <input type="checkbox" id="eatchoice" value="chiclen">
+        What can you bring to the community?
+        <br>
+        <textarea name="whyessay" rows="20" cols="30">Type something...</textarea>
+        <br>
+        <br>
+        Upload here your CV!
+        <label for="cv">Select a File</label>
+        <input type="file" id="cv" name="cv"><br>
+        <input type="submit" name="submit" value="Send money now!">
+
+    </form>
+</body>
+
+</html>

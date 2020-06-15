@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memes 101</title>
+    <link rel="stylesheet" type="text/css" href="registerstyle.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html"> Homepage</a></li>
+            <li><a href="whatarememes.html"> What are memes?</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="upload.html">Upload meme</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <header>
+            <h1>Become a member</h1>
+        </header>
+
+        <article>
+            <i>Write down the following information for complete registration!</i><br><br>
+              <form action="page3.html" method="post">
+              <fieldset>
+         <legend><span class="myNumber">1</span>Your basic info</legend>
+         <label for="name">Name(First Middle Last):</label>
+         <input type="text" id="name" name="user_name" >
+
+         <label for="birthday">Date of birth:</label>
+         <input type="date" id="birthday" name="birthday">
+
+         <label>Gender:</label>
+         <input type="radio" id="male" value="male" name="gender"><label for="male" class="light">Male</label><br>
+         <input type="radio" id="female" value="female" name="gender"><label for="female" class="light">Female</label>
+         <br><br>
+
+         <label for="birthplace">Place of birth:</label>
+         <input type="text" id="birthplace" name="place_of_birth">
+
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username">
+
+
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="user_password">
+
+         <label for="confirm">Confirm password:</label>
+         <input type="password" id="confirm" name="confirmpw">
+
+         <label for="mail">E-mail:</label>
+         <input type="email" id="mail" name="user_email">
+
+         <label for="confirmemail">Confirm email:</label>
+         <input type="email" id="confirmemail" name="emailconfirmation">
+       </fieldset>
+
+       <fieldset>
+         <legend><span class="myNumber">2</span>Your profile</legend>
+         <label for="reason">Reason for joining this meme page</label>
+         <textarea id="reason " name="reason_for_joining"></textarea>
+
+         <label for="favcolor">Select your favorite color:</label>
+         <input type="color" id="favcolor" name="favcolor"><br>
+       </fieldset>
+       <a href="submission.html" class="myButton">Register Now!</a><br><br><br>
+     </form>
+    </article>
+    </section>
+    </body>
+</html>
