@@ -1,0 +1,36 @@
+body {
+    background-color: darkseagreen;
+    font-family: arial;
+    color: white;
+}
+
+header {
+    padding: 12px 32px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    background-color: mediumaquamarine;
+    text-align: center;
+}
+
+nav {
+    width: 15%;
+    float: left;
+}
+
+article {
+    width: 85%;
+}
+
+a {
+    padding: 4px 8px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    background-color: mediumaquamarine;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
