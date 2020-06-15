@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Collect</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nrsjRv_IuiWs8TmIDeMx6ZFrXwANxoaZILbG_WJo_xVbARrgHGL2FdzswYUs42PpqqrIe3oSQSCAnH2Ff6WlHGEJWkVTYXhRqsXwPCkvA1RO3fEjHYjDsQ-N0kSDA53kzZbHuWSKtc4Yz42QRnxfGw" charset="UTF-8"></script><style>
+    button {
+      width: 50px;
+      margin: 5px;
+      font-size: 30px;
+      padding: 0;
+    }
+    .myform {
+      width: 200px;
+      margin: 1px;
+    }
+    </style>
+    <script type="text/javascript">
+
+      var sum1 = 0;
+
+      function one() {
+        var left = document.getElementById("left");
+        var selected = left.options[left.selectedIndex].text;
+        var right = document.getElementById("right");
+        var opt1 = document.createElement("option");
+        opt1.text= selected;
+        right.add(opt1);
+        var sum = document.getElementById("sum");
+        sum1 += parseInt(selected, 10);
+        sum.innerHTML = "Current sum: " + sum1.toString();
+        left.remove(left.selectedIndex);
+        if (sum1==733) {
+          alert("You did it!");
+        }
+
+      }
+
+      function two() {
+        var right = document.getElementById("right");
+        var selected = right.options[right.selectedIndex].text;
+        var left = document.getElementById("left");
+        var opt1 = document.createElement("option");
+        opt1.text= selected;
+        /*console.log(opt1);*/
+        left.add(opt1);
+        var sum = document.getElementById("sum");
+        sum1 -= parseInt(selected, 10);
+        sum.innerHTML = "Current sum: " + sum1.toString();
+        right.remove(right.selectedIndex);
+        if (sum1==733) {
+          alert("You did it!");
+        }
+      }
+
+    </script>
+  </head>
+
+  <body>
+      <table>
+        <tr>
+          <td>
+            <select id="left" size="10" class="myform">
+              <option class="options">1</option>
+              <option class="options">2</option>   
+              <option class="options">4</option> 
+              <option class="options">8</option> 
+              <option class="options">16</option> 
+              <option class="options">32</option> 
+              <option class="options">64</option> 
+              <option class="options">128</option> 
+              <option class="options">256</option> 
+              <option class="options">512</option>         
+           </select>
+          </td>
+          <td>
+            <div><button onclick="one()">&#8680;</button></div>
+            <div><button onclick="two()">&#8678;</button></div>
+          </td>
+          <td>
+            <select id="right" size="10" class="myform"></select>
+          </td>
+        </tr>
+        <tr>
+          <td>Collect: 733</td>
+          <td></td>
+          <td id="sum">Current sum: 0</td>
+        </tr>
+      </table>
+  </body>
+</html>

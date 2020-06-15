@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+</head>
+
+  <style type="text/css">
+  	table {
+  		border: 1px solid black;
+  		text-align: center;
+  		width: 30%;
+  		border-collapse: collapse;
+  	}
+  	tr {
+  		border: 1px solid black;
+  	}
+	th {
+		background-color: yellow;
+	}
+	form {
+		width: 30%;
+	}
+	button {
+		width: 30%;
+	}
+  </style>
+
+  <script type="text/javascript">
+	var ctr = 1;   //counter
+	var ctr2 =0;
+    var timerRunning = false;
+    var timer;
+	
+	
+
+		function on_event() {
+		    var table_1 = document.getElementById('table_events');
+		    	var row = table_1.insertRow(); 
+			    var cell1 = row.insertCell(0);
+			    cell1.innerHTML = ctr.toString();
+			    ctr++;
+		  }
+
+		function clear_table() {
+			var table_1 = document.getElementById('table_events');
+			for (var i = 1; i < ctr+ctr2; i++) {
+				table_1.deleteRow(1);
+			}
+		ctr2 = 0;
+		ctr= 1;
+		}
+
+		
+		function sum () {
+			var table_1 = document.getElementById('table_events');
+		    	var row = table_1.insertRow(); 
+			    var cell1 = row.insertCell(0);
+			    var sum = 0;
+			    for (var i = 1; i < ctr+ctr2; i++) {
+			     sum += i;
+			    }
+			    //sum2+=sum;
+			    clear_table();
+			    cell1.innerHTML = sum.toString();
+			    ctr2++;
+		}
+
+
+
+		  function timerStartStop() {
+		    var button = document.getElementById('start');
+		    if (timerRunning) {
+		      window.clearInterval(timer);
+		      button.innerHTML = "Start";
+		      timerRunning = false;
+		    }
+		    else {
+		      timer = window.setInterval(on_event, 1000);
+		      button.innerHTML = "Stop";
+		      timerRunning = true;
+		    }
+		  }
+
+		 
+  </script>
+
+<body>
+
+	<form>
+		<button type="button" onclick="timerStartStop()" id="start">Start</button>
+		<button type="button" onclick="clear_table()" id="clear">Clear</button>
+		<button type="button" onclick="sum()" id="fold">Fold</button>
+	</form>
+	<br>
+	<table id="table_events">
+		<tr><th>Numbers</th></tr>
+	</table>
+
+</body>
+</html>
