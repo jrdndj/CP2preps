@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Gradient</title>
+<style type="text/css">
+	table{
+		  border-collapse:collapse;
+
+	}
+</style>
+</head>
+<body>
+<table id= "table">
+	
+</table>
+<script type="text/javascript">
+	window.onload = function() {
+		fill();
+	}
+	function fill()
+	{
+	var table = document.getElementById('table');
+	for(var i=0; i<256;i++){
+		row = table.insertRow();
+		for(var j=0;j<256;j++){
+			var cell = row.insertCell();
+			var r = 256;
+			var g = 256-i;
+			var b = 256-j;
+			cell.style.backgroundColor = "rgb("+r.toString()+","+g.toString()+","+b.toString()+")";
+		}
+	}
+	}
+</script>
+</body>
+</html>
