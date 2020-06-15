@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rules</title>
+	<link rel="shortcut icon" href="mine.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--This the header-->
+	<div class="container-fluid div1">
+		<div class="row">
+			<div class="col-sm">
+		      	<a href="menu.html"><img src="mine.png" class="img-fluid" alt="mine"></a>
+		    </div>
+		    <div class="col-sm headr">
+		     		<header class="header1">
+						MINESWEEPER 
+					</header>
+					<br>
+					<p class="p1">
+						Are you ready to sweep ?
+					</p>
+		    </div>
+		    <div class="col-sm headr2">
+		    	<a href="https://www.famnit.upr.si/sl/"><img src="famnit.png" class="famnit img-fluid" alt="famnit"></a>
+		    </div>
+		</div>
+	</div>
+	<!--This is the NAV-->
+	<div class="div2">
+		<nav class="nav1">
+			<ul class="nav nav-tabs nav-justified ">
+			  	<li class="nav-item ">
+			    	<a class="nav-link a1 activ" href="rules.hmtl">RULES</a>
+			  	</li>
+			  	<li class="nav-item dropdown dropdown1">
+			    	<a class="nav-link dropdown-toggle a1 dropbtn" data-toggle="dropdown" href="8x8.html" role="button" aria-haspopup="true" aria-expanded="false">8-BY-8</a>
+			    	<div class="dropdown-menu dropdown-content">
+			      		<a class="a2" href="8x8.html">Beginner</a>
+			      		<a class="a2" href="8x8normal.html">Normal</a>
+			      		<a class="a2" href="8x8king.html">King</a>
+			    	</div>
+			    </li>
+			  	<li class="nav-item dropdown dropdown1">
+			    	<a class="nav-link dropdown-toggle a1 dropbtn" data-toggle="dropdown" href="16x16.html" role="button" aria-haspopup="true" aria-expanded="false">16-BY-16</a>
+				    <div class="dropdown-menu dropdown-content">
+					    <a class="a2" href="16x16.html">Beginner</a>
+					    <a class="a2" href="16x16normal.html">Normal</a>
+					    <a class="a2" href="16x16king.html">King</a>
+				    </div>
+			  </li>
+			  <li class="nav-item">
+			    	<a class="nav-link a1" href="Top.html">TOP PLAYERS</a>
+			  </li>
+			  <li class="nav-item">
+			    	<a class="nav-link a1" href="about.html">ABOUT</a>
+			  </li>
+			  
+			</ul>
+		</nav>
+	</div>
+	<div class="container-fluid div3">
+		<div class="div4">
+			<h3>Rules</h3><br>
+			<p>The object of the game of minesweeper is to locate all the mines as quickly as possible. Specifically, the game of minesweeper is won at the point when all squares that are not mines are clicked open.<br><br>
+
+The game of minesweeper is lost when a square that the player clicks open contains a mine.<br><br>
+
+The game of minesweeper begins upon the opening of the first square the player clicks open, which starts the timer.<br><br>
+
+The grid of mines for a board is pre-generated before the start of the game. The first square clicked never contains a mine. If it did contain a mine in the board pre-generation, the mine is moved to the upper-left hand corner of the board, and if that was a mine, the next square over to the right, and so on.<br><br>
+
+There are two ways to click open a square: left-clicking the square and chording.<br><br>
+
+To click open a square by left-clicking, click the left mouse button. The square the cursor is over at the point of release of the left mouse button is the square that is opened.<br><br>
+
+When a square is successfully opened without containing a mine, it shows a number. The number indicates the number of mines that exist in the eight squares touching the square the number was in.<br><br>
+
+If the number would have been a 0, the number 0 is not shown, and all squares touching that square are opened as well.<br><br>
+
+When a square is right-clicked, a flag appears over the square. Right-clicking is intended for marking a square as a mine. Right-click again to remove the flag. (Note: In the original windows minesweeper, the second click moves to the ?, and only the third click removes the mark. The ? is obsolete in the professional minesweeper world, and by default nearly all professional minesweeper players turn off the ? option if it exists at all.) Each time a square is flagged, the number of “mines left” display is decremented.<br><br>
+
+(This process is known as chording.) If the number in a square is equal to the number of squares touching that square that are flagged, double clicking on the number opens up all remaining squares around the number. The game is lost if there is any inaccuracy in the flagging around the number. Specifically, the left mouse button must be released over the square in which the number is while the right mouse button is depressed.<br><br>
+
+The number of mines in a board is pre-determined. A <b>Beginner</b> board has 10 mines on an 8-by-8 board and 20 on a 16-by-16 board, a <b>Normal</b> board has 20 mines an 8-by-8 board and 40 on a 16-by-16 board, and a <b>King</b> board has 30 mines on an 8-by-8 board and 60 on a 16-by-16 board</p>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+		<footer>
+			&copy <a href="https://zyxyvy.wordpress.com/2012/08/11/the-rules-of-minesweeper/">zyxyvy.wordpress.com</a> <br>
+			&copy Baptiste PDJ
+		</footer>
+		
+	</div>
+	
+</body>
+</html>

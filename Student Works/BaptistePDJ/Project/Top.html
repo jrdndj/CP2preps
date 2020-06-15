@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top Players</title>
+<link rel="shortcut icon" href="mine.png" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container-fluid div1">
+<div class="row">
+<div class="col-sm">
+<a href="menu.html"><img src="mine.png" class="img-fluid" alt="mine"></a>
+</div>
+<div class="col-sm headr">
+<header class="header1">
+MINESWEEPER 
+</header>
+<br>
+<p class="p1">
+Are you ready to sweep ?
+</p>
+</div>
+<div class="col-sm headr2">
+<a href="https://www.famnit.upr.si/sl/"><img src="famnit.png" class="famnit img-fluid" alt="famnit"></a>
+</div>
+</div>
+</div>
+<div class="div2">
+<nav class="nav1">
+<ul class="nav nav-tabs nav-justified ">
+<li class="nav-item ">
+<a class="nav-link a1" href="rules.html">RULES</a>
+</li>
+<li class="nav-item dropdown dropdown1">
+<a class="nav-link dropdown-toggle a1 dropbtn" data-toggle="dropdown" href="8x8.html" role="button" aria-haspopup="true" aria-expanded="false">8-BY-8</a>
+<div class="dropdown-menu dropdown-content">
+<a class="a2" href="8x8.html">Beginner</a>
+<a class="a2" href="8x8normal.html">Normal</a>
+<a class="a2" href="8x8king.html">King</a>
+</div>
+</li>
+<li class="nav-item dropdown dropdown1">
+<a class="nav-link dropdown-toggle a1 dropbtn" data-toggle="dropdown" href="16x16.html" role="button" aria-haspopup="true" aria-expanded="false">16-BY-16</a>
+<div class="dropdown-menu dropdown-content">
+<a class="a2" href="16x16.html">Beginner</a>
+<a class="a2" href="16x16normal.html">Normal</a>
+<a class="a2" href="16x16king.html">King</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link a1 activ" href="Top.html">TOP PLAYERS</a>
+</li>
+<li class="nav-item">
+<a class="nav-link a1" href="about.html">ABOUT</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="container-fluid div3">
+<div class="div4">
+<div id="carouselExampleCaptions" class="carousel slide divcar3" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active divcar">
+<img src="white.png" class="d-block w-100 imgcar" alt="nothing">
+<div class="carousel-caption d-none d-md-block">
+<h5 class="divcar2">1</h5>
+<p class="divcar2">Jordan with this time:32s</p>
+</div>
+</div>
+<div class="carousel-item divcar">
+<img src="white.png" class="d-block w-100 imgcar" alt="nothing">
+<div class="carousel-caption d-none d-md-block">
+<h5 class="divcar2">2</h5>
+<p class="divcar2">Johnny with this time:52s</p>
+</div>
+</div>
+<div class="carousel-item divcar">
+<img src="white.png" class="d-block w-100 imgcar" alt="nothing">
+<div class="carousel-caption d-none d-md-block">
+<h5 class="divcar2">3</h5>
+<p class="divcar2">Emma with this time:70s</p>
+</div>
+</div>
+
+</div>
+<a class="carousel-control-prev divcar2" href="#carouselExampleCaptions" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+<div class="table-responsive-lg">
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th scope="col">#</th>
+<th scope="col">Name</th>
+<th scope="col">Time (s)</th>
+</tr>
+</thead>
+<tbody id="score">
+<tr>
+<th scope='row'>1</th>
+<td>Jordan</td>
+<td>32</td>
+</tr><tr>
+<th scope='row'>2</th>
+<td>Johnny</td>
+<td>52</td>
+</tr><tr>
+<th scope='row'>3</th>
+<td>Emma</td>
+<td>70</td>
+</tr><tr>
+<th scope='row'>4</th>
+<td>Larry</td>
+<td>73</td>
+</tr><tr>
+<th scope='row'>5</th>
+<td>Jordan</td>
+<td>79</td>
+</tr><tr>
+<th scope='row'>6</th>
+<td>Michel</td>
+<td>82</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="card-footer text-muted">
+<footer>
+&copy Baptiste PDJ
+</footer>
+</div>
+</body>
+</html>

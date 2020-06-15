@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colors</title>
+	</style>
+</head>
+<body>
+	<table style="border-collapse: collapse;">
+		<script type="text/javascript">
+			for (var i = 0; i < 256; i++) {
+				var b = 255 - i;
+				document.write("<tr>");
+				for (var k = 0; k < 256; k++) {
+					var g = 255 - k;
+					document.write('<td style="background-color: rgb(255,' + g + ',' +  b + '); border-color: rgb(255,' + g + ',' +  b + ');"></td>');	
+				};
+
+				document.write("</tr>");
+					}
+		</script>
+	</table>
+</body>
+</html>
