@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+            .container{overflow: hidden}
+            .tab{float: left}
+           
+           
+           
+            .tab-btn{margin: 50px;}
+           
+           
+            button{display:block;margin-bottom: 20px;}
+            
+            tr{transition:all .25s ease-in-out}
+            
+            
+            
+            tr:hover{background-color: #ddd;}
+            
+        </style>    
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="tab">
+                <table id="table1" border="1">
+                    <tr>
+                        <th>Numbers</th>
+                     
+                        <th>Select</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>4</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>16</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>32</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>64</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>128</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>256</td>
+                      
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                     <tr>
+                        <td>512</td>
+                        
+                        <td><input type="checkbox" name="check-tab1"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="tab tab-btn">
+                <button onclick="tab1_To_tab2();">>>>>></button>
+                <button onclick="tab2_To_tab1();"><<<<<</button>
+            </div>
+            
+            <div class="tab">
+                <table id="table2" border="1">
+                    <tr>
+                        <th>Numbers</th>
+                        
+                        <th>Select</th>
+                    </tr>
+                </table>   
+            </div>
+        </div>
+        
+        <script>
+            
+            function tab1_To_tab2()
+            {
+                var table1 = document.getElementById("table1"),
+                    table2 = document.getElementById("table2"),
+                
+                
+                
+                    checkboxes = document.getElementsByName("check-tab1");
+          
+          
+          
+            console.log("Val1 = " + checkboxes.length);
+                 for(var i = 0; i < checkboxes.length; i++)
+                     if(checkboxes[i].checked)
+                        {
+                   
+                            var newRow = table2.insertRow(table2.length),
+                                cell1 = newRow.insertCell(0),
+                                
+                                cell4 = newRow.insertCell(1);
+                        
+                            cell1.innerHTML = table1.rows[i+1].cells[0].innerHTML;
+                           
+                            cell4.innerHTML = "<input type='checkbox' name='check-tab2'>";
+                           
+                           
+                            var index = table1.rows[i+1].rowIndex;
+                            table1.deleteRow(index);
+                           
+                            i--;
+                           console.log(checkboxes.length);
+                        }
+            }
+            
+            
+            function tab2_To_tab1()
+            {
+                var table1 = document.getElementById("table1"),
+                   
+                   
+                   
+                    table2 = document.getElementById("table2"),
+                    
+                    
+                    checkboxes = document.getElementsByName("check-tab2");
+           
+           
+           
+            console.log("Val1 = " + checkboxes.length);
+                 for(var i = 0; i < checkboxes.length; i++)
+                     if(checkboxes[i].checked)
+                        {
+                      
+                            var newRow = table1.insertRow(table1.length),
+                                cell1 = newRow.insertCell(0),
+                                
+                                cell4 = newRow.insertCell(1);                    
+                            cell1.innerHTML = table2.rows[i+1].cells[0].innerHTML;
+                          
+                            cell4.innerHTML = "<input type='checkbox' name='check-tab1'>";
+                           
+                          
+                            var index = table2.rows[i+1].rowIndex;
+                            table2.deleteRow(index);
+                           
+                            i--;
+                           console.log(checkboxes.length);
+                        }
+            }
+            
+        </script>    
+        
+    </body>
+</html>
