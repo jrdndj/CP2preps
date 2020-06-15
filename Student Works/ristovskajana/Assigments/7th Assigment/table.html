@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style type="text/css">
+		table {
+			width: 100%;
+			border: none;
+			border-collapse: collapse;
+			padding: 0;
+			margin: 0;
+		}
+		td {
+			height: 1.5px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		document.write("<table>");
+		for(var i = 256; i > 0; i--){
+			document.write("<tr>");
+			for(var j = 256; j > 0; j--){
+				document.write("<td style='background-color: rgb(255, "+ i +", "+ j +")'></td>");
+			}
+			document.write("</tr>");
+			}
+			document.write("</table>");
+	</script>
+
+</body>
+</html>
