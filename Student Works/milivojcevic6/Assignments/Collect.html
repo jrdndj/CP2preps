@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Collect</title>
+        <style>
+            ul {
+    list-style: none;
+    margin: 10;
+    padding: 10;
+    display: grid;
+    grid-template-columns: 130px 70px 100px;
+    grid-gap: 10px
+}
+select {
+    width: 100px;
+    height: 180px;
+}
+li.relative {
+    position: relative
+}
+#add {
+    position: absolute;
+    width: 40px;
+    font-size: 25px;
+    top: 0
+}
+#remove {
+    position: absolute;
+    width: 40px;
+    font-size: 25px;
+    bottom: 0
+}
+        </style>
+        <script>
+            function addOptions( fromId, toId ) {
+
+              var sum1=0;
+
+              var fromEl = document.getElementById( fromId ),
+              toEl = document.getElementById( toId );
+
+              if ( fromEl.selectedIndex >= 0 ) {
+                  var index = toEl.options.length;
+
+                  for ( var i = 0; i < fromEl.options.length; i++ ) {
+                      if ( fromEl.options[ i ].selected ) {
+                          toEl.options[ index ] = fromEl.options[ i ];
+                          i--;
+                          index++
+                      }
+                  }
+                  }
+                  sum(); 
+              }
+
+              function sum () {
+
+                var list = document.getElementById('right').getElementsByTagName('option');
+                var sum=0;
+                var sum2= document.getElementById("sum");
+
+                for(var i=0; i<list.length; i++)
+                  sum+= parseInt( list[i].innerHTML );
+                sum2.innerHTML= "Current sum: " +sum;
+
+              }
+
+</script>
+    </head>
+    
+    <body>
+        <ul>
+            <li>
+        <select id="left" name="left" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>4</option>
+            <option>8</option>
+            <option>16</option>
+            <option>32</option>
+            <option>64</option>
+            <option>128</option>
+            <option>256</option>
+            <option>512</option>
+        </select>
+            </li>
+            <li class="relative">
+        <input  type="button" id="add" value="&#8702;" onclick="addOptions( 'left', 'right' )" />
+        <input  type="button" id="remove" value="&#8701;" onclick="addOptions( 'right', 'left' )" />
+            </li>
+            <li>
+        <select id="right" name="right" multiple></select>
+            </li>
+        </ul>
+        <ul>
+            <li>Collect: 733</li>
+            <li></li>
+            <li id="sum">Current sum: 0</li>
+        </ul>
+    </body>
+</html>
