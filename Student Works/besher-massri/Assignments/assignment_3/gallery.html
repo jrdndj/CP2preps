@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #eeeeee;
+            min-width: 700px;
+        }
+
+        header {
+            font-size: 35px;
+            color: green;
+            font-style: italic;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            flex: 0.4;
+
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the menu and the content
+        (inside the section) sit on top of each other instead
+        of next to each other */
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+        }
+
+        .nav-items {
+            background-color: orange;
+            text-align: center;
+            margin: 5px;
+            width: 100%;
+        }
+
+        .nav-items a {
+            padding: 1px;
+            background-color: grey;
+            color: white;
+            text-decoration: none;
+            width: 75%;
+            text-align: left;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: orange;
+        }
+
+        table,
+        td,
+        th {
+            border-bottom: 1px solid black;
+            text-align: left;
+            border-collapse: collapse;
+            /*border-spacing: 10px*/
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            width: 50%;
+        }
+
+        th {
+            color: orange;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            color: green;
+            font-weight: bold;
+            height: 1em;
+        }
+
+        tr:nth-child(odd) {
+            vertical-align: middle;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <nav>
+            <ul>
+                <li class="nav-items"><a href="homepage.html">Home Page</a></li>
+                <li class="nav-items"><a href="what.html">What are memes?</a></li>
+                <li class="nav-items"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Browse Memes</h2>
+
+            <p>Checkout the description of each meme below</p>
+            <br>
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Name and Description</th>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img alt="Be like Bill Meme" src="resources/gallery/meme1.jpg" </td>
+                    <td>Be Like Bill</td>
+                </tr>
+                <tr>
+                    <td>Bill is a stick-person illustration with white space left for captioning. The version pictured
+                        here is Bill wearing a hat. There are also versions of Bill sitting at a computer.
+                        <br><br>
+                        Bill lets you make passive-aggressive public judgments about other people's life choices — an
+                        all-too irresistible appeal in modern society. To comment on something you disagree with, the
+                        innocuous Bill stick figure is an easy way to transmit your message. </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img alt="Kermit Sipping Tea Meme" src="resources/gallery/meme2.jpg" </td>
+                    <td>Kermit Sipping Tea Meme: "But That's None of My Business"</td>
+                </tr>
+                <tr>
+                    <td>While the adorable muppet imagery seems innocent enough, this meme allows someone to freely pass
+                        judgment on other people for some perceived fault or failing. If you disagree with someone's
+                        life choices or practices, the very meme-able Kermit will do the judging for you. </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img alt="Kylo Ren's Tri-Lightsaber Meme" src="resources/gallery/meme3.jpg" </td>
+                    <td>Kylo Ren's Tri-Lightsaber</td>
+                </tr>
+                <tr>
+                    <td>When the trailer of Star Wars: The Force Awakens was released, fans went into a frenzy over the
+                        character Kylo Ren's tri-lightsaber. Apparently, the functionality of such a mythical weapon was
+                        debatable. This spurred a viral form of playful vandalism where readers around the world edited
+                        different implements onto Ren's lightsaber, such as this example of a Swiss Army knife.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img alt="Grumpy Cat Meme" src="resources/gallery/meme4.jpg" </td>
+                    <td>Grumpy Cat</td>
+                </tr>
+                <tr>
+                    <td>Grumpy Cat was a beloved housepet from Arizona whose real name was Tardar Sauce. The kitty had a
+                        disorder called feline dwarfism, leaving her with a distinctive underbite that gave off a
+                        pouting facial expression. This little beast became the poster cat for sarcasm and faux
+                        negativity. Thousands of captioned meme photos have been created using Tardar's seemingly grumpy
+                        face. Tardar, who passed away in 2019, actually was a very happy and friendly cat, which makes
+                        the sarcasm memes even richer!</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img alt="Ylvis: What Does the Fox Say? Meme" src="resources/gallery/meme5.jpg"
+                            </td>
+                    <td>Ylvis: What Does the Fox Say?</td>
+                </tr>
+                <tr>
+                    <td>Norwegian comedy and music duo Ylvis asked the burning question, "What sound do foxes make?"
+                        Sure enough, they not only provided the answer but presented it via a preposterous dance video
+                        that went viral. This musical meme has gotten a lot of traction since its 2013 inception.</td>
+                </tr>
+
+            </table>
+        </article>
+    </section>
+    <footer><p>&copy; Besher Massri</p></footer>
+</body>
+
+</html>
