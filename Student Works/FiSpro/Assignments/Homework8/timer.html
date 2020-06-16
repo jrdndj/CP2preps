@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timer</title>
+	<style>
+		#timer {
+			width: 200px;
+			padding: 5px;
+			text-align: center;
+			font-size: 50px;
+			margin:3px;
+		}
+        
+		button {
+			width: 100px;
+			margin: 3px;
+		}
+        
+		table {
+			width: 300px;
+            margin: 10px;
+            clear: left;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        
+        td {
+            border: 1px solid black;
+            text-align: center;
+            background-color: yellow;
+        }
+	</style>
+	<script>
+
+    var timerRunning = false;
+    var timer;
+    var counter=1;
+
+    function increaseTimer() {
+  
+      var timer = document.getElementById('timer');
+      var n = parseInt(timer.innerHTML);
+      n++;
+      timer.innerHTML = n.toString();
+       var table_1 = document.getElementById('myTable');
+  			var row = table_1.insertRow();
+  			var cell1=row.insertCell(0);
+  			cell1.innerHTML = counter.toString();
+  			counter++;	
+       for (var i = 0; i < counter; i++){
+    
+          cell1.style.backgroundColor = "white"; 
+       }
+  }
+
+    function timerStartStop() {
+      var button = document.getElementById('startstop');
+        if (timerRunning) {
+          window.clearInterval(timer);
+           button.innerHTML = "Start";
+          timerRunning = false;
+    }
+        else {
+          timer = window.setInterval(increaseTimer, 1000);
+          button.innerHTML = "Stop";
+          timerRunning = true;
+        }
+  }
+
+      function reset() {
+        var timer = document.getElementById('timer');
+        var table_1 = document.getElementById('myTable');
+        	for (var i = 1; i<counter; i++) {
+    				table_1.deleteRow(1);
+    			}
+    		counter=1;
+    			
+		
+  }
+     function fold() {
+      var sum=0;
+      var table_1 = document.getElementById('myTable');
+     
+
+      for (var i = 1; i<counter; i++) {
+          table_1.deleteRow(1);
+          sum+=i;
+          var row = table_1.insertRow();
+        }
+       var cell1=row.insertCell(0);
+      cell1.innerHTML = sum.toString();
+      cell1.style.backgroundColor = "white"; 
+   	}
+   
+  
+
+  </script>
+
+  </head>
+  <body>
+  	<input type="hidden" id="timer"></input>
+  	<button id="startstop" onclick="timerStartStop()">Start</button>
+  	<button onclick="reset()">Reset</button>
+  	<button  onclick="fold()">Fold</button>
+  	<p>
+  	<table id="myTable">
+  		<tr>
+  			<td>Numbers</td>
+  		</tr>
+  	</table>
+    </p>
+  </body>
+  </html>

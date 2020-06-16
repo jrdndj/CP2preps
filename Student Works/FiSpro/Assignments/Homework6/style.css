@@ -1,0 +1,106 @@
+ * {
+     box-sizing: border-box; /* changes the layout of the page */
+}
+
+table.nav, a { 
+    /* this is for the class nav for the table and for the links to the other pages */
+                width: 30%;
+                margin: auto;
+                background-color: gray;
+                color: white;
+                font-family: sans-serif;
+                text-decoration: none;
+            }
+
+table.nav, td.n {
+    /* this is for the nav class for the table and the data that is in the rows */
+                border: 6px solid darkorange;
+            }
+
+table.meme {
+    /* this is for the meme class table. This is the main table with pictures */
+                width: 100%;
+                margin: auto;
+                color: darkorange;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+table.meme, td{
+    /* this is for the meme class for the table and the data that is in the rows */
+                border: 1px solid black;
+            }
+td.header {
+    color: darkorange;
+}
+
+td.g {
+    color: gray;
+}
+
+a.name {
+    color: green;
+}
+
+a.name:hover {
+    color: orange;
+}
+
+a.menu:hover {
+    color: hotpink;
+}
+
+td.active {
+    border: 6px solid darkgreen;
+    background-color: darkgreen;
+}
+
+ul.list {
+    list-style-image: url(index.png);
+    margin-left: 40;
+    padding: 0;
+}
+
+h1 {
+    color: darkorange; 
+    font-family: sans-serif; 
+    font-size: 30px;
+    position: sticky;
+}
+
+h1.home {
+    color: green; 
+    font-family: cursive; 
+    font-size: 50px;
+}
+
+p.h {
+    color: gray; 
+    font-family: sans-serif;
+}
+
+h3 {
+    color: gray;
+}
+
+nav {
+    /* this is for the nav section. We set the layout for this part of the code. */
+            float: left;
+            width: 30%;
+            height: 300px; 
+            padding: 40px;
+}
+
+article {
+    /* this is for the article section. We set the layout for this part of the code */
+                float: left;
+                width: 70%;
+                height: 300px; 
+            }
+/* this is for the page to be responsive */
+            @media (max-width: 600px) {
+                nav, article {
+                     width: 100%;
+                     height: auto;
+                }
+            }  

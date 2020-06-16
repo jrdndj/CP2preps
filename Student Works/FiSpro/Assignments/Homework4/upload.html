@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Upload</title>
+        <style type="text/css">
+            body{
+                background-color: lightblue;
+            }
+            table{
+                background-color: aliceblue;
+                margin: left;
+            }
+            table, td{
+                text-align: center;
+                border: 2px solid lightblue;
+            }
+            h1, form{
+                font-family: Times;
+                text-align: center;
+            }
+            div, a{
+                color: darkcyan;
+                text-decoration: none;
+                font-family: Times;
+                font-size: 30px;
+            }
+        </style> 
+    </head>
+    <body>
+        <h1>Upload a meme</h1>
+        <br>
+        <div>
+        <table>
+            <tr>
+                <td><a href="homepage.html">Home Page</a></td>
+            </tr>
+            <tr>
+                <td><a href="register.html">Register</a></td>
+            </tr>
+            <tr>
+                <td><a href="upload.html">Upload meme</a></td>
+            </tr>
+            <tr>
+                <td><a href="rate.html">Rate a meme</a></td>
+            </tr>
+        </table>
+        </div>
+        <form action="page3.html" method="get">
+            <label for="memename">Input name/title for the meme</label>
+            <input type="text" name="meme" id="memename">
+            <br><br>
+            Enter description for your meme:
+            <br><br>
+            <textarea name="descr" rows="10" cols="20">Enter description here...</textarea>
+            <br><br>
+            <label for="memeimg">Upload photo for your meme:</label>
+            <br>
+            <input type="file" name="img" id="memeimg">
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>

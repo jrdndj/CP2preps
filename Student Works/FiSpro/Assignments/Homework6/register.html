@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Register Account</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+             <nav>
+                <table class="nav">
+                    <tr>
+                        <td class="n"><a href="homepage.html" class="menu">Home page</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="what.html" class="menu">What are memes?</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="gallery.html" class="menu">Gallery</a></td>
+                    </tr>
+                    <tr>
+                      <td class="active"><a href="register.html" class="menu">Register</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="upload.html" class="menu">Upload a meme</a></td>
+                    </tr>
+                     <tr>
+                      <td class="n"><a href="about.html" class="menu">About us</a></td>
+                    </tr>
+                </table>
+            </nav>
+         <article>
+             <h1>Registration form</h1>
+        <form action="page3.html" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="first" id="fname">
+            <br>
+            <label for="mname">Middle Name:</label>
+            <input type="text" name="middle" id="mname">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="last" id="lname">
+            <br>
+            Gender:
+            <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br>
+                <br>
+                <label for="date">Date of birth:</label>
+                <input type="date" name="bday" id="date">
+                <br>
+                <label for="place">Place of Birth:</label>
+                <input type="text" name="birth" id="place">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Login Info</legend>
+            <label for="uname">Enter Username:</label>
+            <input type="text" name="username" id="uname">
+            <br>
+            <label for="pword">Enter Password:</label>
+            <input type="Password" name="password" id="pword">
+            <br>
+            <label for="pw">Confirm Password:</label>
+            <input type="Password" name="password" id="pw">
+            <br>
+            <label for="em">Enter e-mail Address:</label>
+            <input type="email" name="email" id="em">
+            <br>
+            <label for="ema">Confirm e-mail Address:</label>
+            <input type="email" name="email" id="ema">
+            <br><br>
+            Why do you want to join?
+            <br>
+            <textarea name="why" rows="20" cols="30">Write some text...</textarea>
+            <br><br>
+            <label for="favcolor">Select your favorite color</label>
+            <input type="color" id="favecolor" name="fvclr">
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+            </fieldset>
+        </form>
+            </article>
+        </section>
+    </body>
+</html>

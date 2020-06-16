@@ -1,0 +1,57 @@
+body {
+    background-color: darkmagenta;
+    background-image: url(diagmonds.png);
+    font-family: cursive;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+h4 {
+    font-size: 25px;
+    color: darkorange;
+}
+
+h4.su {
+    margin-top: 70px;
+}
+
+form label {
+    color: white;
+}
+
+form input {
+    font-family: cursive;
+}
+
+form input:focus {
+    font-size: 15px;
+    background-color: darkorange;
+}
+
+form button {
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    border-color: darkorange;
+    border-radius: 20%;
+}
+
+form button:hover {
+    background-color: darkorange;
+}
+
+h4 a {
+    text-decoration: none;
+    color: white;
+    border: 5px solid white;
+    border-radius: 25%;
+}
+
+h4 a:hover {
+    color: darkorange;
+}

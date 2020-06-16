@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Meme Homepage</title>    
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            * {
+              box-sizing: border-box;
+            }
+            table, a{
+                width: 30%;
+                margin: auto;
+                background-color: gray;
+                color: white;
+                font-family: sans-serif;
+                text-decoration: none;
+            }
+            table, td{
+                border: 6px solid darkorange;
+            }
+            nav {
+            float: left;
+            width: 30%;
+            height: 300px; 
+            padding: 40px;
+            }
+            article {
+                float: left;
+                width: 70%;
+                height: 300px; 
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                     width: 100%;
+                     height: auto;
+                }
+            }  
+        </style>
+    </head>
+    <body>
+        <section>
+            <nav>
+                <table>
+                    <tr>
+                        <td><a href="homepage.html">Home page</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="what.html">What are memes?</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="gallery.html">Gallery</a></td>
+                    </tr>
+                </table>
+            </nav>
+            <article>
+                <h1 style="color: darkorange; font-family: sans-serif; font-size: 30px;">Meme Gallery</h1>
+                <h1 style="color: green; font-family: cursive; font-size: 50px">The largest collection of memes in the interwebs</h1>
+                <p style="color: gray; font-family: sans-serif">
+                In this site, we allow you to check out the different memes that have been featured across history.<br><br>
+                    To know more about memes, click What are memes?<br>
+                    To see the memes, check out Gallery.<br><br>
+                    &copy; Filip Sprostran
+                </p>
+            </article>
+        </section>
+    </body>
+</html>

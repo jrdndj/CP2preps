@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Upload</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+        <section>
+            <nav>
+                 <table class="nav">
+                    <tr>
+                        <td class="n"><a href="homepage.html">Home page</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="what.html">What are memes?</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="gallery.html">Gallery</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="register.html">Register</a></td>
+                    </tr>
+                    <tr>
+                      <td class="n"><a href="upload.html">Upload a meme</a></td>
+                    </tr>
+                      <tr>
+                      <td class="n"><a href="about.html">About us</a></td>
+                    </tr>
+                </table>
+            </nav>
+            <article>
+                <h1>Upload a meme</h1>
+        <form action="page3.html" method="get">
+            <fieldset>
+                <legend>Meme info</legend>
+            <label for="memename">Input name/title for the meme</label>
+            <input type="text" name="meme" id="memename">
+            <br><br>
+            Enter description for your meme:
+            <br><br>
+            <textarea name="descr" rows="10" cols="20">Enter description here...</textarea>
+            <br><br>
+            <label for="memeimg">Upload photo for your meme:</label>
+            <br>
+            <input type="file" name="img" id="memeimg">
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+            </fieldset>
+        </form>
+            </article>
+        </section>
+    </body>
+</html>

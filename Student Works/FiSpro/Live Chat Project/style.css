@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url(diagmonds.png);
+    font-family: cursive;
+}
+
+header {
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+header hr {
+    border: 1px solid white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 230px;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 5px;
+    padding: 0;
+    background-color: darkorange;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: hotpink;
+    text-decoration: none;
+    width: 80%;
+}
+
+nav ul li a:hover {
+    color: darkorange;
+    background-color: rebeccapurple;
+}
+
+#thisPage {
+    background-color: rebeccapurple;
+}
+
+article {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+article h4 {
+    color: white;
+}
+
+.feedback {    /* for feedback.html */
+    color: darkorange;
+}
+
+.issues {     /* for issues.html */
+    color: darkorange;
+}
+
+#userPhoto {    /* for profile.html */
+    width: 20%;
+    vertical-align: text-top;   
+}
+
+#status {     /* for profile.html */
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#status:hover {    /* for profile.html */
+    background-color: darkorange;
+}
+
+form label {
+    color: white;
+}
+
+#uname {     /* for feedback.html and issues.html */
+    font-family: cursive;
+}
+
+#uname:focus {     /* for feedback.html and issues.html */
+    font-size: 15px;
+    background-color: darkorange;
+}
+
+#email {     /* for issues.html */
+    font-family: cursive;
+}
+
+#email:focus {     /* for issues.html */
+    font-size: 15px;
+    background-color: darkorange;
+}
+
+form textarea {     /* for feedback.html and issues.html */
+    font-family: cursive;
+    width: 50%;
+}
+
+form textarea:focus {    /* for feedback.html and issues.html */
+    background-color: darkorange;
+}
+
+#submit {     /* for feedback.html and issues.html */
+    font-family: cursive;
+    border-color: darkorange;
+}
+
+#submit:hover {     /* for feedback.html and issues.html */
+    background-color: hotpink;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3 {
+    color: darkorange;
+}
+
+footer h4 {
+    color: white;
+}
+
+footer hr {
+    border: 2px solid white;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+    width: 100%;
+    height: auto;
+    }
+}

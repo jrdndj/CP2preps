@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Live Chat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    </head>
+    <body>
+        
+        <header>
+        <h3 id="welcome"></h3>
+        <h3 id="talko">TALKO</h3>
+            <hr>
+        </header>
+        
+        <section>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="thisPage">Live Chat</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="feedback.html">Praise / Complaints</a></li>
+                    <li><a href="issues.html">Inform us about any issues</a></li>
+                </ul>
+            </nav>
+            
+            <article>
+        <div class="userInfo">
+            <a href="profile.html" title="Information about your profile"><img id="icon" src="https://www.freeiconspng.com/uploads/info-icon-7.png"></a>
+            <div class="userName">
+                <img id="userPhoto" src="http://hotprintdesign.com/wp-content/uploads/2019/02/Sani-Sebastian.png">
+                <h4 id="username"></h4>
+                <p>online</p>
+            </div>
+        </div>
+        
+        <div class="middle">
+            <div class="messagesList" id="m">
+                <!-- ↓↓↓ where the messages appear -->
+                <ul id="messages"></ul>
+                
+                <div class="userInput">
+                    <form id="chat">
+                    <!-- ↓↓↓ where the user types the message -->
+                    <input id="input" type="text" placeholder="Type a message...">
+                    <button id="send">Send</button>
+                    </form>
+                        
+                </div>
+            </div>
+        </div>
+            </article>
+        </section>
+        
+        <footer>
+            <h3><a href="login.html" id="leave" onclick="clearMessages()">Leave Chat</a></h3>
+            <br>
+            <h3>Thank you for using TALKO!</h3>
+            <hr>
+            <h4>&copy;COPYRIGHT 2020. TALKO&trade;</h4>
+        </footer>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="server.js"></script>
+        <script type="text/javascript" src="messages.js"></script>
+        <script type="text/javascript" src="username.js"></script>
+
+    </body>
+</html>

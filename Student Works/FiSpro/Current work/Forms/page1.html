@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <title>Page 1</title>
+    </head>
+    <body>
+        <form action="page2.html" method="get">
+            <label for="uname">Enter Username:</label>
+            <input type="text" name="username" id="uname">
+            <br>
+            <label for="pword">Enter Password:</label>
+            <input type="Password" name="password" id="pword">
+            <br>
+            <fieldset> 
+                <legend>Demographic:</legend>
+            Gender:
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label> <br>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            What is your age group?
+            <br>
+            <select id="agegroup" name="agegroup" size="3" multiple>
+                <option value="kids">0 to 10</option>
+                <option value="teens">13 to 19</option>
+                <option value="youngadult">20 to 35</option>
+                <option value="mature">36 to 60</option>
+                <option value="senior">61 and above</option>
+            </select>
+            <br>
+            <button type="button" onclick="alert('haha old!')">Know my age!</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Meal Choice</legend>
+                What do you like to eat? <br>
+                <input type="checkbox" id="choice" name="eatchoice" value="chicken">
+                <label for="choice">Chicken</label>
+            <br>
+                 <input type="checkbox" id="choice" name="eatchoice" value="beef">
+                <label for="choice">Beef</label>
+            <br>
+                 <input type="checkbox" id="choice" name="eatchoice" value="chicken">
+                <label for="choice">Chicken</label>
+            </fieldset>
+            <br>
+            <label for="favcolor">Select your favorite color</label>
+            <input type="color" id="favcolor" name="favcolor"><br>
+            Why do you want to join?
+            <br>
+            <textarea name="Whyessay" rows="20" cols="30">This is some text...</textarea>
+            <br>
+            Upload your CV
+            <label for="cv">Select a file:</label>
+            <input type="file" id="cv" name="cv">
+            <br>
+            <input type="submit" name="submit" value="Submit :)">
+        </form>
+    </body>
+</html>

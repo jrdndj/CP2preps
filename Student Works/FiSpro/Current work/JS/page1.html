@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first time with JavaScript</title>
+    <style>
+        body {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+	<script>
+		var name = prompt("Enter your name");
+		//We need to parse the int input
+		var age = parseInt(prompt("How old are you?", 12));
+		document.write("Hello " + name + " you look great!<br>");
+        document.write("Have a nice day!<br><br>");
+		if (age < 18) {
+			document.write("<img src=pedo.png height=400>");
+		}
+        else if (age == 18) {
+            document.write("<img src=turtle.png height=400");
+        }
+		else {
+			document.write("<img src=oldman.jpg height=400>");
+		}
+	</script>
+</body>
+</html>
