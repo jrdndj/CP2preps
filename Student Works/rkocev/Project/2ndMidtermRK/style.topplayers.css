@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #282828;
+    width: 100%;
+}
+
+#navbar {
+    zoom: 1;
+    width: auto;
+    background: black;
+    padding: 8px 0;
+}
+
+#navbar:before {
+    content: '';
+    display: block;
+}
+
+#navbar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#navbar ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid green;
+    zoom: 1;
+}
+
+#navbar ul:before {
+    content: '';
+    display: block;
+}
+
+#navbar ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#navbar li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li a {
+    float: left;
+    color: lightgray;
+    text-decoration: none;
+    height: 24px;
+    padding: 9px 15px 0;
+    font-weight: normal;
+}
+
+#navbar li:hover,
+#navbar .active {
+    text-decoration: none;
+    border-bottom: 2px solid green;
+}
+
+#navbar li:hover a {
+    color: #fff;
+}
+
+#navbar .active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 55px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgba(0, 255, 127, 1);
+    color: green;
+}
+
+h2 {
+    margin: auto;
+    width: 90%;
+    padding: 2px;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: green;
+    font-size: 31px;
+    text-shadow: 2px 2px 1px rgba(0, 255, 127, 1);
+}
+
+table.mytable { /* simply: positioned on thhe center of the screen and set the background and bordes */ 
+    margin: auto;
+    padding: 10px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    border: 2px solid black;
+    background-color: black;     
+    text-align: center;
+    border-collapse: collapse;   
+}
+
+table.mytable td { /* setting how each cell will look */
+    border: 4px solid #282828;
+    padding: 5px;
+}
+
+table.mytable th {     
+    padding: 5px;
+}
+
+table.mytable tbody td { 
+    font-size: 20px;
+    color: white;
+}
+
+table.mytable thead {     /* setting gradient color background fitting the color scheme and setting "underline" */
+    background: #3e4f30;
+    background: -moz-linear-gradient(top, #3e4f30 0%, #132405 100%);
+    background: -webkit-linear-gradient(top, #3e4f30 0%, #132405 100%);
+    background: -o-linear-gradient(top, #3e4f30 0%, #132405 100%);
+    background: -ms-linear-gradient(top, #3e4f30 0%, #132405 100%);
+    background: linear-gradient(to bottom, #3e4f30 0%, #132405 100%);
+    border-bottom: 5px solid green; /* the underline */
+}
+
+table.mytable thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+div div {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+

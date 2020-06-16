@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Game</title>
+</head>
+<style type="text/css">
+    .mainContainer {
+        width: 650px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #selection,
+    #select {
+        width: 250px;
+        height: 250px;
+        font-size: 18px;
+    }
+
+    .counter {
+        margin-left: 366px;
+        width: 250px;
+        padding-top: 0px;
+    }
+
+    .collect {
+        padding-top: 10px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="mainContainer">
+        <div class="subject-info-box-1">
+            <select name="selectfrom" id="selection" multiple size="10">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+                <option value="128">128</option>
+                <option value="256">256</option>
+                <option value="512">512</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <div>
+                <button id="button1">&rarr;</button>
+            </div>
+            <div>
+                <button id="button2">&larr;</button>
+            </div>
+        </div>
+        <div>
+            <select name="select" id="select" multiple size="10"></select>
+        </div>
+    </div>
+    <div class="collect">
+        <p>Collect: 733</p>
+    </div>
+    <input type="text" name="class" value="0" class="counter" />
+    <script src="./net.js"></script>
+    <script type="text/javascript">
+        let counter = document.getElementsByName("select");
+        if (counter.value == 733) {
+            alert("You did it !")
+        }
+        $(document).ready(function () {
+            $('#button1').click(function () {
+                $('#selection option:selected').each(function () {
+                    $('#select').append("<option value='" + $(this).val() + "'>" + $(this).text() + "</option>");
+                    $("input[name='class']").val(parseInt($(this).val()) + parseInt($("input[name='class']").val()));
+                });
+            });
+            $('#button2').click(function () {
+                $('#select option:selected').each(function () {
+                    $('#selection').append("<option value='" + $(this).val() + "'>" + $(this).text() + "</option>");
+                    $(this).remove();
+                    $("input[name='class']").val(parseInt($("input[name='class']").val() - parseInt($(this).val())));
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
