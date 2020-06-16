@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Color</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    <table>
+    <script>
+      for (var i = 0; i < 256; i++) {
+        document.write("<tr>");
+        for (var j = 0; j < 256; j++) {
+          document.write("<td style=\"background-color: rgb(255, " + (256 - i).toString() + ", " + (256 - j).toString() + ")\"></td>");
+        }
+        document.write("</tr>");
+      }
+    </script>
+    </table>
+  </body>
+</html>

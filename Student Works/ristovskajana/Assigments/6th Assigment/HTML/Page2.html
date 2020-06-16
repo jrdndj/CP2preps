@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2>Form of personal info</h2>
+        <h1>You can sign in below</h1>
+    </header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="Page1.html" title="Home Page">Home Page</a></li>
+            <li><a href="Page5.html" title="What are Memes?">What are Memes?</a></li>
+            <li><a href="Page4.html" title="Gallery">Gallery</a></li>
+            <li class="active"><a href="Page2.html" title="Sign in" class="active">Sign in</a></li>
+            <li><a href="Page3.html" title="Upload a meme">Upload a meme</a></li>
+            <li><a href="Page6.html" title="About">About</a></li>
+        </ul>
+    </nav>
+    <article>
+    <form action="form1.php" method="post">
+		<fieldset>
+		<legend>Personal info</legend>
+        First name:  <input type="text" id="fname" name="fname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$" required /><br /><hr>
+        Middle name: <input type="text" id="mname" name="mname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$"  /><br /><hr>
+        Last name:  <input type="text" id="lname" name="lname" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$" required /><br /><hr>
+        Date od birth: <input type="date" id="bdate" name="bdate" required /><br /><hr>
+        Gender: <br />
+          <input type="radio" id="gmale" name="gender" value="male"><label for="gmale">Male</label><br />
+          <input type="radio" id="gfemale" name="gender" value="female"><label for="gfemale">Female</label><br />
+          <input type="radio" id="gothr" name="gender" value="other"><label for="gothr">Other</label><br /><hr>
+        Place of Birth: <input type="text" id="pbirth" name="pbirth" required><br /><hr>
+    	</fieldset>
+    	<fieldset>
+		<legend>More info</legend>
+        Email: <input type="email" id="email" name="email" required><br /><hr>
+        Confirm Email addres: <input type="email" id="cemail" name="cemail" required><br /><hr>
+        Username: <input type="text" id="username" name="username" required><br /><hr>
+        Choose a password: <input type="password" id="passwd" name="passwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br /><hr>
+        Upload your photo (optional): <input type="file" id="foto" name="foto"> <br /><hr>
+        </fieldset>
+        <fieldset>
+		<legend>About you</legend>
+        Favourite colour: <input type="color" id="fcolor" name="fcolor" required><br><hr>
+        Favourite animal: <input type="text" id="fanimal" name="fanimal" required><br><hr>
+        Describe yourself: <br /><hr>
+        <textarea name="desc" id="decs" rows="5" cols="30"></textarea>
+        <br /><hr>
+        Reason for joining this meme page:<br> <textarea id="reason" rows="5" cols="30" name="reason" required></textarea><br /><hr>
+        </fieldset>
+        <fieldset>
+        	<legend>Submit your info</legend>
+        <button type="submit" class="submit">Submit</button> 
+        <button type="reset" class="reset">Reset</button>
+    	</fieldset>
+   </form>
+</article>
+</section>
+<footer><p>
+    &copy; Jana Ristovska
+</p>
+</body>
+</html>

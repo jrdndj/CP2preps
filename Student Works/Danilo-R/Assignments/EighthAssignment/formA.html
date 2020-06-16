@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validating Forms</title>
+	<style type = "text/css">
+
+		button {
+			width: 92px;
+			margin: 3px;
+			cursor: pointer;
+		}
+
+		.myForm {
+			width: 200px;
+			margin: 1px;
+			box-sizing: border-box;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+	</style>
+	<script type = "text/javascript">
+		var entries = [];
+		// we declared an array with the name entries. The capacity is "unlimited"
+		entries["Cool Kids"] = [];
+		entries["Emo Kids"] = [];
+		entries["Others"] = [];
+	
+		function entryChanged() {
+			var name = document.getElementById("entry").value;
+			var button = document.getElementById("addButton");
+			button.disabled = !(/^[A-ZŠČŽ][a-zščž]+(\s[A-ZŠČŽ][a-zščž]+){1,2}$/.test(name));
+			// '!' makes it false; if disabled is false, it is enabled
+		}
+
+		function addEntry() {
+			var name = document.getElementById("entry").value;
+			var group = document.getElementById("group").value;
+			entries[group].push(name); // saves it in the array
+			updateEntries(); // allows us to display it in the list of names 
+		}
+
+		function updateEntries() {
+			var group = document.getElementById("group").value;
+			var names = document.getElementById("names");
+			while (names.length > 0) 
+				names.remove(0); // this cleans the array before it saves (removes duplicates)
+			for (var entry of entries[group]) {
+				var option = document.createElement("option");
+				option.text = entry; // this adds text to the option
+				names.add(option); // this displays the text as an option in the list of names
+			} // end of for loop
+
+		selectionChange();
+		} // end of function
+
+		function selectionChange() {
+			var names = document.getElementById("names");
+			var button = document.getElementById("removeButton");
+			button.disabled = (names.selectedIndex == -1);
+		}
+
+
+		function removeEntry() {
+			var group = document.getElementById("group").value;
+			var names = document.getElementById("names");
+			var index = names.selectedIndex; // gets the index of the selection
+			if (index == -1) return; // do nothing if nothing is selected
+			entries[group].splice(index, 1); // remove from array the element, based on index 
+			updateEntries(); // updates the list
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<form>
+		<div>
+			<select name = "group" id = "group" class = "myForm" onchange = "updateEntries()">
+				<option>Cool Kids</option>
+				<option>Emo Kids</option>
+				<option>Others</option>
+			</select>
+		</div>
+		<div>
+			<select id = "names" size = "10" class = "myForm" onchange = "selectionChange()"></select>
+		</div>
+		<div>
+			<input type = "text" id = "entry" class = "myForm" oninput = "entryChanged()">
+		</div>
+		<div class = "center myForm">
+			<button type = "button" id = "addButton" onclick = "addEntry()" disabled>Add</button>
+			<button type = "button" id = "removeButton" onclick = "removeEntry()" disabled>Remove</button>
+		</div>
+
+	</form>
+
+</body>
+</html>

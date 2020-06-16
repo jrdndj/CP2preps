@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button  id="kreni" onClick="myTimer = setInterval(myCounter, 1000);hideandshow();">Start counter!</button>
+
+<p id="cc">0</p>
+
+<button style="display: none;" id="stani" onClick="clearInterval(myTimer);hideandshow2();">Stop counter!</button>
+<button  onClick="zbir();">Sum of the current elements</button>
+<button onClick="reset();">Clear</button>
+<p id="suma"></p>
+
+
+<script>
+var sum =0;
+var c = 0;
+var temp = 0;
+function myCounter() {
+  
+  
+  if ( c == 100) clearInterval(myTimer);
+  else document.getElementById("cc").innerHTML = ++c;
+}
+
+function zbir(){
+    var n = c;
+     sum =  n * (n + 1) / 2;
+
+     document.getElementById("suma").innerHTML = sum;
+    
+
+
+}
+
+function reset(){
+    c=0;
+    a = 0;
+    document.getElementById('cc').innerHTML = a;
+   
+}
+
+
+function hideandshow(){
+
+
+    var kk = document.getElementById("kreni");
+    var ss = document.getElementById("stani");
+    kk.style.display = "none";
+    ss.style.display = "block";
+
+}
+
+
+function hideandshow2(){
+
+
+var kk = document.getElementById("kreni");
+var ss = document.getElementById("stani");
+kk.style.display = "block";
+ss.style.display = "none";
+
+}
+
+
+
+
+
+
+</script> 
+
+
+</body>
+</html>

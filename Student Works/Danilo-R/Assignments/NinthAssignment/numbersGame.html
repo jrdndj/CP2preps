@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>Collect</title>
+
+  <style>
+
+    button {
+      width: 50px;
+      margin: 5px;
+      font-size: 30px;
+      padding: 0;
+    }
+
+    .myform {
+      width: 200px;
+      margin: 1px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <td>
+        <select id = "left" size = "10" class = "myform">
+        </select>
+      </td>
+      <td>
+        <div><button onclick = "moveToRight()">&#8680;</button></div>
+        <div><button onclick = "moveToLeft()">&#8678;</button></div>
+      </td>
+      <td>
+        <select id = "right" size="10" class = "myform"></select>
+      </td>
+    </tr>
+    <tr>
+      <td>Collect: 733</td>
+      <td></td>
+      <td id = "sum">Current sum: 0</td>
+    </tr>
+  </table>
+
+  <script>
+
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var collected = document.getElementById("sum");
+    var i = 1;
+    var sum = 0;
+    var notHighestNumber = true;
+
+    function addNumbers() {
+      while (notHighestNumber) {
+        var option = document.createElement("option");
+        option.text = i;
+        left.add(option);
+        i = i * 2;
+        if (i == 1024) {
+          notHighestNumber = false;
+        }
+      }
+    }
+
+    addNumbers();
+
+    function moveToRight() {
+      var elementToMove = left.options[left.selectedIndex];
+      var deleteElementToMove = left.selectedIndex;
+      var number = parseInt(elementToMove.text);
+      var option = document.createElement("option");
+      option.text = number;
+      right.add(option);
+      left.remove(deleteElementToMove);
+      sum = sum + number;
+      collected.innerHTML = "Current sum: " + sum;
+      if (sum == 733) {
+        alert("You did it!");
+      }
+    }
+
+    function moveToLeft() {
+      var elementToMove = right.options[right.selectedIndex];
+      var deleteElementToMove = right.selectedIndex;
+      var number = parseInt(elementToMove.text);
+      var option = document.createElement("option");
+      option.text = number;
+      left.add(option);
+      right.remove(deleteElementToMove);
+      sum = sum - number;
+      collected.innerHTML = "Current sum: " + sum;
+      if (sum == 733) {
+        alert("You did it!");
+      }
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+Week 6
+These are my notes
+Today we shall COVER CSS Nav Bars all the way until CSS Advanced.
+We plan to "finish" CSS today so that next week we get to do Java Script
+
+Today will be quite relaxed. Next will be intense, logic wise. 
+
+Cos JS will be reminding you of your Programming I traumas. loops, conditions, functions, but all on webpages. 
+Less trauma than C and Java cos JS is an interpreted language. So that means even if there is error in your code, your web page will still "display" theoretically of course. :) 
+
+
+For context, the PH is under lockdown right now. Its a military lockdown cos of nCov-19. 
+There was one senator who was positive for the virus. 
+But his wife is about to give birth. So he went to the delivery section of the hospital (its the part of the hospital where they give birth to babies but it also means its not as well protected as you know the emergency section).
+He basically went in, undetected and infected everyone in the section. so now he is laughing stock in our country.
+Today we will a meme out of him. he used his senator privileges and I am so mad. 
+
+his name is Koko Pimentel. I know right, funny name. 
+
+Horizontal Navbars
+and Vertical Navbar are pretty much list of links 
+<a href
+
+ul = unordered list
+
+we will be using external css
+so that means this is configured inside head
+we will be doing multiple html pages today hopefully and we show we use one external css file 
+
+
+Website vs Webpage
+website is a collection of web pages
+web page could static or dynamic 
+website becomes more legit if it has a standard design. we usually are able to do using external css. one css to rule them all. 
+
+For resources on sprites and icons: 
+https://material.io/design/
+
+
+
+
+
+

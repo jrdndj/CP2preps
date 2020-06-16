@@ -1,0 +1,56 @@
+var http = require( 'http');
+var url = require('url');
+
+
+function formatAsHtml(content){
+	var output = 
+"<!DOCTYPE html>\n" + 
+	"<html>\n" + 
+	"<head>\n" +
+    "<meta charset=\"UTF-8\">\n" +
+    "<title>My Chit Chat</title>\n" +
+    "</head>\n" +
+    "<body>\n" +
+    content + "\n" +
+    "</body>\n" +
+    "</html>";
+
+return output;
+
+}
+
+
+
+var messages = [];
+
+
+
+
+
+
+
+function handleRequest(request, response){
+
+var urlData= url.parse(request.url,true);
+var parameters = urlData.query;
+
+if(urlData.pathname =="/chat.html"){
+response.writeHead(200, {'Content-Type': 'text/html'});
+
+
+}
+
+else {
+response.writeHead(404, {'Content-Type': 'text/html'});
+rsponse.write(formatAsHtml("<div>Page not here bruh </div>""));
+response.end();
+
+}
+
+}
+
+
+
+var server = http.createServer(handleRequest);
+server.listen(8080);
+console.log("Ahoy! server is at port 8080 up beep!");

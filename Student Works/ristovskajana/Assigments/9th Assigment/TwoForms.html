@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation Forms</title>
+	<style type="text/css" media="screen">
+		.myform {
+	        width: 200px;
+	        margin: 1px;
+	    }
+
+		.rightarrow, .leftarrow {
+			float: top;
+			width: 50px;
+		    margin: 5px;
+		    font-size: 30px;
+		    padding: 0;
+		}
+	</style>
+	<script type="text/javascript">
+		var n = 0;
+		function addRight(selectedEntry) {
+			var right =  document.getElementById("right");
+			var number = document.createElement("option");
+			number.text = selectedEntry;
+			right.add(number);
+			n = n + parseInt(selectedEntry, 10);
+			var sum = document.getElementById("sum");
+			sum.innerHTML = "Current sum: " + n.toString();
+			left.remove(left.selectedIndex);
+			if(n == 733){
+				alert("Congrats !!!");
+			}
+			
+		}
+
+		function addLeft(selectedEntry) {
+			var left =  document.getElementById("left");
+			var number = document.createElement("option");
+			number.text = selectedEntry;
+			left.add(number);
+			n = n - parseInt(selectedEntry, 10);
+			var sum = document.getElementById("sum");
+			sum.innerHTML = "Current sum: " + n.toString();
+			right.remove(right.selectedIndex);
+			if(n == 733){
+				alert("Congrats !!!");
+			}
+			
+		}
+
+		function selectedRight() {
+			var right =  document.getElementById("right");
+			var selectedEntry = right.options[right.selectedIndex].text;
+			addLeft(selectedEntry);
+		}
+
+		function selectedLeft() {
+			var left =  document.getElementById("left");
+			var selectedEntry = left.options[left.selectedIndex].text;
+			addRight(selectedEntry);
+		}
+
+	</script>
+</head>
+<body>
+	<table>
+        <tbody>
+        	<tr>
+	          <td>
+	            <select id="left" size="10" class="myform">
+	            	<option id="entry">1</option>
+	            	<option id="entry">2</option>
+	            	<option id="entry">4</option>
+	            	<option id="entry">8</option>
+	            	<option id="entry">16</option>
+	            	<option id="entry">32</option>
+	            	<option id="entry">64</option>
+	            	<option id="entry">128</option>
+	            	<option id="entry">256</option>
+	            	<option id="entry">512</option>
+	            </select>
+	          </td>
+	          <td>
+	            <div><button class="rightarrow" onclick="selectedLeft()">⇨</button></div>
+	            <div><button class="leftarrow" onclick="selectedRight()">⇦</button></div>
+	          </td>
+	          <td>
+	            <select id="right" size="10" class="myform"></select>
+	          </td>
+	        </tr>
+	        <tr>
+	          <td>Collect: 733</td>
+	          <td></td>
+	          <td id="sum">Current sum: 0</td>
+	        </tr>
+      </tbody>
+  </table>
+</body>
+</html>

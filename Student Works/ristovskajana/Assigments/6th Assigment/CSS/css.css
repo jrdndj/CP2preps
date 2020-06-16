@@ -1,0 +1,355 @@
+* {
+	box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html {
+    height: 100%;
+}
+
+body { 
+    margin: 0 auto;
+    height: 100%;
+    background-position:center; 
+    background-size: contain; 
+    font-size: 17px;
+} 
+
+header{
+    width: 100%;
+    height: 14%;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+}
+
+h1 { 
+    margin-left: 40px;
+    font-size:40px; 
+    color: #00b300; 
+    font-weight:bold; 
+    font-family: Cursive;
+    margin-left:10px; 
+} 
+        
+h2 { 
+    margin-left: 40px;
+    font-size:30px; 
+    color: #ff9900;
+    margin-left:10px; 
+} 
+
+h3{
+    color: gray;
+    margin-left:10px; 
+    margin-right: 50px;
+    font-size:23px;
+}
+
+h4{
+    color: #363636;
+    margin-left:10px; 
+    margin-right: 50px;
+}
+
+h5{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+p.what{
+    margin-right: 80px;
+}
+        
+section {
+    margin-left: 10px;
+    height: 80%;
+}
+        
+nav {
+  	float: left;
+  	width: 13%;
+ 	height: 300px;
+	background: white;
+  	padding: 20px; 	
+    margin: 40px auto;
+    margin-top: 0px;
+}
+		
+nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 130px;
+}
+
+ul.spongebob {
+    list-style-image: url('spongebob.png');
+}
+
+nav ul li {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    background-color: #ff9900;
+}
+
+nav ul li.active {
+    background-color: #00b300;
+}
+
+nav ul li:hover {
+    background-color: #00b300;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    background-color: #4d4d4d;
+    text-decoration: none;
+    width: 75%;
+}
+
+nav ul li a.active {
+    color: #ff9900;
+    pointer-events: none;
+    cursor: default;
+
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+div{
+    display: block;
+}
+
+div.info {
+    padding: 10px;
+    font-size: 20px;
+}
+		
+article {
+	float: left;
+	padding: 10px;
+	width: 87%;
+    height: 100%;
+	background-color: white;
+    background-attachment: scroll;
+    overflow: auto;
+}
+
+div.cas{
+    width: 80%;
+}
+
+button{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+button.submit {
+  background-color: #00b300;
+  color: white;
+  border-radius: 5px;
+}
+
+button.reset {
+  background-color: #4d4d4d;
+  color: #ff9900;
+  border-radius: 5px;
+}
+
+div.pagination {
+  display: inline-block;
+}
+
+div.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+div.pagination a.pan {
+  background-color: #00b300;
+  color: white;
+  border-radius: 5px;
+}
+
+div.pagination a:hover:not(.pan) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+div.legend {
+    float: left;
+    height: 40px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+div.image {
+    float: left;
+    height: 40px;
+    width: 38.5%;
+    color: #ff9900;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div.name {
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    color: #ff9900;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+div.image:hover , div.name:hover{
+    color: #00b300;
+}
+
+div.meme {
+    float: left;
+    height: 400px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+div.memetitle:hover {
+    color: #ff9900;
+}
+
+div.column1 {
+    float: left;
+    width: 38.5%;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+    width: 500px;
+    height: 400px;
+    border-radius: 5%;
+
+}
+
+div.memecolumn2 {
+    border: 1px solid black;
+    height: 400px;
+    width: 100%;
+    border-collapse: collapse;
+    border-right: none;
+    border-top: none;
+}	
+
+div.memetitle {
+    height: 10%;
+    font-size: 20px;
+    padding: 1px;
+    font-family: cursive;
+    color: #00b300;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+div.Description {
+    height: 80%;
+    font-size: 17px;
+}
+
+div.rates {
+    height: 10%;
+    border: 1px solid black;
+    font-size: 20px;
+    border-collapse: collapse;
+    border-right: none;
+}
+
+.checked {
+    color: orange;
+}    
+.ratem {
+    float: right;
+    height: 12px;
+    padding: 0 10px;
+    background: white;
+
+}
+
+.ratem:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+
+.ratem:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+}
+
+.ratem:not(:checked) > label:before {
+        content: '★ ';
+}
+
+.ratem > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.ratem:not(:checked) > label:hover, .ratem:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.ratem > input:checked + label:hover,
+.ratem > input:checked + label:hover ~ label,
+.ratem > input:checked ~ label:hover,
+.ratem > input:checked ~ label:hover ~ label,
+.ratem > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    div.column1, div.memecolumn2{
+        width: 100%;
+        height: auto;
+    }
+    div.image, div.name{
+        width: 100%;
+        height: auto;
+    }
+}

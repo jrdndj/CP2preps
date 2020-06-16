@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 1</title>
+        <style>
+            body {
+                background-image: url("https://pokewalls.files.wordpress.com/2012/05/299nosepass1600x1200.jpg");
+            }
+            fieldset {
+                display: block;
+                margin-left: 2px;
+                margin-right: 2px;
+                padding-top: 0.35em;
+                padding-bottom: 0.625em;
+                padding-left: 0.75em;
+                padding-right: 0.75em;
+                border: 2px groove (internal value);
+                background-color:#ff6666;
+            }
+            textarea {
+                background-color:#ff6666;
+            }
+            #header {
+                padding: 20px;
+                background-color: slategray;
+                text-align: center;
+                font-family: Arial;
+                font-size: 30px;
+                color: white;
+                background: linear-gradient(110deg, #ff6666 10%, slategray 60%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header"> 
+            <h1>Nosepassian Cult Registration Site</h1>
+            We are once again asking for your financial support
+        </div>
+        <form action="page2.html">
+            <br>
+            <label for="uname">Enter username: </label>
+            <input type="text" name="username" id="uname">
+            <br>
+            <label for="pword">Enter password: </label>
+            <input type="Password" name="password" id="pword">
+            <br>
+            <fieldset>
+                <legend>Demographic: </legend>
+                Gender:
+                <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br>
+                <label for="birthday">Birthday: </label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                What is your age group?
+                <br>
+            <select id="agegroup" name="agegroup" size="3">
+                <option value="kids">0 to 10</option>
+                <option value="teens">13-19</option>
+                <option value="youngadult">20 to 35</option>
+                <option value="mature">36 to 60</option>
+                <option value="senior">61 and above</option>
+            </select>
+            <br>
+            <button type="button" onclick="alert('haha old!')">Know my age!</button>
+            <br>
+            </fieldset>
+            <fieldset>
+                <legend>Meal Choice</legend>
+                What do you like to eat?
+                <br>
+                <input type="checkbox" id="choice" name="eatchoice" value="chicken">
+                <label for="choice">Chicken</label>
+                <br>
+                <input type="checkbox" id="choice" name="eatchoice" value="beef">
+                <label for="choice">Beef</label>
+                <br>
+                <input type="checkbox" id="choice" name="eatchoice" value="peta">
+                <label for="choice">No to Animals!</label>
+            </fieldset>
+            <br>
+            <label for="favcolor">Select your favorite color: </label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br>
+            Why do you want to join? <br>
+            <textarea name="whyessay" rows="20" cols="30">List as many reasons as you can think of about why Nosepass is the greatest Pocket Monster.</textarea>
+            <br>
+            Upload your CV
+            <label for="cv">Select a file: </label>
+            <input type="file" id="cv" name="cv">
+            <br>
+            <input type="submit" name="submit" value="Send money now!">
+        </form>
+        <br>
+        <div id="header"> 
+            Has anyone seen my glazed ham leg around here?
+        </div>
+    </body>
+</html>

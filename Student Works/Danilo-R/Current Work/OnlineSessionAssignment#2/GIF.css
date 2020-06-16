@@ -1,0 +1,112 @@
+* {
+	box-shadow: border-box;
+	font-family: Abel;
+}
+
+body {
+	background-color: white;
+}
+
+header {
+	padding: 40px;
+	background-color: #401f68;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	letter-spacing: 15px;
+	word-spacing: 20px;
+	line-height: 40px;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+h3 {
+	padding: 20px;
+	color: #716c6b;
+}
+
+nav {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+a {
+	color: #401f68;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+ul {
+	list-style-image: url("https://phoneky.co.uk/thumbs/screensavers/down/abstract/poring_rbjz4fhl.gif");
+	background-color: white;
+	border: 2px solid #401f68;
+	padding: 0;
+	padding-bottom: 20px;
+	list-style-position: inside;
+    font-size: 26px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+li a {
+	display: block;
+}
+
+li a:hover {
+	background-color: #401f68;
+}
+
+article {
+	float: left;
+	width: 75%;
+	text-align: center;
+}
+
+img:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	background-color: #b6acd1;
+	color: #342f2e;
+	text-align: center;
+	padding: 20px;
+}
+
+input {
+	border: 1px solid #716c6b;
+}
+
+#submit {
+	background-color: #4e2a84;
+	color: white;
+	border: none;
+	width: 160px;
+	padding: 16px;
+	font-size: 16px;
+}
+
+#submit:hover {
+	background-color: white;
+	color: #4e2a84;
+	border: 2px solid #4e2a84;
+	transition-duration: 0.5s;
+}
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Counter Page</title>
+        <style>
+            button {
+                padding: 6px 25px;
+                margin-left: 9px;
+            }
+            table {
+		    margin: 10px;
+		    clear: left;
+		    border-collapse: collapse;
+		    border: 1px solid black;
+            }
+            tr {
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                text-align: center;
+            }
+            th.a {
+                background-color: yellow;
+                padding: 0px 103.5px;
+            }
+            #timer {
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">  
+            var timerRunning = false;
+            var timer;
+            var n = 0;
+            var m = 0;
+
+            function increaseTimer() {
+                var table1 = document.getElementById("myTable");
+                var row = table1.insertRow();
+                row.innerHTML = n;
+                n++;
+                function fold() { //I don't like this programming language very much :(
+                    for(var i = 1; i <= n; i++) {
+                        m = m + i;
+                    }
+                    for(var j = 0; j < n-1; j++) {
+                        table1.deleteRow(1);
+                    }
+                    var row2 = table1.insertRow();
+                    row.innerHTML = m;
+                } 
+            }
+
+            function timerStartStop() {
+                var button = document.getElementById('startstop');
+                if (timerRunning) {
+                  window.clearInterval(timer);
+                  button.innerHTML = "Start";
+                  timerRunning = false;
+                }
+                else {
+                  timer = window.setInterval(increaseTimer, 1000);
+                  button.innerHTML = "Stop";
+                  timerRunning = true;
+                }
+            }
+
+            function reset() {
+                var table1 = document.getElementById("myTable");
+                for(var i = n; i > 0; i--) {
+                    table1.deleteRow(1);
+                }
+                n = 0;
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <div>
+            <button id="startstop" onclick="timerStartStop()">Start</button>
+            <button onclick="reset()">Clear</button>
+            <button onclick="fold()">Fold</button>
+        </div>
+        <div>
+            <table id="myTable">
+                <th class="a">Numbers</th>
+            </table>
+        </div>
+    </body>
+    
+</html>

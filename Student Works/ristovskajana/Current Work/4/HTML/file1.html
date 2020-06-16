@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+	<style>
+		h1{
+			font-size: 40px;
+			font-family: sans-serif;
+			color: darkgreen;
+			text-align: center;
+		}
+		h2{
+			font-family: sans-serif;
+			font-size: 30px;
+			text-align: center;
+			color: darkolivegreen;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = prompt("What is your name");
+		document.write("<h1>Hello " + name + " you look great today</h1>");
+		var age = parseInt(prompt("Hi " + name + " how old are you"));
+		document.write("<br><h2> Oh you are " + age + " years old<h2>");
+		//age+=5;
+		//document.write("<br> Oh you are " + age + " years old 5 years from now");
+		if(age<18){
+			document.write("<br><img src=pedo.jpg>");
+		} else{
+			document.write("<br><img src=harold.jpg>");
+		}
+		age++;
+		while(age<=18){
+			document.write("<br> Next year you are " + age + " ...still young");
+			document.write("<br><img src=pedo.jpg>");
+			age++;
+		}
+		document.write("<br> Yikes you are " + age + " ...too old");
+		document.write("<br><img src=harold.jpg>");
+	</script>
+
+</body>
+</html>

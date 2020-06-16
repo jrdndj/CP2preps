@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+</head>
+
+<style type = "text/css">
+
+	table, tr {
+		border: 1px solid black;
+		border-collapse: collapse;
+		width: 446px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	th {
+		background-color: yellow;
+	}
+
+	button {
+		background-color: whitesmoke;
+		margin: 4px;
+		width: 140px;
+		height: 30px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+</style>
+
+<script type = "text/javascript"> 
+
+	var counting = false;
+	var number = 1;
+	var timer;
+	var sum = 0;
+
+	function increaseTimer() {
+		var tableOne = document.getElementById("myTable");
+		var row = tableOne.insertRow();
+		row.innerHTML = number;
+		number++;
+	}
+
+	function startAndStop() {
+		var button = document.getElementById("startAndStop");
+		if (counting) {
+			clearInterval(timer);
+			button.innerHTML = 'Start';
+			counting = false;
+		} else {
+			timer = setInterval(increaseTimer, 1000);
+			button.innerHTML = 'Stop';
+			counting = true;
+		}
+	}
+
+	function clearTimer() {
+		var x = document.getElementById("myTable").rows.length;
+		var tableOne = document.getElementById("myTable");
+		for (var i = 1; i < x; i++) {
+			tableOne.deleteRow(1);
+		}
+		number = 1;
+		sum = 0;
+
+	}
+
+	function foldTimer() {
+		var x = document.getElementById("myTable").rows.length;
+		var tableOne = document.getElementById("myTable");
+		for (var i = 1; i < x; i++) {
+			tableOne.deleteRow(1);
+		}
+		for (var i = 1; i < x - 1; i++) {
+			sum = sum + (number - i);
+		}
+		var row = tableOne.insertRow();
+		row.innerHTML = sum;
+	}
+
+</script>
+
+<body>
+
+	<button id = "startAndStop" onclick = "startAndStop()">Start</button>
+	<button onclick = "clearTimer()">Clear</button>
+	<button onclick = "foldTimer()">Fold</button>
+	<br>
+
+	<table id = "myTable">
+		<th>Numbers</th>
+	</table>
+	
+</body>
+</html>

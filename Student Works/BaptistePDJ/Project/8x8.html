@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play in 8 by 8</title>
+	<link rel="shortcut icon" href="mine.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script type="text/javascript" src="minefamnit.js"></script>
+	<script type="text/javascript" src="minesweeper.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--This the header-->
+	<div class="container-fluid div1">
+		<div class="row">
+			<div class="col-sm">
+		      <a href="menu.html"><img src="mine.png" class="img-fluid" alt="mine"></a>
+		    </div>
+		    <div class="col-sm headr">
+		     		<header class="header1">
+						MINESWEEPER 
+					</header>
+					<br>
+					<p class="p1">
+						Are you ready to sweep ?
+					</p>
+		    </div>
+		    <div class="col-sm headr2">
+		    		<a href="https://www.famnit.upr.si/sl/"><img src="famnit.png" class="famnit img-fluid" alt="famnit"></a>
+		    </div>
+		</div>
+	</div>
+	<!--This is the NAV-->
+	<div class="div2">
+		<nav class="nav1">
+			<ul class="nav nav-tabs nav-justified ">
+			  <li class="nav-item ">
+			    <a class="nav-link a1" href="rules.html">RULES</a>
+			  </li>
+			  <li class="nav-item dropdown dropdown1">
+			    <a class="nav-link dropdown-toggle a1 dropbtn activ" data-toggle="dropdown" href="8x8.html" role="button" aria-haspopup="true" aria-expanded="false">8-BY-8</a>
+			    <div class="dropdown-menu dropdown-content">
+			      <a class="a2 activ" href="8x8.html">Beginner</a>
+			      <a class="a2" href="8x8normal.html">Normal</a>
+			      <a class="a2" href="8x8king.html">King</a>
+			    </div>
+			  <li class="nav-item dropdown dropdown1">
+			    <a class="nav-link dropdown-toggle a1 dropbtn" data-toggle="dropdown" href="16x16.html" role="button" aria-haspopup="true" aria-expanded="false">16-BY-16</a>
+			    <div class="dropdown-menu dropdown-content">
+			      <a class="a2" href="16x16.html">Beginner</a>
+			      <a class="a2" href="16x16normal.html">Normal</a>
+			      <a class="a2" href="16x16king.html">King</a>
+			    </div>
+			  </li>
+			  <li class="nav-item" id="toplink">
+			    <a class="nav-link a1" href="Top.html">TOP PLAYERS</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link a1" href="about.html">ABOUT</a>
+			  </li>
+			  
+			</ul>
+		</nav>
+	</div>
+	<div class="container-fluid div3">
+		<div class="div4">
+			<div class="row">
+				<div class="col-sm">
+					Time: <p id="timer">000</p>
+				</div>
+				<div class="smiley col-sm" onclick="newGame(8, 8, 10)">
+				&#128512;
+				</div>
+				<div class="col-sm">
+					<form>
+ 						<label for="username">Username:</label><br>
+  					 	<input type="text" id="username" name="username">  
+  					 </form>
+				</div>
+			</div>
+			<br>
+			<div id="mainfield">
+			<div class="container">
+
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			    <div class="col-sm case">
+			      O
+			    </div>
+			  </div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+		<footer>
+			&copy Baptiste PDJ
+		</footer>
+		
+	</div>
+	<script type="text/javascript">newGame(8, 8, 10)</script>
+</body>
+</html>

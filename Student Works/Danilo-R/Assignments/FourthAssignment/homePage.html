@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>Home Page</title>
+	<meta charset = "UTF-8">
+	<link href = "https://fonts.googleapis.com/css?family=Work Sans" rel = "stylesheet">
+	<style type = "text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family: Work Sans;
+		}
+
+		nav {
+			float: center;
+			text-align: right;
+			padding: 40px;
+		}
+
+		header {
+			float: center;
+			margin-top: 80px;
+			color: rgb(40, 50, 60);
+			text-align: center;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+
+		.navigationBarClass {
+			background: none;
+			border: none;
+			color: rgb(130, 140, 145);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.currentPageClass {
+			background: none;
+			border: none;
+			color: rgb(10, 40, 45);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.registerNowClass {
+			width: 300px;
+			height: 50px;
+			background-color: rgb(10, 40, 45);
+			color: white;
+			border: none;
+			border-radius: 16px;
+			cursor: pointer;
+			display: block;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<button class = "currentPageClass">Home page</button>
+		<a href = "registerAccountPage.html"><button class = "navigationBarClass">Register Account</button></a>
+		<a href = "uploadMemePage.html"><button class = "navigationBarClass">Upload meme</button></a>
+		<a href = "rateMemePage.html"><button class = "navigationBarClass">Rate meme</button></a>
+	</nav>
+	<header>
+		<h1>Welcome to the website dedicated to memes!</h1>
+		<p>Upload your favorite memes, and don't forget<br> to rate our 'top 3' collection.</p>
+	<a href = "registerAccountPage.html"><button class = "registerNowClass">Register now</button></a>
+	<br>
+	<p align = "center">You can also upload memes by pressing <a href = "uploadMemePage.html">here</a></p>
+	</header>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Sample 2</title>
+
+  <style>
+
+  </style>
+
+
+  <script>
+
+  var ctr= 1;
+
+
+  function on_event(who,what){
+  var table_1=document.getElementById(' events ');
+
+
+
+  function clear_table(){
+
+  }
+
+  </script>
+<head>
+<body>
+
+<img src="struggle.jpg" height=300>

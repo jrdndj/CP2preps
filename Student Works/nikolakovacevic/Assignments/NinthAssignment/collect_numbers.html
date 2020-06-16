@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Started from the code we've been given to work with. -->
+<!-- Used the same numbers as in the example. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Collect Numbers</title>
+
+        <style>
+
+        button {
+        width: 50px;
+        margin: 2px;
+        font-size: 28px;
+        padding-bottom: 6px;
+        }
+        .myform {
+        width: 200px;
+        margin: 1px;
+        }
+
+        </style>
+
+        <script>
+
+            function sum_table() { // sum every number till that point
+                var table = document.getElementById('right').getElementsByTagName('option');
+                var sum = 0;
+
+                for (var i = 0; i < table.length; i++) {
+                    sum = sum + parseInt(table[i].innerHTML);
+                }
+
+                var starting_sum = document.getElementById('sum');
+                starting_sum.innerHTML = "Current sum: " + sum; 
+                if (sum == 733) {
+                    window.alert('You have reached the desired number'); // alert pops up when we get to 733
+                }
+
+            }
+            function right_table() { // for the right table
+                var left_number = document.getElementById('left');
+                var right_number = document.getElementById('right');
+
+                var index = left_number.selectedIndex; // store the left value into the index
+
+                if (index == -1) 
+                    return;
+                right_number.add(left_number.options[index]); // add the number
+                sum_table();
+            }
+
+            function left_table() { // for the left table
+                var left_number = document.getElementById('left');
+                var right_number = document.getElementById('right');
+
+                var index = right_number.selectedIndex; // store the right value into the index
+
+                if (index == -1) 
+                    return;
+                left_number.add(right_number.options[index]); // add the number
+                sum_table();
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <table>
+            <tbody> 
+                <tr>
+                    <td>
+                        <select id="left" size="10" class="myform">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>8</option>
+                            <option>16</option>
+                            <option>32</option>
+                            <option>64</option>
+                            <option>128</option>
+                            <option>256</option>
+                            <option>512</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div><button onclick="right_table()">&rarr;</button></div> <!-- arrows -->
+                        <div><button onclick="left_table()">&larr;</button></div> <!-- arrows -->
+                    </td>
+                    <td>
+                        <select id="right" size="10" class="myform"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Collect: 733</td>
+                    <td></td>
+                    <td id="sum">Current sum: 0</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

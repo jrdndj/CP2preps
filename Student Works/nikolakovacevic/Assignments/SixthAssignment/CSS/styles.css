@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff; /*#b3d9ff*/
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  font-size: 20px;
+  padding: 0 10px;
+  color: #FF9933;
+  font-weight: 800;
+  text-align: left;
+  position: sticky;
+}
+
+/* The sub-header */
+#header2 {
+  font-size: 55px;
+  font-style: italic;
+  font-weight: bold;
+  color: #009900;
+  font-family: "Brush Script MT";
+  text-align: left;
+  margin: 0;
+  padding: 0 10;
+}
+
+/*The style of the nav-bar*/
+.navbar {
+  flex: 1;
+  flex-direction: column;
+} 
+
+nav {
+  background: #ffffff;
+  margin: 40px auto;
+}	
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 130px;
+}
+
+nav ul li {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  background-color: rgb(111, 214, 240);
+}
+
+nav ul li a {
+  display: block;
+  width: 80%;
+  padding: 5px 5px;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: rgb(142, 145, 127);
+  color: white;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: rgba(216, 20, 20, 0.712);
+}
+
+.active{
+	background-color: rgb(194, 125, 36);
+	color: white;
+}
+
+.active:hover {
+  background-color: #000;
+}
+
+/* Styling the div below the .navbar */
+.second-part {
+  flex: 7;
+  flex-direction: column;
+}
+
+.upload-box {
+  flex: 7;
+  flex-direction: column;
+}
+
+fieldset {
+  width: 450px;
+  float: left;
+  border-color: #F00;
+  border-style: solid;
+}
+
+.meme {
+  position: relative;
+  width: 80%;
+  height: 4150px;
+  border: 10px solid #FF9933;
+  background-color: #FF9933;
+}
+
+/* Styling divs and making tables */
+.memecolumn1, .memecolumn2 {
+  height: inherit - 50px;
+  position: absolute;
+  background-color: #87CEFA;
+  box-sizing: content-box;
+  width: 49.8%!important;
+  top: 0;
+}
+
+.memecolumn1 {
+  left: 0;
+}
+
+.memecolumn2 {
+  right: 0; 
+}
+
+.meme-img  {
+  border-radius: 15%;
+}
+
+.info, .memeimage {
+  box-sizing: content-box;
+  padding: 5px;
+}
+
+.info {
+  height: 400px;
+  border-bottom: 2px solid #FF9933; 
+}
+
+.memetitle {
+  font-family: "Brush Script MT";
+  font-style: italic;
+  color: #009900;
+  height: 40px;
+  font-weight: semi-bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+.memedescription {
+  color: gray;
+  height: 280px;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.memestars {
+  color: #000;
+  height: 35px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.memetitle, .memedescription, .memestars {
+  border-bottom: 2px solid salmon;
+}
+
+.memerate {
+  position: absolute;
+  text-align: center;
+  right: 20%;
+}
+
+.memeimage {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-bottom: 2px solid #FF9933; 
+}
+
+.memeimage-homepage {
+  width: 100%;
+  text-align: center;
+}
+
+.img-homepage {
+  width: 40%;
+  height: 300px;
+}
+
+.memeimage img {
+  height: 95%;
+  left: 9%;
+  position: absolute;
+  top: 2%;
+  width: 80%;
+}
+
+
+/*Description*/
+article {
+  padding: 0 10px;
+  color: gray;
+}
+
+/* The end text and copyrights */
+footer {
+  position: relative;
+  margin: auto;
+  font-size: 15px; 
+  float: left;
+  width: 60%;
+  color: gray;
+}
+
+/* Designing the stars. */
+.rate {
+  float: left!important;
+  left: 0;
+  height: 30px;
+  padding: 0 80px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float :right;
+  width: 1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+input[type="submit"] {
+  width: 80px;
+  height: 32px;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;	
+  background-color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.description {
+	color: gray;
+}
+
+.form {
+	flex: 1 0 auto;
+}
+
+.register-image {
+	float: right;
+  margin-right: 200px;
+  margin-top: 200px;	
+}
+
+.about-description {
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsive layout - makes the menu and the content
+(inside the section) sit on top of each other instead
+of next to each other */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+
+  nav, article, #join, .complete-box {
+    width: 100%;
+      height: auto;
+  }
+}

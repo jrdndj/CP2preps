@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+
+ <link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset=utf-8 /> 
+<title>color</title> 
+<style type="text/css"> 
+
+
+
+</style>  
+</head>
+<body >
+
+
+
+<table id="myTable" border="0" >
+
+
+</table>
+<form> 
+
+
+
+
+
+
+<script type="text/javascript">
+   
+
+
+
+
+ var input = document.querySelectorAll("input");
+        for(var i = 0; i < input.length; i++){
+        input[i].addEventListener("input", function(){
+            var red = document.getElementById("red").value,
+                green = document.getElementById("green").value,
+                blue = document.getElementById("blue").value;
+                var display = document.getElementById("myTable");
+            display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</form>
+</body>
+</html>

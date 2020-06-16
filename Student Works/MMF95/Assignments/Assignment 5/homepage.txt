@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8" />
+    <title>Memes Gallery</title>
+    <meta name="description" content="Memes gallery" />
+    <meta name="author" content="mkljun" />
+    <meta name="keywords" content="memes, gallery" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BOpad7VEUVeEMCNnPLn_hL8DQ7a9bN5EU8LSh05zOo2AMDhgvHWSnE2PNZZPchhXx8XzrXDUuoAIumKh5oBIAeyTw0JQfha6RQ6grugFca4" charset="UTF-8"></script>
+      
+  </head>
+
+
+
+<body>
+<div class="sticky">I will stick to the screen when you reach my scroll position</div>
+
+
+
+<ul>
+  <li><a class="active" href="homepage.html">Homepage</a></li>
+  <li><a href="what.html"">What are the memes</a></li>
+<div class="dropdown">
+    <button class="dropbtn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+<ul>
+      <a href="gallery.html">Gallery memes</a>
+      <a href="Register account.html">Account</a>
+ <a href="Upload meme.html">Upload Meme</a>
+</ul>    
+</div>
+  </div> 
+
+ <li style="float:right"><a href="about.html">About us</a></li>
+
+</ul>
+
+
+
+
+
+
+
+<div class="about-section">
+  <h1>Memes Gallery</h1>
+</div>
+
+   
+
+      <div class="column2">
+         
+
+   	  <p style="color:Green;" class="largecomic">The largest collection of memes in the interwebs</p>
+	  <p style="color:MediumSeaGreen;">In this site, we allow you check out diferent memes that have been featured accross history.</p>
+	  <p style="color:MediumSeaGreen;">To know more about memes, click What are memes.<br />
+             To see the memes, check out Gallery.
+	  </p>
+     
+
+        <footer>
+          <p>&copy; MMF</p>
+        </footer>
+      </div>
+ 
+   </section>
+
+
+
+  </body>
+</html>

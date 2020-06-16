@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<title>Table Timer</title>
+	</head>
+
+	<style>
+
+		* {
+			font-family: sans-serif;
+		}
+
+		.btns {
+			margin-top: 5px;
+			width: 100%;
+		}
+
+		.table {
+			width: 100%;
+		}
+
+		button {
+			background-color: #1E90FF;
+			margin: 10px;
+			width: 120px;
+			border: 1.5px solid black;
+		}
+
+		table {
+		    margin: 10px;
+		    width: 410px;
+		    clear: left;
+		    border-collapse: collapse;
+		    border: 1.5px solid black;
+		    text-align: center;
+		  }
+
+     	th {
+			background-color: #FF9933;
+			color: black;
+			font-style: bold;
+		}
+
+		td {
+			 border: 1.5px solid black;
+		}
+		
+	</style>
+
+	<script type="text/javascript">
+		var c = 1;
+		var number = 1;
+		var timer = null;
+
+		function change_button() {
+			var b = document.getElementById('b1');
+			if (b.innerHTML == "Start") {
+				b.innerHTML = "Stop";
+				timer = setInterval(make_table, 1000); // set timer
+			} else { 
+				b.innerHTML = "Start";
+				clearTimeout(timer);
+    			timer = null; // reset
+			}
+		}
+
+		function make_table() { // name says it all
+			var table = document.getElementById('do_stuff');
+			var row = table.insertRow();
+			var cell1 = row.insertCell(0);
+			cell1.innerHTML = number;
+			number++;
+			c++;
+				
+		}
+x
+		function clear_table() { // clear everything
+			var table = document.getElementById('do_stuff');
+			for(var i = 1; i < c; i++){
+				table.deleteRow(1);
+			}
+			c = 1; // reset 
+			number = 1; // reset 
+		}
+
+		function fold_table() { // sum every number till that point
+			var table = document.getElementById('do_stuff');
+			var td = document.getElementById('do_stuff').getElementsByTagName('td');
+           	var sum = 0;
+
+            for (var i = 0; i < td.length; i++) {
+                if (td[i]) {
+                    sum = sum + parseInt(td[i].innerHTML);
+                }
+            }
+
+            for (var i = 1; i < c; i++) {
+				table.deleteRow(1);
+			}
+
+			c = 1;
+			var row = table.insertRow(); // insert rows
+			var cells = row.insertCell(0); // insert colums/cells at the first position
+			cells.innerHTML = sum; // number inside the cell is the sum of all the numbers so far
+			c++;
+		}
+	</script>
+
+	<body>
+		<div class="btns">
+			<button id="b1" onclick="change_button()">Start</button>
+			<button id="b2" onclick="fold_table()">Fold</button>
+			<button id="b3" onclick="clear_table()">Clear</button>
+		</div>
+
+		<div class="table">
+			<table id="do_stuff">
+				<tr>
+					<th>Table</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

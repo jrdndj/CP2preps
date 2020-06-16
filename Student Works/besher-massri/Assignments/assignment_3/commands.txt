@@ -1,0 +1,23 @@
+89191247@student:~$ cd public_html/
+89191247@student:~/public_html$ mkdir Practicum_2
+89191247@student:~/public_html$ cd Practicum_2/
+89191247@student:~/public_html/Practicum_2$ mkdir Assignment_3
+89191247@student:~/public_html/Practicum_2$ cd Assignment_3/
+89191247@student:~/public_html/Practicum_2/Assignment_3$ touch gallery.html what.html homepage.html commands.txt
+89191247@student:~/public_html/Practicum_2/Assignment_3$ ls
+commands.txt  gallery.html  homepage.html  what.html
+89191247@student:~/public_html/Practicum_2/Assignment_3$ ls
+commands.txt  gallery.html  homepage.html  what.html
+89191247@student:~/public_html/Practicum_2/Assignment_3$ tar czvf task.tgz *
+commands.txt
+gallery.html
+homepage.html
+resources/
+resources/gallery/
+resources/gallery/meme1.jpg
+resources/gallery/meme2.jpg
+resources/gallery/meme3.jpg
+resources/gallery/meme4.jpg
+resources/gallery/meme5.jpg
+what.html
+89191247@student:~/public_html/Practicum_2/Assignment_3$

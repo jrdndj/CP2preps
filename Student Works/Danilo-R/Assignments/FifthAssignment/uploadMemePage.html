@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>Upload Meme Page</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href = "https://fonts.googleapis.com/css?family=Montserrat" rel = "stylesheet">
+	<link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+
+	<nav>
+		<a href = "homePage.html"><button class = "navigationBarClass">Home page</button></a>
+		<a href = "registerAccountPage.html"><button class = "navigationBarClass">Register Account</button></a>
+		<button class = "currentPageClass">Upload meme</button>
+		<a href = "rateMemePage.html"><button class = "navigationBarClass">Rate meme</button></a>
+		<a href = "aboutPage.html"><button class = "navigationBarClass">About</button></a>
+	</nav>
+	<header>
+		<h1>Upload your favorite meme!</h1>
+	</header>
+	<section>
+		<article>
+			<form action = "receivedSubmissionPage.html" method = "GET">
+				<fieldset>
+					<legend>Meme info</legend>
+					<label for = "memeName">Meme name</label>
+					<input type = "text" id = "memeName">
+					<label for = "uploadMeme">Upload meme photo</label>
+					<input type = "file" id = "uploadMeme">
+					<label for = "describeMeme">Describe this meme</label>
+					<textarea id = "describeMeme" rows = "5" cols = "20">Type here to describe this meme ...</textarea>
+				</fieldset>
+				<input class = "submitClass" type = "submit" value = "Submit">
+			</form>
+		</article>
+	</section>
+	<footer>
+		<p>&copy; 2020 Computer Practicum II Course. All rights reserved.</p>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Memes</title>
+	<style type="text/css" media="screen">
+		* {
+	  box-sizing: border-box;
+		}
+		h1 { 
+            font-size:50px; 
+            color: #00b300; 
+            font-weight:bold; 
+            font-family: Cursive;
+            margin-left:10px; 
+        } 
+        h2 { 
+            font-size:30px; 
+            color: #ff9900;
+            margin-left:10px; 
+        } 
+        body { 
+            margin: 0 auto; 
+            background-position:center; 
+            background-size: contain; 
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        p{
+        	margin-left: 20px;
+        }
+        section{
+        	margin-left: 10px;
+
+        }
+        nav {
+  			float: left;
+  			width: 13%;
+ 			height: 300px;
+			background: white;
+  			padding: 20px;  		
+  		}
+		nav ul {
+		  list-style-type: none;
+		  padding: 0;
+		}
+		div{
+			background:  #4d4d4d;
+			padding: 10px;
+		}
+		article {
+		  float: left;
+		  padding: 10px;
+		  width: 87%;
+		  background-color: white;
+		  height: 300px; 
+		}
+		@media (max-width: 600px) {
+  		  nav, article {
+    	  width: 100%;
+   		  height: auto;
+ 		 }
+    </style>
+</head>
+<body>
+	<section>
+	<nav>
+   	 	<ul>
+			<div class="1">
+				<br>
+				<a href="Page1.html" title="Home Page" style="color:white">Home Page</a>
+				<br><br>
+			</div>
+			<br>
+			<div class="2">
+				<br>
+				<a href="Page5.html" title="What are Memes?" style="color:white">What are Memes?</a>
+				<br><br>
+			</div>
+			<br>
+			<div class="3">
+				<br>
+				<a href="Page4.html" title="Gallery" style="color:white">Gallery</a>
+				<br><br>
+			</div>
+			<br>
+			<div class="4">
+				<br>
+				<a href="Page2.html" title="Sign in" style="color:white">Sign in</a>
+				<br><br>
+			</div>
+			<br>
+			<div class="5">
+				<br>
+				<a href="Page3.html" title="Upload a meme" style="color:white">Upload a Meme</a>
+				<br><br>
+			</div>
+		</ul>
+	</nav>
+<article>
+	<h2>Upload a meme</h2>
+    <form action="form2.php" method="post">
+		<fieldset>
+		<legend>Upload a meme</legend>
+        Title of the meme: <input type="text" id="mtitle" name="mtitle" size="50" pattern="^[A-Z]{1}[a-z]{1-20}$" required /><br /><br />
+        Upload the photo of the meme: <input type="file" id="meme" name="meme"> <br /><br>
+   		Description of the meme:<br> <textarea name="mdesc" id="mdecs" rows="6" cols="60"></textarea><br /><br />
+        <input type="submit" >
+        <input type="reset">
+    	</fieldset>
+    </form>
+</article>
+</section>
+</body>
+</html>
