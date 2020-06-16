@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Leaderboard</title>
+  	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="img/logo.png"> <!-- icon on tab page -->
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <!-- flags imgs -->
+      <link rel="stylesheet" href="css/flags.css?ddasda=42342423">
+  </head>
+
+  <body>
+  	<div class="body_bg">
+        <!-- navbar menu start -->
+        <header class="main">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                        <!-- nav menu | always top of the page | new config for sm | dark theme -->
+                          <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                              <!-- logo + link to index -->
+                              <a class="navbar-brand" href="index"> <img class="img-fluid logo" src="img/logo.png" alt="logo"></a>
+                              <!-- menu icon showing up when navbar's too big for screen size -->
+                              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                  data-target="#navbarMenu"><!-- linked to next div -->
+                                  <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                              </button>
+
+                              <div class="collapse navbar-collapse main-item" id="navbarMenu">
+                                  <ul class="navbar-nav">
+                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="index" role="button" data-toggle="dropdown">Home</a>
+
+                                          <div class="dropdown-menu">
+                                              <div class="dropdown-header">Homepage's anchors</div>
+
+                                              <a class="dropdown-item disabled" href="#history">Tic Tac Toe's History</a>
+                                              <a class="dropdown-item disabled" href="#rules">Rules</a>
+
+                                              <div class="dropdown-divider"></div><!-- divides the dropdown in two sections -->
+                                              
+                                              <a class="dropdown-item" href="index">Home</a>
+
+                                          </div>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="play">Play</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link active" href="leaderboard">Leaderboard</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="about">About</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+        </header>
+        <!-- navbar menu end -->
+
+        <!-- leaderboard part start -->
+        <div class="container padding-t">
+            <div class="row">
+                <table class="table table-hover table-dark">
+                    <caption>Ranking of all users</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Nickname</th>
+                            <th scope="col">Wins</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><div class="flag flag-fr"></div></td>
+                            <td>Wazzabeee</td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td><div class="flag flag-us"></div></td>
+                          <td>Shroud</td>
+                          <td>41</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td><div class="flag flag-th"></div></td>
+                          <td>Kurapika</td>
+                          <td>39</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td><div class="flag flag-us"></div></td>
+                          <td>John</td>
+                          <td>36</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Zorro</td>
+                          <td>35</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Luffy</td>
+                          <td>34</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">7</th>
+                          <td><div class="flag flag-ru"></div></td>
+                          <td>Kakashi</td>
+                          <td>29</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">8</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Irumi</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Leolio</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">11</th>
+                          <td><div class="flag flag-es"></div></td>
+                          <td>Krilin</td>
+                          <td>17</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">12</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Onizuka</td>
+                          <td>16</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">13</th>
+                          <td><div class="flag flag-de"></div></td>
+                          <td>Sanji</td>
+                          <td>16</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">14</th>
+                          <td><div class="flag flag-rm"></div></td>
+                          <td>Peach</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">15</th>
+                          <td><div class="flag flag-pl"></div></td>
+                          <td>Mario</td>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">16</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Luigi</td>
+                          <td>11</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">17</th>
+                          <td><div class="flag flag-ch"></div></td>
+                          <td>Bowser</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">18</th>
+                          <td><div class="flag flag-jp"></div></td>
+                          <td>Kappa</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">19</th>
+                          <td><div class="flag flag-fr"></div></td>
+                          <td>Shroud</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">20</th>
+                          <td><div class="flag flag-fr"></div></td>
+                          <td>Martin</td>
+                          <td>1</td>
+                        </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- leaderboard part end -->
+    </div>
+
+      <!-- Footer's part start -->
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50"> <!-- padding top & bottom | 50% opacity white text -->
+          <div class="container text-center">
+              <small>Copyright &copy; DELTEIL Clément | Project 2 - Tic Tac Toe AI Server</small>
+          </div>
+      </footer>
+      <!-- Footer's part end -->
+
+      <!-- script to use fontawesome icons -->
+      <script src="https://kit.fontawesome.com/984feae7b7.js" crossorigin="anonymous"></script>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

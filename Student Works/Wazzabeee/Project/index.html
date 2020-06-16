@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>Homepage</title>
+    	<meta charset="utf-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="icon" href="img/logo.png"> <!-- icon on tab page -->
+      	<link rel="stylesheet" type="text/css" href="css/style.css">
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+    	<div class="body_bg">
+            <!-- navbar menu start -->
+            <header class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- nav menu | always top of the page | new config for sm | dark theme -->
+                            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                            	<!-- logo + link to index -->
+                                <a class="navbar-brand" href="index"> <img class="img-fluid logo" src="img/logo.png" alt="logo"></a>
+                                <!-- menu icon showing up when navbar's too big for screen size -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarMenu"><!-- linked to next div -->
+                                    <span class="menu_icon"><i class="fas fa-bars"></i></span> 
+                                </button>
+
+                                <div class="collapse navbar-collapse main-item" id="navbarMenu">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle active" href="index" role="button" data-toggle="dropdown">Home</a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="dropdown-header">Homepage's anchors</div>
+
+                                                <a class="dropdown-item" href="#history">Tic Tac Toe's History</a>
+                                                <a class="dropdown-item" href="#rules">Rules</a>
+
+                                                <div class="dropdown-divider"></div><!-- divides the dropdown in two sections -->
+        
+                                                <a class="dropdown-item" href="index">Home</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="play">Play</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="leaderboard">Leaderboard</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about">About</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- navbar menu end -->
+
+            <!-- TTT's history start -->
+            <section class="history_part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-10">
+                            <div class="history_text">
+
+                                <h1 id="history">Tic Tac Toe's history </h1>
+                                <div class="clearfix"> <!-- clearfix's used to avoid element overflow of the container -->
+                                    <img class="img-fluid img-thumbnail pull-right mr-2 float-right" src="img/gizas_pyramids.jpg" alt="Gizas Piramids">
+                                    <p>Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BCE.
+                                    The pyramids of Giza are among the most recognizable symbols of the civilization of ancient Egypt.<a href="https://en.wikipedia.org/wiki/Ancient_Egypt" target="_blank"><img src="img/wikipedia.png" class="wiki_logo" alt="Wikipedia logo"></a></p>
+                                </div>
+                                <div class="clearfix">
+                                    <img class="img-fluid img-thumbnail pull-left mr-3 float-left" src="img/roman_empire.png" alt="Map of Roman Empire">
+								    <p>An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time) and instead of having any number of pieces, each player only had three, thus they had to move them around to empty spaces to keep playing. The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also played on a simple grid and requires three pieces in a row to finish, and Picaria, a game of the Puebloans.<a href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank"><img src="img/wikipedia.png" class="wiki_logo" alt="Wikipedia logo"></a></p>
+                                </div>
+                                <div class="clearfix">
+								    <p>The different names of the game are more recent. The first print reference to "noughts and crosses" (nought being an alternative word for zero), the British name, appeared in 1858, in an issue of Notes and Queries. The first print reference to a game called "tick-tack-toe" occurred in 1884, but referred to "a children's game played on a slate, consisting in trying with the eyes shut to bring the pencil down on one of the numbers of a set, the number hit being scored". "Tic-tac-toe" may also derive from "tick-tack", the name of an old version of backgammon first described in 1558. The US renaming of "noughts and crosses" as "tic-tac-toe" occurred in the 20th century.</p>
+                                    <a href="https://en.wikipedia.org/wiki/File:OXO_emulated_screenshot.png" title="Fair use of copyrighted material in the context of OXO" target="_blank"><img class="img-fluid img-thumbnail pull-right mr-3 float-right" src="img/oxo.png" alt="Oxo game emulate screenshot"></a>
+								    <p>In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the University of Cambridge, became one of the first known video games. The computer player could play perfect games of tic-tac-toe against a human opponent.<a href="https://en.wikipedia.org/wiki/OXO" target="_blank"><img src="img/wikipedia.png" class="wiki_logo" alt="Wikipedia logo"></a></p>
+                                </div>
+
+								<p>In 1975, tic-tac-toe was also used by MIT students to demonstrate the computational power of Tinkertoy elements. The Tinkertoy computer, made out of (almost) only Tinkertoys, is able to play tic-tac-toe perfectly. It is currently on display at the Museum of Science, Boston.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TTT's history end -->
+
+            <!-- rules part start -->
+            <section class="rules">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-10">
+                            <div class="rules_text">
+
+                                <h2 id="rules">Rules</h2>
+                                <p>Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.<br>The following example game is won by the first player, X:</p>
+                                <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank"><img src="img/ttt-game.png" class="img-fluid" alt="Tic-tac-toe's game example"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- rules part end -->
+        </div>
+
+        <!-- Footer's part start -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50"><!-- padding top & bottom | 50% opacity white text -->
+            <div class="container text-center">
+                <small>Copyright &copy; DELTEIL Clément | Project 2 - Tic Tac Toe AI Server</small>
+            </div>
+        </footer>
+
+        <!-- script to use fontawesome icons -->
+        <script src="https://kit.fontawesome.com/984feae7b7.js" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
