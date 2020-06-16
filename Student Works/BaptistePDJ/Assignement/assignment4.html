@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page 1</title>
+	</head>
+	<body style="background-color: lightblue; text-align: center;">
+		<section style="background-color: blue;color: white;">
+		<form action="page2.html" method="get">
+			<label for="username">Enter Username:</label>
+			<input type="text" name="username" id="username">
+			<br>
+			<!-- in label and input | for is linked with ID -->
+			<label for="pword">Enter Password:</label>
+			<input type="Password" name="pw" id="pword">
+			<br>
+			Gender :
+			<br>
+			<input type="radio" name="gender" id="male" value="male">
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="female" value="female">
+			<label for="male">Female</label>
+			<br>
+			<label for="birthday">Birthday:</label>
+  			<input type="date" id="birthday" name="birthday">
+  			<br></section>
+  			<section style="color: blue;background-color: lightblue">
+			<fieldset>
+				<legend>Demographic :</legend>
+				What is you are group ?
+				<br>
+				<select id="agegroup" name="agegroup" size="4" multiple>
+					<option value="kids">0 to 10</option >
+					<option value="teens">13 to 19</option>
+					<option value="youngadult">20 to 35</option>
+					<option value="mature">36 to 60</option>
+					<option value="senior">61 and above</option>
+				</select>
+				<br>
+				<button type="button" onclick="alert('haha old')">Know my age</button></section>
+
+			</fieldset>
+			<br><section style="background-color: blue;color: white;">
+			<fieldset>
+				<legend>Meal choice</legend>
+				What do you like to eat ?
+				<br>
+				<input type="checkbox" name="eatchoice" value="chicken" id="choice">
+				<label for="choice">Chicken</label>
+				<input type="checkbox" name="eatchoice" value="beef" id="choice">
+				<label for="choice">Beef</label>
+				<input type="checkbox" name="eatchoice" value="tomato" id="choice">
+				<label for="choice">Tomato</label>
+			</fieldset>
+			</section>
+			<br>
+			<section style="color: blue;background-color: lightblue">
+			<label for="favcolor">Select your favorite color:</label>
+  			<input type="color" id="favcolor" name="favcolor">
+  			<br>
+			Why do you want to join ?
+			<br>
+			<textarea name="whyessay" rows="20" cols="30">enter your text here</textarea></section><section style="background-color: blue; color: white;">
+			<br>
+			<label for="myfile">Upload your CV:</label>
+  			<input type="file" id="cv" name="cv">
+  			<br>
+			<input type="submit" name="submit" value="submit"></section>
+		</form>
+	</body>
+</html>

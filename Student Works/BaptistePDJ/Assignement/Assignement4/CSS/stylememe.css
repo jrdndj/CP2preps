@@ -1,0 +1,181 @@
+.headr{
+	background-color: grey;
+	
+}/*Used for header*/
+.sect{
+			text-align: center;
+			font-size: 20px;
+			font-family: Montserrat;
+			color: #2b580c;
+			background-color: #21BF73;
+}/*Used for article*/
+.nav{
+	background-color: #2b580c;
+	height: 300px;
+	font-size: 29px;
+}/*Used for the nav*/
+.n2{
+				text-align: center;
+				  font-size: 15px;
+				  color:#2b580c;
+				  font-family:Montserrat; 
+				  font-style: italic;
+
+		}
+.n1{
+				  font-size: 80px;
+				  color: #21BF73;
+				  font-family:Montserrat; 
+				  font-style: bold;
+
+		}
+		#about{
+			color: #2b580c;
+			background-color:#21BF73;
+		}
+		.name
+		{
+			color: black;
+		}
+		.attr{
+			color: black;
+			font-style: italic;
+			text-decoration: underline;
+		}
+.activ{
+	color: #21BF73;
+	 background-color: green;
+	text-decoration: none;
+	font-family: Montserrat;
+
+}
+.ledg{
+	color: black;
+	font-style: italic;
+	text-decoration: underline;
+}
+body{
+	background-color: grey;
+}
+img{
+	border-radius: 25px;
+}
+		nav {
+				font-family: Montserrat;
+				font-size: 20px;
+				margin-left: 50px;
+			}
+		a:link {
+			  color: #21BF73;
+			  background-color: #2b580c;
+			  text-decoration: none;
+			  font-family: Montserrat;
+			}
+			a:visited {
+				  color: #21BF73;
+				  background-color: 2b580c;
+				  text-decoration: none;
+				  font-family: Montserrat;
+				}
+		a:hover{
+				color: #21BF73;
+				  background-color: green;
+				  text-decoration: none;
+				  font-family: Montserrat;
+
+		}
+			section:after {
+				  content: "";
+				  display: table;
+				  clear: both;
+		}
+	}
+
+			@media (max-width: 600px) {
+  			nav, article, a, h3,{
+			    width: 100%;
+			    height: auto;
+  		}
+	}
+		* {
+  				box-sizing: border-box;
+	}
+	.slide{
+		color: powderblue;
+	}
+	.memeimage{
+		float: left;
+		width: 60%;
+		height: 100%;
+		border: 3px solid white;
+		padding: 10px;
+		align-content: center;
+		margin-bottom: 10px;
+	}
+	#image{
+		
+		width: 500px;
+		height: 304px;
+
+	}
+	.memetitle{
+		margin-right: 93px;
+		border: 3px solid white;
+		border-left: none;
+		text-align: center;
+		width: 30%;
+		height: 15%;
+		color: #21BF73;
+		background-color: #2b580c; 
+		float: right;
+		padding: 2px;
+		font-family: Montserrat;
+	}
+	.memetitle:hover{
+		color:Orange;
+		background-color: hotpink;
+		font-family: Montserrat;
+	}
+	.memestars{
+		margin-right: 93px;
+		border: 3px solid white;
+		border-left: none;
+		border-top: none;
+		text-align: center;
+		width: 30%;
+		height: 15%;
+		color: #21BF73;
+		background-color: #2b580c; 
+		float: right;
+		padding: 10px;
+		font-family: Montserrat;
+	}
+	.memedescription{
+		margin-right: 93px;
+		border: 3px solid white;
+		border-left: none;
+		border-top: none;
+		text-align: center;
+		width: 30%;
+		height: 35%;
+		color: #21BF73;
+		background-color: #2b580c; 
+		float: right;
+		padding: 18px;
+		font-family: Montserrat;
+	}
+	.memerate{
+		margin-right: 93px;
+		border: 3px solid white;
+		border-left: none;
+		border-top: none;
+		text-align: center;
+		width: 30%;
+		height: 35%;
+		color: #21BF73;
+		background-color: #2b580c; 
+		float: right;
+		padding: 10px;
+		margin-bottom: 10px;
+		font-family: Montserrat;
+	}

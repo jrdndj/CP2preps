@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://e.famnit.upr.si/pluginfile.php/621595/mod_resource/content/1/collect-empty.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Collect</title>
+    <style>
+    button {
+      width: 50px;
+      margin: 5px;
+      font-size: 30px;
+      padding: 0;
+    }
+    .myform {
+      width: 200px;
+      margin: 1px;
+    }
+    </style>
+
+    <script type="text/javascript">
+      var entries = []; 
+      entries["left"] = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512];
+      entries["right"] = [];
+      var som = 0;
+
+      function Inside() {
+        var left = document.getElementById("left");
+        for(i = 0; i = entries.length; i++){
+          var option = document.createElement("option");
+        option.text = entries[i];
+        left.add(option);
+        }
+      }
+      function Remove() {
+      var name = document.getElementById("entry").value;
+      var group = document.getElementById("group").value;
+      entries[group].push(name);
+      
+    }
+
+    function RemoveLeft() {
+      var left = document.getElementById("left");
+      var index = left.selectedIndex;
+      entries["right"].push(entries["left"][index]);
+      entries["left"].splice(index, 1);
+      updateEntriesLeft();
+      updateEntriesRight();
+    }
+    function RemoveRight() {
+      var right = document.getElementById("right");
+      var index = right.selectedIndex;
+      entries["left"].push(entries["right"][index]);
+      entries["right"].splice(index, 1);
+      updateEntriesLeft();
+      updateEntriesRight();
+    }
+    function updateEntriesLeft() {
+      var left = document.getElementById("left");
+      while(left.options.length > 0){
+        left.remove(0);
+      }
+      for (var entry of entries["left"]) {
+        var option = document.createElement("option");
+        option.text = entry;
+        left.add(option);
+      }
+    }
+    function updateEntriesRight() {
+      var right = document.getElementById("right");
+      while(right.options.length > 0){
+        right.remove(0);
+      }
+      for (var entry of entries["right"]) {
+        var option = document.createElement("option");
+        option.text = entry;
+        right.add(option);
+      }
+      Sum();
+          }
+    function Sum() {
+      var thing = document.getElementById("sum");
+      som = 0;
+      for(i = 0; i <= entries["right"].length-1; i++ ){
+        som = parseInt(som) + parseInt(entries["right"][i]);
+        som = som.toString();
+        console.log(som);
+      }
+      thing.innerHTML = "Current sum: " + som;
+      if (som == "733") {
+        alert("You win , congratulations !!!!");
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    
+      <table>
+        <tbody><tr>
+          <td>
+            <select id="left" size="10" class="myform">
+              <option>1</option>
+              <option>2</option>
+              <option>4</option>
+              <option>8</option>
+              <option>16</option>
+              <option>32</option>
+              <option>64</option>
+              <option>128</option>
+              <option>256</option>
+              <option>512</option>
+            </select>
+          </td>
+          <td>
+            <div><button onclick="RemoveLeft()">⇨</button></div>
+            <div><button onclick="RemoveRight()">⇦</button></div>
+          </td>
+          <td>
+            <select id="right" size="10" class="myform"></select>
+          </td>
+        </tr>
+        <tr>
+          <td>Collect: 733</td>
+          <td></td>
+          <td id="sum">Current sum: 0</td>
+        </tr>
+      </tbody></table>
+  </html>
