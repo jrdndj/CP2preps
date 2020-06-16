@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>(Not) My first time with Javascript</title>
+	<style>
+		body {
+			align-content: center;
+			background-color: papayawhip;
+		}
+		div {
+			width: 900px;
+			margin: 0 auto;
+			text-align: center;
+			font-size: large;
+		}
+		h1 {
+			color: orange
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main-div">
+		<script>
+			let name = prompt("What is your name? ");
+			let age = parseInt(prompt("Hi " + name + " how old are you?", 18));
+			document.write("<h1>Hello " + name + " you look awesome!</h1> <br>");
+			document.write("<br> So you are " + age + " years old. <br>");
+			let pedo = "pedobear.jpg";
+			let oldman = "harold.jpg";
+			let selectedPicture = age < 18 ? pedo : oldman;
+			document.write("<img src=\"" + selectedPicture + "\" height=\"400\"><br><br><br>");
+			if (age < 18) {
+				while (++age < 18) {
+					document.write("<br>Age is " + age + "<br>Still young <br>");
+					document.write("<img src=\"" + pedo + "\" height=\"400\"><br><br> <br>");
+				}
+				document.write("<br>Age is " + age);
+				document.write("<br>Too old!<br>");
+				document.write("<img src=\"" + oldman + "\" height=\"400\">");
+			} else {
+				document.write("<br>Too old already!<br>");
+			}
+		</script>
+	</div>
+</body>
+
+</html>

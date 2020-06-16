@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Meme Gallery</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          background-color: #eeeeee;
+          min-width: 700px;
+        }
+  
+        header{
+            font-size: 40px;
+            color: green;
+            font-style: italic;
+            font-weight: bold;
+        }
+  
+        /* Container for flexboxes */
+        section {
+          display: flex;
+        }
+  
+        /* Style the navigation menu */
+        nav {
+          flex: 0.4;
+          
+          padding: 20px;
+        }
+  
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+  
+        /* Style the content */
+        article {
+          flex: 3;
+          background-color: #f1f1f1;
+          padding: 10px;
+        }
+  
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+  
+        /* Responsive layout - makes the menu and the content
+        (inside the section) sit on top of each other instead
+        of next to each other */
+        @media (max-width: 600px) {
+          section {
+            flex-direction: column;
+          }
+        }
+        .nav-items{
+            background-color: orange;
+            text-align: center;
+            margin: 5px;
+            width: 100%;
+        }
+        .nav-items a{
+            padding: 1px;
+            background-color: grey;
+            color:white;          
+            text-decoration: none;  
+            width: 75%;
+            text-align: left;
+            display: inline-block;
+        }
+        h2{
+            font-size: 30px;
+            color: orange;
+        }
+    </style>
+  </head>
+  <body>
+    
+      <section>
+        <nav>
+      <ul>
+        <li class="nav-items"><a href="homepage.html">Home Page</a></li>
+        <li class="nav-items"><a href="what.html">What are memes?</a></li>
+        <li class="nav-items"><a href="gallery.html">Gallery</a></li>
+      </ul>
+        </nav>
+        <article>
+            <h2>Meme Gallery</h2>
+            <header>
+                <h1>The largest collection of memes in the interwebs</h1>
+            </header>
+        
+            <p>In this site, we allow you check out the different memes that have been features across history.</p>
+            <br>
+            <p>To know more about memes, click What are memes?<br>
+            <u>To see the me</u>mes, checkout Gallery.</p>
+            <p>&copy; Besher Massri</p>
+        </article>
+      </section>
+  </body>
+</html>

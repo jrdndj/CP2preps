@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Timer</title>
+    <style>
+        #timer {
+            width: 200px;
+            padding: 5px;
+            color: red;
+            background-color: yellow;
+            text-align: center;
+            font-size: 50px;
+            margin: 3px;
+        }
+
+        button {
+            width: 100px;
+            margin: 3px;
+            padding: 10px;
+        }
+
+        table {
+            margin: 10px;
+            clear: left;
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 312px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="startstop" onclick="timerStartStop()">Start</button>
+    <button onclick="reset()">Clear</button>
+    <button onclick="fold()">Fold</button>
+    <table id='table_counter'>
+        <thead>
+            <th>Numbers</th>
+        </thead>
+        <tbody id='table_counter_content'>
+
+        </tbody>
+    </table>
+    <script defer>
+        let timer;
+        let timerCounter = 1;
+        let timerEnabled = false;
+        let table = document.getElementById('table_counter_content');
+        let elements = [];
+        function appendValue(value) {
+            let row = table.insertRow().insertCell().innerHTML=value.toString();
+            elements.push(value);
+        }
+        function timerStartStop() {
+            if (timerEnabled) {//stop
+                clearInterval(timer);
+                document.getElementById('startstop').innerHTML = 'Start';
+            } else {//start
+                timer = setInterval(() => appendValue(timerCounter++), 1000);
+                document.getElementById('startstop').innerHTML = 'Stop';
+            }
+            timerEnabled = !timerEnabled;
+        }
+        function reset(resetCounter = true) {
+            if (resetCounter){
+                timerCounter = 1;
+            }
+            table.innerHTML = "";
+            elements = [];
+        }
+        function fold() {
+            let total = elements.reduce((acc, cur) => {
+                return acc + cur;
+            });
+            reset(false);
+            appendValue(total);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Collect</title>
+    <style>
+        button {
+            width: 50px;
+            margin: 5px;
+            font-size: 30px;
+            padding: 0;
+        }
+
+        .myform {
+            width: 200px;
+            margin: 1px;
+        }
+    </style>
+    <script>
+        function addNumber(){
+            //remove it from the left
+            let val=getAndRemoveSelectedItem(document.getElementById('left'));
+            if (val){//val is not null, i.e. there is an element selected
+                addElement(document.getElementById('right'),val);
+                addToSum(val);
+                checkSum();
+            }
+        }
+        function removedNumber(){
+            //remove it from the right
+            let val=getAndRemoveSelectedItem(document.getElementById('right'));
+            if (val){//val is not null, i.e. there is an element selected
+                addElement(document.getElementById('left'),val);
+                //the negative sign indicate subtraction instead of addition, since the movement is from right to left
+                addToSum(-val);
+                checkSum();
+            }
+        }
+        function getAndRemoveSelectedItem(select){
+            let idx=select.selectedIndex;
+            //if there is nothing selected, do nothing
+            if (idx===-1){
+                return null;
+            }
+            let options=select.options;
+            let val=options[idx].text;
+            //remove it
+            select.remove(idx);
+            //return its value
+            return parseInt(val);
+        }
+        function addElement(select,val){
+            let newEl=document.createElement('option');
+            newEl.text=val;
+            select.add(newEl);
+        }
+        function getSum(){
+            let sumEl=document.getElementById('sum');
+            let inner=sumEl.innerHTML;
+            inner=inner.slice('Current sum: '.length);
+            return parseInt(inner);
+        }
+        function addToSum(amount){
+            //if amount is negative -> subtract
+            let sum=getSum();
+            sum+=amount;
+            document.getElementById('sum').innerHTML='Current sum: '+sum.toString();
+        }
+        function checkSum(){
+            if (getSum()===733){
+                window.alert("You did it!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <select id="left" size="10" class="myform"></select>
+            </td>
+            <td>
+                <div><button onclick="addNumber()">&#8680;</button></div>
+                <div><button onclick="removedNumber()">&#8678;</button></div>
+            </td>
+            <td>
+                <select id="right" size="10" class="myform"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>Collect: 733</td>
+            <td></td>
+            <td id="sum">Current sum: 0</td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    let leftGroup=document.getElementById('left');
+    let target=733;
+    
+    for (var i=1;i<=target;i*=2){
+        let op=document.createElement('option');
+        op.text=i;
+        leftGroup.add(op);
+    }
+</script>
+
+</html>
