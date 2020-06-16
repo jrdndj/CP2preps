@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>Register Account Page</title>
+	<meta charset = "UTF-8">
+
+
+	<link href = "https://fonts.googleapis.com/css?family=Work Sans" rel = "stylesheet">
+	<style type = "text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family: Work Sans;
+		}
+
+		fieldset {
+			float: left;
+			width: 33%;
+			height: 420px;
+			color: rgb(40, 50, 60);
+			margin-bottom: 50px;
+		}
+
+		legend, input, label, select, textarea {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		label {
+			color: rgb(40, 50, 60);
+		}
+
+		input {
+			border: 0.5px solid rgb(165, 160, 175);
+			border-radius: 16px;
+			margin-bottom: 20px;
+		}
+
+		select {
+			border: 0.5px solid rgb(165, 160, 175);
+			width: 180px;
+		}
+
+		.submitClass {
+			width: 300px;
+			height: 50px;
+			background-color: rgb(10, 40, 45);
+			color: white;
+			border: none;
+			border-radius: 16px;
+			cursor: pointer;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<form action = "receivedSubmissionPage.html" method = "GET">
+		<header>
+			<fieldset>
+				<legend>Personal info</legend>
+				<br>
+				<label for = "firstName">First name</label>
+				<input type = "input" id = "firstName">
+				<label for = "middleName">Middle name</label>
+				<input type = "input" id = "middleName">
+				<label for = "lastName">Last name</label>
+				<input type = "input" id = "lastName">
+				<label for = "gender">Gender</label>
+				<select id = "gender">
+					<option selected disabled>Choose ...</option>
+					<option value = "male">Male</option>
+					<option value = "female">Female</option>
+				</select>
+				<br>
+				<label for = "birthDate">Birth date</label>
+				<input type = "date" id = "birthDate">
+				<label for = "birthPlace">Birth place</label>
+				<input type = "input" id = "birthPlace">
+			</fieldset>
+
+			<fieldset>
+				<legend>Profile info</legend>
+				<br>
+				<label for = "userName">User name</label>
+				<input type = "input" id = "userName">
+				<label for = "password">Password</label>
+				<input type = "password" id = "password">
+				<label for = "confirmPassword">Confirm Password</label>
+				<input type = "password" id = "confirmPassword">
+				<label for = "emailAdress">e-mail adress</label>
+				<input type = "input" id = "emailAdress">
+				<label for = "confirmEmailAdress">Confirm e-mail adress</label>
+				<input type = "input" id = "confirmEmailAdress">
+			</fieldset>
+
+			<fieldset>
+				<legend>Other info</legend>
+				<br>
+				<label for = "favoriteColor">Favorite color</label>
+				<input type = "color" id = "favoriteColor">
+				<label for = "whyJoin">Why would you like to join?</label>
+				<textarea id = "whyJoin" rows = "8" cols = "24">Type your messsage here ...</textarea>
+			</fieldset>
+		</header>
+		<section>
+			<article>
+				<input class = "submitClass" type = "submit" value = "Submit">
+			</article>
+		</section>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first time with JavaScript</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+	<header>
+		<h1>My First Time with JavaScript</h1>
+		<script>
+			var name = prompt("What is your name?");
+			var age = parseInt(prompt("Hey " + name + ", how old are you?",18));
+		</script>
+	</header>
+	<div class = "blank"></div>
+	<article>
+		<script>
+			document.write("<h1>Hello, " + name + ", you look awesome!</h1><br>");
+			var pedobear = "pedobear.jpg";
+			var harold = "harold.jpg";
+			if (age < 18) {
+				document.write("<img src = \"" + pedobear + "\" height = \"400\">");
+			}
+			else {
+				document.write("<img src = \"harold.jpg\" height = \"400\">")
+			}
+
+			age++;
+
+			while (age < 18) {
+				document.write("<br>Age is " + age + ".<br>Still young!<br>")
+				document.write("<img src = \"" + pedobear + "\" height = \"200\"><br>");
+				age++;
+			}
+
+			document.write("<br>Too old!<br>");
+			document.write("<img src = \"harold.jpg\" height = \"200\"><br>");
+		</script>
+	</article>
+	<footer>
+		<p>&copy; Copyright 2020 - Computer Practicum II course.</p>
+	</footer>
+
+</body>
+</html>

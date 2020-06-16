@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make a Choice!</title>
+	<style type = "text/css">
+
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin: 10px;
+			clear: left;
+		}
+
+		td {
+			border: 1px solid black;
+		}
+
+		div {
+			float: left;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+		}
+
+		button {
+			float: left;
+			clear: left;
+			margin: 10px;
+		}
+
+	</style>
+	<script type = "text/javascript">
+		// sequence number, it has to be outside my_event because we will use this later on (global variable)
+		var counter = 1;
+		// I want my_event to do something when I click or hover or leave an element
+		function my_event(where, what) {
+			var tableOne = document.getElementById('myTable');
+			var row = tableOne.insertRow();
+			var cellOne = row.insertCell(0);
+			var cellTwo = row.insertCell(0);
+			var cellThree = row.insertCell(0);
+			cellOne.innerHTML = what;
+			cellTwo.innerHTML = where;
+			cellThree.innerHTML = counter.toString();
+			counter++;
+		}
+
+		function clean_my_mess() {
+			var tableOne = document.getElementById("myTable");
+			for (var i = 1; i < counter; i++) {
+				tableOne.deleteRow(1);
+			}
+			counter = 1;
+		}
+
+	</script>
+</head>
+<body>
+
+	<img src = "strugglingMan.png" height = "400">
+	<br>
+	<div onclick = "my_event('yes', 'clicked')"
+	onmouseover = "my_event('yes', 'over')"
+	onmouseout = "my_event('yes', 'out')">
+	<img src = "yesButton.png" height = "200">
+</div>
+<div onclick = "my_event('no', 'clicked')"
+onmouseover = "my_event('no', 'over')"
+onmouseout = "my_event('no', 'out')">
+<img src = "noButton.png" height = "200">
+</div>
+<p>
+	<button onclick = "clean_my_mess()">Clean up my Mess</button>
+</p>
+<p>
+	<table id = "myTable">
+		<tr>
+			<td>Sequence No.</td>
+			<td>Choice</td>
+			<td>Event</td>
+		</tr>
+	</table>
+</p>
+</body>
+</html>

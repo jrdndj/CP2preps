@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>Rate Meme Page</title>
+	<meta charset = "UTF-8">
+	<link href = "https://fonts.googleapis.com/css?family=Work Sans" rel = "stylesheet">
+	<style type = "text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family: Work Sans;
+		}
+
+		nav {
+			float: center;
+			text-align: right;
+			padding: 40px;
+		}
+
+		header {
+			float: center;
+			margin-top: 80px;
+			color: rgb(40, 50, 60);
+			text-align: center;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		table, th, tr, td {
+			border-collapse: collapse;
+			table-layout: fixed;
+			width: 80%;
+			border: 0.5px solid rgb(165, 160, 175);
+			margin-left: auto;
+			margin-right: auto;
+		}	
+
+		td {
+			padding-top: 0px;
+			padding-bottom: 0px;
+			font-size: 14px;
+		}
+
+		.navigationBarClass {
+			background: none;
+			border: none;
+			color: rgb(130, 140, 145);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.currentPageClass {
+			background: none;
+			border: none;
+			color: rgb(10, 40, 45);
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.memeNameClass {
+			background-color: rgb(235, 235, 235);
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.responsiveClass {
+			max-width: 70%;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.rateClass {
+			text-align: center;
+		}
+
+		.rateDesignClass {
+			color: rgb(130, 140, 145);
+		}
+
+		.rateMemeClass {
+			text-align: center;
+			background: none;
+			width: 75px;
+			height: 30px;
+			border: 0.5px solid rgb(235, 235, 235);
+			color: rgb(10, 40, 45);
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<a href = "homePage.html"><button class = "navigationBarClass">Home page</button></a>
+		<a href = "registerAccountPage.html"><button class = "navigationBarClass">Register Account</button></a>
+		<a href = "uploadMemePage.html"><button class = "navigationBarClass">Upload meme</button></a>
+		<button class = "currentPageClass">Rate meme</button>
+	</nav>
+	<header>
+		<h1>Rate the memes from our collection!</h1>
+	</header>
+	<section>
+		<article>
+			<table>
+				<tr>
+					<th>Image</th>
+					<th>Name and Description</th>
+					<th>Meme Rating</th>  
+				</tr>
+				<tr>
+					<td rowspan = "2"><img src = "https://i.imgflip.com/3rtvfc.jpg" class = "responsiveClass"></td> 
+					<td class = "memeNameClass">Carefully, He's a Hero</td>
+					<td class = "rateClass">Meme rate: <span class = "rateDesignClass">4.7</span>/5</td>
+				</tr>
+				<tr>
+					<td>"Carefully He's a Hero" is an image macro featuring a screenshot from the 2004 superhero film Spider-Man 2 that includes the line as a subtitle. Online, people use a screenshot of the scene in which the line is said to make jokes about paying tribute for absurd or humorous actions. On June 30th, 2004, the film Spider-Man 2 was released in the United States. In the film, the character Spider-Man (portrayed by Tobey MacGuire) passes out while using his physical strength to stop a runaway train.</td>
+					<td><p class = "rateClass">Rate this meme</p><br>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 1/5')">1</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 2/5')">2</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 3/5')">3</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 4/5')">4</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 5/5')">5</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td rowspan = "2"><img src = "https://i.kym-cdn.com/photos/images/newsfeed/001/462/928/b98.jpg" class = "responsiveClass"></td> 
+					<td class = "memeNameClass">I've Never Met This Man in My Life</td>
+					<td class = "rateClass">Meme rate: <span class = "rateDesignClass">3.9</span>/5</td>
+				</tr>
+				<tr>
+					<td>"I've Never Met This Man In My Life" refers to a memorable quote uttered by the character Loki in the 2017 Marvel superhero film Thor: Ragnarok. A screenshot of Loki saying the line has since been used online as a reaction image macro to express willful ignorance. On October 21st, 2017, YouTube channel First Trailer uploaded an "extended clip" of the then-upcoming Marvel superhero film "Thor: Ragnarok".</td>
+					<td><p class = "rateClass">Rate this meme</p><br>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 1/5')">1</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 2/5')">2</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 3/5')">3</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 4/5')">4</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 5/5')">5</button>
+					</td>
+				</tr>
+				<tr> 
+					<td rowspan = "2"><img src = "https://i.imgflip.com/3ruu7l.jpg" class = "responsiveClass"></td> 
+					<td class = "memeNameClass">Woman Yelling at a Cat</td>
+					<td class = "rateClass">Meme rate: <span class = "rateDesignClass">5</span>/5</td>
+				</tr>
+				<tr>
+					<td>"Woman Yelling at a Cat" refers to a meme format featuring a screen cap of The Real Housewives of Beverly Hills cast members Taylor Armstrong and Kyle Richards followed by a picture of a confused-looking cat sitting behind a dinner plate. The format gained significant popularity across the web in mid-June 2019 and the cat was later identified as Smudge the Cat.</td>
+					<td><p class = "rateClass">Rate this meme</p><br>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 1/5')">1</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 2/5')">2</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 3/5')">3</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 4/5')">4</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 5/5')">5</button>
+					</td>
+				</tr>
+				
+				<tr>
+					<td rowspan = "2"><img src = https://i.kym-cdn.com/photos/images/newsfeed/001/389/733/c97.png class = "responsiveClass"></td> 
+					<td class = "memeNameClass">Tom Reading The Newspaper</td>
+					<td class = "rateClass">Meme rate: <span class = "rateDesignClass">4.3</span>/5</td>
+				</tr>
+				<tr>
+					<td>"Tom Reading The Newspaper" refers to an image of Tom from Tom and Jerry looking up from a newspaper with a suspicious expression on his face. The image is often paired with captions indicating a confusing, potentially tragic scenario which would cause Tom to look up from his paper. The image has also been edited as an exploitable wherein what Tom is reading is changed. The image comes from the 1956 episode of Tom and Jerry, "Down Beat Bear."</td>
+					<td><p class = "rateClass">Rate this meme</p><br>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 1/5')">1</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 2/5')">2</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 3/5')">3</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 4/5')">4</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 5/5')">5</button>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan = "2"><img src = "https://i.redd.it/js9bjwx01e231.jpg" class = "responsiveClass"></td> 
+					<td class = "memeNameClass">Mike Wazowski Explaining Things</td>
+					<td class = "rateClass">Meme rate: <span class = "rateDesignClass">5</span>/5</td>
+				</tr>
+				<tr>
+					<td>"Mike Wazowski Explaining Things" refers to a still image from 2001 video game Monsters Inc: Wreck Room Arcade in which character Mike Wazowski is shown complaining in front of characters Sulley and Roz. Online, the image has been circulated as an object-labeling meme, usually to illustrates situations in which someone is attempting to explain something.</td>
+					<td><p class = "rateClass">Rate this meme</p><br>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 1/5')">1</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 2/5')">2</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 3/5')">3</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 4/5')">4</button>
+						<button class = "rateMemeClass" onclick = "alert('Thanks! Your rate: 5/5')">5</button>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+
+</body>
+</html>
