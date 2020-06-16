@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dr.Norman Borlaug memorial</title>
+<meta charset="UTF-8">
+<link rel="icon" href="https://cdn3.iconfinder.com/data/icons/foods-30/60/wheat__grain__crop__seed__festival-512.png">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto;
+  }
+html 
+{
+  scroll-behavior: smooth;
+}
+.title
+{
+	background-color: LightGray;
+	text-align: center;
+}
+.invitation
+{
+	font-weight: bold;
+	text-align: center;
+    font-size: large;
+}
+.biography
+{
+	background-color: LightGray;
+
+}
+.centerblock
+{
+	/* I used margins to make it perfect, I didn't find the given method as precise */
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.centered
+{
+   	text-align: center;
+}
+
+.button 
+{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+}
+img
+{
+	height: auto; 
+    width: auto; 
+    max-width: 900px; 
+    max-height: 600px;
+}
+figcaption
+{
+	font-size: 15px;
+}
+cite
+{
+	font-style: normal;
+
+}
+</style>
+</head>
+<body>
+<div class="title">
+<br><h1 id="title"> Dr.Norman Borlaug</h1>
+<p><cite>The man who saved a billion lives</cite></p><br>
+</div>
+<div class="centered">
+<button class="button" onclick="document.getElementById('1910s').scrollIntoView();">1910s</button>
+<button class="button" onclick="document.getElementById('1930s').scrollIntoView();">1930s</button>
+<button class="button" onclick="document.getElementById('1940s').scrollIntoView();">1940s</button>
+<button class="button" onclick="document.getElementById('1950s').scrollIntoView();">1950s</button>
+<button class="button" onclick="document.getElementById('1960s').scrollIntoView();">1960s</button>
+<button class="button" onclick="document.getElementById('1970s').scrollIntoView();">1970s</button>
+<button class="button" onclick="document.getElementById('2000s').scrollIntoView();">2000s</button>
+<br>
+<figure>
+<img id= "image" src="https://i0.wp.com/ifdc.org/wp-content/uploads/2014/10/borlaug_2.jpg?ssl=1">
+<figcaption>Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger</figcaption>
+</figure>
+</div>
+<div class ="biography">
+	<br><h2 class="centered" id = "tribute-info">Here is a time line of Dr.Borlaug's life:</h2><br><br>
+<ul class="centerblock">
+  <li id="1910s"><b>1914</b> - Born in Cresco, Iowa</li>
+  <br>
+  <li id="1930s"><b>1933</b> - Left his family's farm to attend University of Minnesota</li>
+  <br>
+  <li id="1940s"><b>1942</b> - Receives a Ph.D. in Genetics and Pathology</li>
+  <br>
+  <li id="1950s"><b>1953</b> - Crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li>
+  <br>
+  <li id="1960s"><b>1962</b> - Brings his high-yielding strains to Delhi in order to mitigate mass starvation in Indian subcontinent</li>
+  <br>
+  <li id="1970s"><b>1970</b> - Receives the Nobel Peace Prize</li>
+  <br>
+  <li id="1980s"><b>1983</b> - Helps seven African countries dramatically increase their maize and sorghum yields</li>
+  <br>
+  <li id="2000s"><b>2009</b> - Dies at the age of 95</li>
+  <br>
+</ul>
+<blockquote class="centerblock"><i>
+"Man's survival, from the time of Adam and Eve until the invention of agriculture, must have been precarious because of his inability to ensure his food supply."
+<br>
+--Dr. Norman Borlaug</i>
+</blockquote>
+<p class="invitation" id = "tribute-link">If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug#Career" target = "_ blank">Wikipedia page</a> </p><br>
+</div>
+</body>
+</html>
