@@ -1,0 +1,341 @@
+!DOCTYPE html>
+<html>
+	<head>
+	<title>Upload Meme</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+		* {
+        box-sizing: border-box;
+    }
+    legend{background-color: #FBFCFC;
+      font-size: 30px;
+      font-style: bold;
+      font-family: Times;}
+      fieldset{
+      background-color: #FBFCFC ;
+    }
+
+    body {
+				background-image: url(upfamnit.jpg);
+				background-position: cover;
+				font-family: Arial;	
+			}
+		header {
+				  background-color: #FBFCFC  ;
+  				text-align: center;
+  				float: right;
+          margin: 30px;
+   				width: 80%;
+  				color: #566573;
+        	font-size: 25px;
+		}
+		nav {	 
+        	float: left;
+  				width: 15%;
+  			  padding: 10px;
+  				}
+		article {
+          float: right;
+  			  width: 80%;
+  				margin: 30px;
+          padding: 60px;
+  				font-size: 26px;
+        	color: #212F3D;
+        	font-family: Times;	
+          text-align: center;
+          background-color: #FBFCFC ;
+        }
+        
+    footer {	
+  				padding: 10px;
+          margin: 30px;
+  				text-align: center;
+  				color: darkgray;
+  				float: right;
+  				width: 85%;
+          background-color: white;
+		    }
+    table {	
+				  margin: auto;
+				  margin-top: 10%; 
+				  border-collapse:separate; 
+          border-spacing: 0 15px;
+		    }
+		td {
+  				padding: 15px;
+  				background-color: lightblue;
+  				border: 10px solid gray;
+  				border-left-width: 30px;
+  				border-right-width: 30px;
+  				border-top-width: 0px;
+  				border-bottom-width: 0px;
+          text-align: center;
+        }
+   .links{
+    		 	font-family: sans-serif;
+    		 	color: black;
+    		 	text-decoration-line: none;
+		    }
+		input{
+    		 	float: central;
+    		 	width: 700px;
+          height: 60px;
+        }
+        table.second {
+            width: 100%;
+        margin: auto;
+        border: 1px solid black;
+                border-collapse: collapse;
+    }
+    th.scnd {
+      padding: 2px;
+      color: black;
+      text-align: center;
+      font-style: bold;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+    }
+    td.scnd {
+      color: green;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+      height: 100%;
+    }
+    td.imgg {
+      border: 1px solid black;
+    }
+    td.name {
+      padding: auto;
+      color: black;
+      font-style: bold;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      
+    }
+    td.bla {
+      padding-top: auto;
+      padding-bottom: auto;
+      color: black;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+      height: 70%;
+    }
+    img {
+      width:  70%;
+    }
+		.bottom{
+    		 	text-decoration-line: none;
+    		 	color: #0B5345 ;
+		    }
+        
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%; 
+    			height: auto;
+  				}
+        }
+        .rating {
+      position: relative;
+      display: inline-flex;
+      direction: rtl;
+      
+    }
+    .rating input {
+      display: none;
+    }
+    .rating label {
+      display: inline-block;
+      cursor: pointer;
+      width: 50px;
+    }
+    .rating label:before {
+      content: '\f005';
+      font-family: fontAwesome;
+      display: inline-block;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+    }
+    .rating label:after {
+      content: '\f005';
+      font-family: fontAwesome;
+      display: inline-block;
+      font-size: 30px;
+      color: orange;
+      top: 0;
+      opacity: 0;
+      transition: all .5s;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+      position: relative;
+    }
+    .rating label:hover:after,
+    .rating input:checked ~ label:after {
+      opacity: 5;
+    }
+
+    .checked {
+      color: black;
+    }
+	</style>
+	</head>
+	<body>
+	<header>
+    <h1>Rate Meme</h1>
+    </header>
+		<section>
+    	<nav>
+  		    <table>
+  		    	<tr>
+  		    		<td><b><a href="HomePage1.html" class="links">Home page</a></b></td></tr>
+            <tr>
+              <td><b><a href="What.html" class="links">What Are Memes?</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RegisterAcc.html" class="links">Register</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="UploadMeme.html" class="links">Upload a Meme</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RateMeme.html" class="links">Rate a Meme</a></b></td></tr>
+  		    </table>
+    	</nav>
+     <article>
+        <p>Check out the description of each meme below</p>
+        <table class="second">
+          <tr class="scnd">
+            <th class="scnd">Image</th>
+            <th class="scnd" colspan="3">Name and Description</th>
+          </tr>
+          <tr class="scnd">
+          <td rowspan="3" class="imgg"><img src="https://www.rd.com/wp-content/uploads/2019/04/02-Hilarious-Dog-Memes.jpg"></td>
+          <br>
+            Current rate:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+          <td class="name">Husky</td>
+        </tr>
+        <tr class="scnd">
+          <td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+        </tr>
+        <tr class="scnd">
+          <td class="special">
+            Your rate:<br>
+            <div class="rating">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star2"><label for="star2"></label>
+              <input type="radio" name="star" id="star3"><label for="star3"></label>
+              <input type="radio" name="star" id="star4"><label for="star4"></label>
+              <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+              <button type="button" onclick="alert('Successful voting!')" id="SubmitRate">Submit</button>
+          </td>
+        </tr>
+
+
+        <tr class="scnd">
+          <td rowspan="3" class="imgg"><img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/cute-wholesome-dog-puppy-memes-268-59097e2b67e44__700.jpg">
+          <br>
+            Current rate:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+          <td class="name">Golden Retriever</td>
+        </tr>
+        <tr class="scnd">
+          <td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+          </td>
+        </tr>
+        <tr class="scnd">
+          <td class="special">
+            Your rate:<br>
+            <div class="rating">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star2"><label for="star2"></label>
+              <input type="radio" name="star" id="star3"><label for="star3"></label>
+              <input type="radio" name="star" id="star4"><label for="star4"></label>
+              <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+              <button type="button" onclick="alert('Successful voting!')" id="SubmitRate">Submit</button>
+          </td>
+        </tr>
+
+        <tr class="scnd">
+          <td rowspan="3" class="imgg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqW6yW_g4y9YevRyarXVKNhOPMlaVoWO8oX_uXIkKK206652vE&usqp=CAU">
+            <br>
+            Current rate:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+          <td class="name">Puppy</td>
+        </tr>
+        <tr class="scnd">
+          <td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+          </td>
+        </tr>
+        <tr class="scnd">
+          <td class="special">
+            Your rate:<br>
+            <div class="rating">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star2"><label for="star2"></label>
+              <input type="radio" name="star" id="star3"><label for="star3"></label>
+              <input type="radio" name="star" id="star4"><label for="star4"></label>
+              <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+              <button type="button" onclick="alert('Successful voting!')" id="SubmitRate">Submit</button>
+          </td>
+        </tr>
+
+        <tr class="scnd">
+          <td rowspan="3" class="imgg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZc_DN7dEKHq89vNrko0O70JMtAMJoR1ydAtbo7QIwE0obMH8g&usqp=CAU">
+          <br>
+            Current rate:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </td>
+          <td class="name">Happy doggo</td>
+        </tr>
+        <tr class="scnd">
+          <td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+          </td>
+        </tr>
+        <tr class="scnd">
+          <td class="special">
+            Your rate:<br>
+            <div class="rating">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star2"><label for="star2"></label>
+              <input type="radio" name="star" id="star3"><label for="star3"></label>
+              <input type="radio" name="star" id="star4"><label for="star4"></label>
+              <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+              <button type="button" onclick="alert('Successful voting!')" id="SubmitRate">Submit</button>
+          </td>
+        </tr>
+        </table>
+      </article>
+    	
+    	</section>
+    	
+    	<footer>
+    	<a href="UploadMeme.html" class="bottom">Click here so you can upload your memes </a><br>&copy; FAMNIT Meme Club
+    	</footer>
+	</body>
+</html>

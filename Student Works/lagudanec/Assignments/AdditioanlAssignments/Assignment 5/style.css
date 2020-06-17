@@ -1,0 +1,177 @@
+/*this applies for all pages*/
+* {
+        box-sizing: border-box;
+    }
+/*for the background of the text area and etc*/
+     legend{background-color: #FBFCFC;
+      font-size: 30px;
+      font-style: bold;
+      font-family: Times;}
+      fieldset{
+      background-color: #FBFCFC ;
+    }
+
+    body {
+				background-image: url(upfamnit.jpg);
+				background-position: cover;
+				font-family: Arial;	
+			}
+		header {
+				  background-color: #FBFCFC  ;
+  				text-align: center;
+  				float: right;
+          margin: 30px;
+   				width: 80%;
+  				color: #566573;
+        	font-size: 25px;
+		}
+		nav {	 
+        	float: left;
+  				width: 15%;
+  			  padding: 10px;
+  				}
+		/*for the font and styles*/
+    article {
+          float: right;
+  			  width: 80%;
+  				margin: 30px;
+          padding: 60px;
+  				font-size: 26px;
+        	color: #212F3D;
+        	font-family: Times;	
+          text-align: center;
+          background-color: #FBFCFC ;
+        }
+        /*footer*/
+    footer {	
+  				padding: 10px;
+          margin: 30px;
+  				text-align: center;
+  				color: darkgray;
+  				float: right;
+  				width: 85%;
+          background-color: white;
+		    }
+      /*the menu table*/
+    table {	
+				  margin: auto;
+				  margin-top: 10%; 
+				  border-collapse:separate; 
+          border-spacing: 0 15px;
+		    }
+		td {
+  				padding: 15px;
+  				background-color: lightblue;
+  				border: 10px solid gray;
+  				border-left-width: 30px;
+  				border-right-width: 30px;
+  				border-top-width: 0px;
+  				border-bottom-width: 0px;
+          text-align: center;
+        }
+   .links{
+    		 	font-family: sans-serif;
+    		 	color: black;
+    		 	text-decoration-line: none;
+		    }
+
+		input{
+    		 	float: central;
+    		 	width: 700px;
+          height: 60px;
+        }
+    /*rating table*/
+        th.scnd {
+      padding: 2px;
+      color: black;
+      text-align: center;
+      font-style: bold;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+    }
+    td.scnd {
+      color: green;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+      height: 100%;
+    }
+    td.imgg {
+      border: 1px solid black;
+    }
+    td.name {
+      padding: auto;
+      color: black;
+      font-style: bold;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      
+    }
+    td.bla {
+      padding-top: auto;
+      padding-bottom: auto;
+      color: black;
+      text-align: left;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 50%;
+      height: 70%;
+    }
+    img {
+      width:  70%;
+    }
+		.bottom{
+    		 	text-decoration-line: none;
+    		 	color: #0B5345 ;
+		    }
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%; 
+    			height: auto;
+  				}
+        }
+         .rating {
+      position: relative;
+      display: inline-flex;
+      direction: rtl;
+      
+    }
+        .rating input {
+      display: none;
+    }
+    .rating label {
+      display: inline-block;
+      cursor: pointer;
+      width: 50px;
+    }
+    .rating label:before {
+      content: '\f005';
+      font-family: fontAwesome;
+      display: inline-block;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+    }
+    .rating label:after {
+      content: '\f005';
+      font-family: fontAwesome;
+      display: inline-block;
+      font-size: 30px;
+      color: orange;
+      top: 0;
+      opacity: 0;
+      transition: all .5s;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+      position: relative;
+    }
+    .rating label:hover:after,
+    .rating input:checked ~ label:after {
+      opacity: 5;
+    }
+
+    .checked {
+      color: black;
+    }

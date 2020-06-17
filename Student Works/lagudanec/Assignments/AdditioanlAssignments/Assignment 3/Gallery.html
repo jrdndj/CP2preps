@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		* {
+  			box-sizing: border-box;
+		}
+		body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: white;
+		}
+		header {
+			    background-color: white;
+  				text-align: left;
+  				float: right;
+  				width: 85%;
+  				color: orange;
+        	    font-size: 20px;
+		}
+		nav {
+  				float: left;
+  				width: 15%;
+  			    padding: 10px;
+  				background: white;
+  		}
+        article {
+  				float: right;
+  				width: 85%;
+  				background-color: white;
+  				margin: 0px;
+                padding: 0px;
+  				font-size: 18px;
+        	    color: gray;
+        	    font-family: Arial;	
+        }
+        footer {
+  				background-color: white;
+  				padding: 10px;
+  				text-align: left;
+  				font-size: 18px;
+  				color: gray;
+  				float: right;
+  				width: 85%;
+		}
+        table.first {
+				margin: auto;
+				margin-top: 10%; 
+				border-collapse:separate; 
+                border-spacing: 0 15px;
+		}
+		td.fst {
+				padding: 5px;
+				background-color: gray;
+				border: 5px solid orange;
+				border-left-width: 20px;
+				border-right-width: 20px;
+				border-top-width: 0px;
+				border-bottom-width: 0px;
+
+		}
+		a:link {
+               text-decoration: none;
+               color: white;
+        }
+        a:visited {
+           		text-decoration: none;
+            	color: white;
+        }
+        a:hover {
+            	text-decoration: none;
+        }
+        a:active {
+            	text-decoration: none;
+        }
+        table.second {
+        		width: 100%;
+				margin: auto;
+				border: 1px solid black;
+                border-collapse: collapse;
+		}
+		th.scnd {
+			padding: 2px;
+			color: orange;
+			text-align: center;
+			font-style: bold;
+			font-size: 20px;
+			border: 1px solid black;
+			width: 50%;
+		}
+		td.scnd {
+			color: green;
+			text-align: left;
+			font-size: 20px;
+			border: 1px solid black;
+			width: 50%;
+			height: 100%;
+		}
+		td.imgg {
+			border: 1px solid black;
+		}
+		td.name {
+			padding: auto;
+			color: green;
+			text-align: left;
+			font-size: 20px;
+			border: 1px solid black;
+			
+		}
+		td.bla {
+			padding-top: auto;
+			padding-bottom: auto;
+			color: green;
+			text-align: left;
+			font-size: 20px;
+			border: 1px solid black;
+			width: 50%;
+			height: 70%;
+		}
+		img {
+			width:  70%;
+		}
+		@media (max-width: 700px) {
+  			nav, article {
+    			width: 100%; 
+    			height: auto;
+  				}
+		}
+	</style>
+</head>
+<body>
+	<header>
+      <h1>Browse Memes</h1>
+    </header>
+    <section>
+    	<nav>
+  		    <table class="first">
+  		    	<tr>
+  		    		<td class="fst">
+  		    			<b><a href="HomePage.html">Home page</a></b>
+  		    		</td>
+  		    	</tr>
+  		    	<tr>
+  		    		<td class="fst">
+  		    			<b><a href="What.html">What are memes?</a></b>
+  		    		</td>
+  		    	</tr>
+  		    	<tr>
+  		    		<td class="fst"><b><a href="Gallery.html">Gallery</a></b>
+  		    		</td>
+  		    	</tr>
+  		    </table>
+    	</nav>
+    	<article>
+    		<p>Check out the description of each meme below</p>
+    		<table class="second">
+    			<tr class="scnd">
+    				<th class="scnd">Image</th>
+    				<th class="scnd" colspan="2">Name and Description</th>
+    			</tr>
+    			<tr class="scnd">
+					<td rowspan="2" class="imgg"><img src="https://www.rd.com/wp-content/uploads/2019/04/02-Hilarious-Dog-Memes.jpg"></td>
+					<td class="name">Husky</td>
+				</tr>
+				<tr class="scnd">
+					<td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+				</tr>
+
+				<tr class="scnd">
+					<td rowspan="2" class="imgg"><img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/cute-wholesome-dog-puppy-memes-268-59097e2b67e44__700.jpg"></td>
+					<td class="name">Golden Retriever</td>
+				</tr>
+				<tr class="scnd">
+					<td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+					</td>
+				</tr>
+
+				<tr class="scnd">
+					<td rowspan="2" class="imgg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqW6yW_g4y9YevRyarXVKNhOPMlaVoWO8oX_uXIkKK206652vE&usqp=CAU"></td>
+					<td class="name">Puppy</td>
+				</tr>
+				<tr class="scnd">
+					<td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+					</td>
+				</tr>
+
+				<tr class="scnd">
+					<td rowspan="2" class="imgg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZc_DN7dEKHq89vNrko0O70JMtAMJoR1ydAtbo7QIwE0obMH8g&usqp=CAU"></td>
+					<td class="name">Happy doggo</td>
+				</tr>
+				<tr class="scnd">
+					<td class="bla">Dogs have been a part of human communities for thousands of years, assisting humans in hunting, guarding property and management of livestock. These traditional roles continue to this day, chiefly in rural areas, but dogs now also occupy more varied niches in contemporary society, primarily as companions.
+					</td>
+				</tr>
+    		</table>
+    	</article>
+    </section>
+    <footer>
+    	<p>&copy; Jordan Deja</p>
+    </footer>
+
+</body>
+</html>

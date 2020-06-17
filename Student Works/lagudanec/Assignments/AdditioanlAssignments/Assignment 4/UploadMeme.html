@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Upload Meme</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+		* {
+        box-sizing: border-box;
+    }
+    legend{background-color: #FBFCFC;
+      font-size: 30px;
+      font-style: bold;
+      font-family: Times;}
+      fieldset{
+      background-color: #FBFCFC ;
+    }
+
+    body {
+				background-image: url(upfamnit.jpg);
+				background-position: cover;
+				font-family: Arial;	
+			}
+		header {
+				  background-color: #FBFCFC  ;
+  				text-align: center;
+  				float: right;
+          margin: 30px;
+   				width: 80%;
+  				color: #566573;
+        	font-size: 25px;
+		}
+		nav {	 
+        	float: left;
+  				width: 15%;
+  			  padding: 10px;
+  				}
+		article {
+          float: right;
+  			  width: 80%;
+  				margin: 30px;
+          padding: 60px;
+  				font-size: 26px;
+        	color: #212F3D;
+        	font-family: Times;	
+          text-align: center;
+          background-color: #FBFCFC ;
+        }
+        
+    footer {	
+  				padding: 10px;
+          margin: 30px;
+  				text-align: center;
+  				color: darkgray;
+  				float: right;
+  				width: 85%;
+          background-color: white;
+		    }
+    table {	
+				  margin: auto;
+				  margin-top: 10%; 
+				  border-collapse:separate; 
+          border-spacing: 0 15px;
+		    }
+		td {
+  				padding: 15px;
+  				background-color: lightblue;
+  				border: 10px solid gray;
+  				border-left-width: 30px;
+  				border-right-width: 30px;
+  				border-top-width: 0px;
+  				border-bottom-width: 0px;
+          text-align: center;
+        }
+   .links{
+    		 	font-family: sans-serif;
+    		 	color: black;
+    		 	text-decoration-line: none;
+		    }
+		input{
+    		 	float: central;
+    		 	width: 700px;
+          height: 60px;
+        }
+		.bottom{
+    		 	text-decoration-line: none;
+    		 	color: #0B5345 ;
+		    }
+        .upl{
+          margin-left: 20%;
+        }
+
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%; 
+    			height: auto;
+  				}
+        }
+	</style>
+	</head>
+	<body>
+	<header>
+    <h1>Upload Meme</h1>
+    </header>
+		<section>
+    	<nav>
+  		    <table>
+  		    	<tr>
+  		    		<td><b><a href="HomePage1.html" class="links">Home page</a></b></td></tr>
+            <tr>
+              <td><b><a href="What.html" class="links">What Are Memes?</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RegisterAcc.html" class="links">Register</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="UploadMeme.html" class="links">Upload a Meme</a></b></td></tr>
+  		    	<tr>
+  		    		<td><b><a href="RateMeme.html" class="links">Rate a Meme</a></b></td></tr>
+  		    </table>
+    	</nav>
+      <form action="SubmissionPage.html" method="get">
+          <fieldset>
+            <legend>Meme info</legend>
+            <label for="name"> Name of meme: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="description"> Description: </label><br>
+            <textarea name="description" rows="20" cols="50">What will you say about this meme? </textarea>
+            <br>
+            <label for="image">Upload your meme</label><br>
+              <input type="file" id="image" name="image">
+              <br>
+          </fieldset>
+          <br>
+        <div class="upl"><input type="submit" name="submit" id="submit" value="Upload"></div>
+        </form>       
+      </article>
+    	
+    	</section>
+    	
+    	<footer>
+    	<a href="UploadMeme.html" class="bottom">Click here so you can upload your memes </a><br>&copy; FAMNIT Meme Club
+    	</footer>
+	</body>
+</html>
