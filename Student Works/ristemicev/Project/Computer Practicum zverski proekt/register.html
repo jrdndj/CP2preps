@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta charset="utf-8">
+	</head>
+	<body>
+		<!--Navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-faded sticky-top">
+		    <a class="navbar-brand mr-auto" href="index.html">
+		    	<img src="images/logo.png" width="70" class="d-inline-block align-center" alt="logo">
+    			NomegleR
+		    </a>
+		     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+	            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+		    <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+		        <ul class="navbar-nav text-center">
+		            <li class="nav-item">
+		                <a class="nav-link" href="index.html">Home</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="login.html">Login</a>
+		            </li>
+		            <li class="nav-item active">
+		                <a class="nav-link" href="register.html">Register</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="livechat.html">Live Chat</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="aboutus.html">About Us</a>
+		            </li>
+		        </ul>
+		    </div>
+		</nav>
+		<!--Navigation bar -->
+
+		<!-- Register -->
+		<section>
+			<div class="container">
+			    <div class="row py-5 mt-4 align-items-center">
+			        <!-- For Demo Purpose -->
+			        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+			            <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
+			            <h1>Create an Account</h>
+			        </div>
+			        <!-- Registeration Form -->
+			        <div class="col-md-7 ml-auto">
+			            <form action="/register" method="POST">
+			                <div class="row">
+
+			                    <!-- Full Name -->
+			                    <div class="input-group col-lg-12 mb-4">
+			                        <div class="input-group-prepend">
+			                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+			                                <i class="fa fa-user text-muted"></i>
+			                            </span>
+			                        </div>
+			                        <input id="fullName" type="text" name="fullname" placeholder="Full Name" class="form-control bg-white border-left-0 border-md">
+								</div>
+								<!-- First Name -->
+
+			                    <!-- Email Address -->
+			                    <div class="input-group col-lg-12 mb-4">
+			                        <div class="input-group-prepend">
+			                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+			                                <i class="fa fa-envelope text-muted"></i>
+			                            </span>
+			                        </div>
+			                        <input id="email" type="email" name="email" placeholder="Email Address" class="form-control bg-white border-left-0 border-md">
+								</div>
+								<!-- Email Address -->
+
+
+			                    <!-- Gender -->
+			                    <div class="input-group col-lg-12 mb-4">
+			                        <div class="input-group-prepend">
+			                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+			                                <i class="fa fa-venus-mars text-muted"></i>
+			                            </span>
+			                        </div>
+			                        <select id="gender" name="gender" class="form-control custom-select bg-white border-left-0 border-md">
+			                            <option value="0">Choose your gender</option>
+			                            <option value="1">Male</option>
+			                            <option value="2">Female</option>
+			                            <option value="3">Other</option>
+			                        </select>
+								</div>
+								<!-- Gender -->
+
+			                    <!-- Password -->
+			                    <div class="input-group col-lg-6 mb-4">
+			                        <div class="input-group-prepend">
+			                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+			                                <i class="fa fa-lock text-muted"></i>
+			                            </span>
+			                        </div>
+			                        <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md">
+								</div>
+								<!-- Password -->
+
+			                    <!-- Password Confirmation -->
+			                    <div class="input-group col-lg-6 mb-4">
+			                        <div class="input-group-prepend">
+			                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+			                                <i class="fa fa-lock text-muted"></i>
+			                            </span>
+			                        </div>
+			                        <input id="passwordConfirmation" type="text" name="passwordConfirmation" placeholder="Confirm Password" class="form-control bg-white border-left-0 border-md">
+								</div>
+								<!-- Password Confirmation -->
+
+			                    <!-- Submit Button -->
+			                    <div class="form-group col-lg-12 mx-auto mb-0">
+			                        <input type="submit" value="Submit">
+			                    </div>
+
+			                    <!-- Divider Text -->
+			                    <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+			                        <div class="border-bottom w-100 ml-5"></div>
+			                        <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+			                        <div class="border-bottom w-100 mr-5"></div>
+								</div>
+								<!-- Divider Text -->
+
+			                    <!-- Social Login -->
+			                    <div class="form-group col-lg-12 mx-auto">
+			                        <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+			                            <i class="fa fa-facebook-f mr-2"></i>
+			                            <span class="font-weight-bold">Continue with Facebook</span>
+			                        </a>
+			                        <a href="#" class="btn btn-primary btn-block py-2 btn-google">
+			                            <i class="fa fa-google mr-2"></i>
+			                            <span class="font-weight-bold">Continue with Google</span>
+			                        </a>
+								</div>
+								<!-- Social Login -->
+
+			                    <!-- Already Registered -->
+			                    <div class="text-center w-100">
+			                        <p class="text-muted font-weight-bold">Already Registered? <a href="login.html" class="text-primary ml-2">Login</a></p>
+								</div>
+								<!-- Already Registered -->
+
+			                </div>
+			            </form>
+			        </div>
+			    </div>
+			</div>
+		</section>
+		<!-- Register -->
+
+		<!-- Footer -->
+		<footer class="page-footer font-small unique-color-dark">
+
+			<div class="footer-top">
+			   	<div class="container">
+				  	<!-- Grid row-->
+				  	<div class="row py-4 d-flex align-items-center">
+					  	<!-- Grid column -->
+					  	<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+						  	<h4 class="mb-0">Get connected with us on social networks!</h6>
+					  	</div>
+					  	<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-6 col-lg-7 text-center text-md-right">
+							<!-- Facebook -->
+							<a class="fb-ic" href="http://facebook.com">
+								<i class="fa fa-facebook-f fa-2x mr-4"></i>
+							</a>
+							<!-- Twitter -->
+							<a class="tw-ic" href="http://twitter.com">
+								<i class="fa fa-twitter fa-2x mr-4"></i>
+							</a>
+							<!--Linkedin -->
+							<a class="li-ic" href="http://linkedin.com">
+								<i class="fa fa-linkedin fa-2x mr-4"></i>
+							</a>
+							<!--Instagram-->
+							<a class="ins-ic" href="http://instagram.com">
+								<i class="fa fa-instagram fa-2x"></i>
+							</a>
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row-->
+			  	</div>
+			</div>
+
+			<div class="footer-logo">
+				<img src="images/logo.png" alt="logo" width="200">
+			</div>
+
+			<div class="col-lg-8 offset-lg-2 text-center">
+				<p class="phrase">Your phrase goes here!</p>
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="register.html">Register</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="livechat.html">Live Chat</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="aboutus.html">About Us</a>
+					</li>
+				</ul>
+		  	</div>
+
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+				<a class="name" href="index.html"> NomegleR</a>
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+
+		<!-- Go to the top button -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+		<!-- Go to the top button -->
+			
+		<!-- Scripts -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+   		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="scripts/register.js"></script>
+        <script src="scripts/totopbutton.js"></script>
+		<script type="text/javascript">
+		
+			function add_chatinline() {
+				var hccid=87083951;
+				var nt=document.createElement("script");
+				nt.async=true;
+				nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;
+				var ct=document.getElementsByTagName("script")[0];
+				ct.parentNode.insertBefore(nt,ct);
+			}
+				add_chatinline(); 
+
+		</script>
+		<!-- Scripts -->
+		<!-- <script src="scripts/traverse.js"></script> -->
+	</body>
+</html>

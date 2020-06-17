@@ -1,0 +1,8 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ea8917e6-047c-47ab-a5e1-a7d2ba78f2b5/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/mrsupickumater"
+}
