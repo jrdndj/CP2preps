@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+  
+header {
+  float: left;
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
+  color: white;
+  padding: 20px 30px 20px 30px;
+  background-color: rgb(64, 64, 64);
+}
+  
+nav {
+  float:left;
+  width: 100%;
+  padding: 0px;
+  background-color: darkorange;
+}
+  
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+  
+nav a {
+  float: left;
+  font-family: Georgia;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+  background-color: darkorange;
+}
+  
+nav a:hover {
+  background-color: orangered;
+}
+  
+section {
+  float: left;
+  width: 100%;
+  background-color: ghostwhite;
+}
+  
+article ul li {
+  margin-bottom: 10px;
+}
+
+article {
+  float: left;
+  width: 85%;
+  padding: 10px 30px 30px 30px;
+  text-align: justify;
+  background-color: white;
+  border-right: 1px dotted gray;
+}
+  
+aside {
+  float: right;
+  width: 15%;
+  font-family: Georgia;
+  font-size: 14px;
+  padding: 10px;
+}
+
+aside p {
+  font-weight: bold;
+  color: orangered;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.datum {
+  margin: 0px;
+  padding: 0px;
+  color: orangered;
+}
+
+div.novica {
+  font-size: 8pt;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  padding-top: 4px;
+  color: darkblue;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+  padding: 3px 20px 3px 20px;
+  color: white;
+  background-color: rgb(64, 64, 64);
+}

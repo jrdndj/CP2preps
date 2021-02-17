@@ -1,0 +1,68 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Kvadrati</title>
+    <style>
+    div {
+      float:left;
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      margin: 10px;
+    }
+    table {
+      clear: left;
+      margin: 10px;
+      border-collapse: collapse;
+    }
+    td {
+      width: 100px;
+      border: solid 1px black;
+      text-align: center;
+    }
+    button {
+      float: left;
+      clear: left;
+      margin: 10px;
+    }
+    </style>
+    <script>
+    var stevilka = 0;
+
+    function dogodek(kdo, kaj) {
+      var tabela = document.getElementById('dogodki');
+      var vrstica = tabela.insertRow();
+      var celica1 = vrstica.insertCell();
+      var celica2 = vrstica.insertCell();
+      var celica3 = vrstica.insertCell();
+      stevilka++;
+      celica1.innerHTML = stevilka.toString();
+      celica2.innerHTML = kdo;
+      celica3.innerHTML = kaj;
+    }
+
+    function pocisti() {
+      var tabela = document.getElementById('dogodki');
+      while (tabela.rows.length > 1) {
+        tabela.deleteRow(1);
+      }
+      stevilka = 0;
+    }
+    </script>
+  </head>
+
+  <body>
+    <div onclick="dogodek('prvi', 'click')" onmouseover="dogodek('prvi', 'over')" onmouseout="dogodek('prvi', 'out')"></div>
+    <div onclick="dogodek('drugi', 'click')" onmouseover="dogodek('drugi', 'over')" onmouseout="dogodek('drugi', 'out')"></div>
+    <div onclick="dogodek('tretji', 'click')" onmouseover="dogodek('tretji', 'over')" onmouseout="dogodek('tretji', 'out')"></div>
+
+    <button onclick="pocisti()">Počisti</button>
+    <table id="dogodki">
+      <tbody><tr>
+        <td>#</td>
+        <td>Kvadrat</td>
+        <td>Dogodek</td>
+      </tr>
+    </tbody></table>
+  
+
+</body></html>

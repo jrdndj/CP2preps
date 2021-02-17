@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quadratic function</title>
+<style>
+#plot {
+    margin: 20px;
+    border: 1px solid black;
+}
+#tag {
+    width: 400px;
+    margin: 0px 20px 0 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<script>
+var points = [
+    [-200, 300],
+    [-150, 125],
+    [-100, 0],
+    [-50, -75],
+    [0, -100],
+    [50, -75],
+    [100, 0],
+    [150, 125],
+    [200, 300]
+];
+</script>
+
+<canvas id="plot" width="400" height="400">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("plot");
+var context = canvas.getContext("2d");
+
+context.beginPath();
+context.moveTo(0, 200);
+context.lineTo(400, 200);
+context.moveTo(200, 0);
+context.lineTo(200, 400);
+context.setLineDash([2, 5]);
+context.strokeStyle = "black";
+context.stroke();
+
+context.beginPath();
+for (var i = 0; i < points.length - 1; i++) {
+    var x0 = points[i][0] + 200;
+    var y0 = 200 - points[i][1];
+    var x1 = points[i+1][0] + 200;
+    var y1 = 200 - points[i+1][1];
+    context.moveTo(x0, y0);
+    context.lineTo(x1, y1);
+}
+context.setLineDash([]);
+context.strokeStyle = "blue";
+context.stroke();
+</script>
+
+<div id="tag">f(x) = 0.01 &middot; x<sup>2</sup> + 0 &middot; x - 100</div>
+
+</body>
+</html>

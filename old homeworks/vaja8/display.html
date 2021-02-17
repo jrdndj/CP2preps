@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display</title>
+<script>
+var text = "I love FAMNIT!";
+var i = 0;
+
+function timerStart()
+{
+	timerRef = window.setInterval("changeText()", 200);
+}
+
+function timerStop()
+{
+	window.clearInterval(timerRef);
+}
+
+function changeText() {
+	if (++i > text.length) i = 0;
+	var display = document.getElementById("display");
+	display.innerHTML = text.substr(0, i);
+}
+</script>
+</head>
+<body>
+
+<div id="display"></div>
+
+<script>
+timerStart();
+</script>
+
+</body>
+</html>

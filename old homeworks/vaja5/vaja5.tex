@@ -1,0 +1,27 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+
+\title{Računalniški praktikum II}
+\author{Naloga za samostojno reševanje 5}
+\date{29. marec 2019}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent
+V datoteki \texttt{mult.html} je oblikovana razpredelnica s poštevanko velikosti $5 \times 5$. Razpredelnico želimo razširiti na velikost $10 \times 10$, kasneje pa še na bistveno več. Ker je ročno stavljenje takšne razpredelnice preobsežno, želimo kodo HTML med značkama \texttt{<table>} in \texttt{</table>} nadomestiti s skripto PHP. Očitno je, da bo potrebno uporabiti dvojno zanko.
+
+\bigskip\noindent
+Da bi prišli do končnega rezultata, lahko sledite sledečemu postopku:
+\begin{enumerate}
+	\item Z uporabo dvojne zanke izpišite vse produkte (bele celice). Zanki naj tečeta od $1$ do $10$. Na tem koraku ignoriramo vrstico $0$ in stolpec $0$ (rumene celice), kjer so zapisani faktorji. Značk HTML za oblikovanje še ni potrebno dodati.
+	\item Dodajte značke \texttt{<tr>} in \texttt{<td>}, tako da dobite pravilen format HTML.
+	\item Dodajte vrstico $0$ in stolpec $0$ tako, da obe zanki začnete izvajati od vrednosti $0$, namesto od $1$. Vsebino teh celic je potrebno izračunati drugače. Dodajte ustrezne vejitve (stavki \texttt{if-then-else}) pri izpisu vsebine celice.
+	\item Obarvajte stolpec $0$ in vrstico $0$ z rumeno barvo. Dodajte ustrezne vejitve pri generiranju celic \texttt{<td>} oz. \texttt{<td class='head'>}.
+	\item Preizkusite, če lahko z enostavno spremembo generirate večjo razpredelnico, npr. $100 \times 100$.
+	\item Poizvejte IP številko strežnika od sošolca (oz. drugega para) in poglejte njegov rezultat. Ali lahko na ta način prepišete njegovo rešitev naloge?
+\end{enumerate}
+\end{document}

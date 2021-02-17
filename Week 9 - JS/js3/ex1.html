@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+    <style>
+    button {
+      width: 92px;
+      margin: 3px;
+    }
+    .myform {
+      width: 200px;
+      margin: 1px;
+      box-sizing: border-box;
+    }
+    .center {
+      text-align: center;
+    }
+    </style>
+    <script>
+    var entries = [];
+    entries["RIN1-1skup"] = [];
+    entries["RIN1-2skup"] = [];
+    entries["RIN1-3skup"] = [];
+
+    function entryChanged() {
+      var name = document.getElementById("entry").value;
+      var button = document.getElementById("addButton");
+      button.disabled = !(/^[A-ZŠČŽ][a-zščž]+(\s[A-ZŠČŽ][a-zščž]+){1,2}$/.test(name));
+    }
+
+    function addEntry() {
+      var name = document.getElementById("entry").value;
+      var group = document.getElementById("group").value;
+      entries[group].push(name);
+      updateEntries();
+    }
+
+    function removeEntry() {
+      var group = document.getElementById("group").value;
+      var names = document.getElementById("names");
+      var index = names.selectedIndex;
+      if (index == -1) return;
+      entries[group].splice(index, 1);
+      updateEntries();
+    }
+
+    function updateEntries() {
+      var group = document.getElementById("group").value;
+      var names = document.getElementById("names");
+      while (names.length > 0)
+        names.remove(0);
+      for (var entry of entries[group]) {
+        var option = document.createElement("option");
+        option.text = entry;
+        names.add(option);
+      }
+      selectionChanged();
+    }
+
+    function selectionChanged() {
+      var names = document.getElementById("names");
+      var button = document.getElementById("removeButton");
+      button.disabled = (names.selectedIndex == -1)
+    }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <select name="group" id="group" class="myform" onchange="updateEntries()">
+          <option>RIN1-1skup</option>
+          <option>RIN1-2skup</option>
+          <option>RIN1-3skup</option>
+        </select>
+      </div>
+      <div>
+        <select id="names" size="10" class="myform" onchange="selectionChanged()">
+        </select>
+      </div>
+      <div>
+        <input type="text" id="entry" class="myform" oninput="entryChanged()">
+      </div>
+      <div class="center myform">
+        <button type="button" id="addButton" onclick="addEntry()" disabled>Dodaj</button>
+        <button type="button" id="removeButton" onclick="removeEntry()" disabled>Briši</button>
+      </div>
+    </form>
+  </body>
+</html>

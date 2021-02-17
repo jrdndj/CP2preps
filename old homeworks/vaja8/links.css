@@ -1,0 +1,27 @@
+body {
+	background: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	text-align: center;
+	padding: 10px;
+}
+
+a {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	background: gray;
+}
+
+a:hover {
+	color: black;
+	background: orange;
+}

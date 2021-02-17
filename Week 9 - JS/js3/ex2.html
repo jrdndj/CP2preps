@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squares</title>
+    <style>
+    #square {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      margin: 10px;
+      box-sizing: border-box;
+    }
+    .slider {
+      width: 200px;
+      margin-left: 10px;
+    }
+    .checkbox {
+      margin-left: 18px;
+    }
+    </style>
+    <script>
+    function updateSquare() {
+      var square = document.getElementById("square");
+
+      var red = parseInt(document.getElementById("red").value);
+      var green = parseInt(document.getElementById("green").value);
+      var blue = parseInt(document.getElementById("blue").value);
+      square.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+      if (document.getElementById("border").checked) {
+        square.style.border = "solid 10px black";
+      }
+      else {
+        square.style.border = "none";
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="square"></div>
+    <div><input type="range" min="0" max="255" value="0" id="red" class="slider" oninput="updateSquare()"></div>
+    <div><input type="range" min="0" max="255" value="0" id="green" class="slider" oninput="updateSquare()"></div>
+    <div><input type="range" min="0" max="255" value="0" id="blue" class="slider" oninput="updateSquare()"></div>
+    <div>
+      <input type="checkbox" id="border" class="checkbox" onchange="updateSquare()">
+      show border
+    </div>
+  </body>
+
+  <script>
+    updateSquare();
+  </script>
+</html>

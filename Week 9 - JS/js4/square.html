@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Square</title>
+<style>
+#square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 15%;
+  box-sizing: border-box;
+}
+#showborder {
+  margin: 10px;
+}
+.slider {
+  width: 200px;
+  margin: 2px 10px;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+</style>
+<script>
+var animationRunning = false;
+var squareGrabbed = false;
+var rotationLocked = false;
+var grabx = 0;
+var graby = 0;
+
+function updateSquare() {
+  var red = document.getElementById("red").value;
+  var green = document.getElementById("green").value;
+  var blue = document.getElementById("blue").value;
+
+  var square = document.getElementById("square");
+  square.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+
+  var borderChecked = document.getElementById("showborder").checked;
+  if (borderChecked) {
+    square.style.border = "solid 10px black";
+  }
+  else {
+    square.style.border = "none";
+  }
+}
+
+function rotateSquare() {
+  if (rotationLocked) {
+    rotationLocked = false;
+    return;
+  }
+
+  if (animationRunning) return;
+
+  var square = document.getElementById("square");
+  square.style.animation = "rotate";
+  square.style.animationDuration = "0.5s";
+  square.style.animationTimingFunction = "ease";
+  animationRunning = true;
+
+  window.setTimeout(
+    function() {
+      var square = document.getElementById("square");
+      square.style.animation = "";
+      animationRunning = false;
+    },
+    500
+  );
+}
+
+function grabSquare(e) {
+  grabx = e.offsetX;
+  graby = e.offsetY;
+  squareGrabbed = true;
+}
+
+function dropSquare(e) {
+  squareGrabbed = false;
+}
+
+function moveSquare(e) {
+  if (!squareGrabbed) return;
+
+  var square = document.getElementById("square");
+  var x = e.clientX - grabx;
+  var y = e.clientY - graby;
+  square.style.left = x + "px";
+  square.style.top = y + "px";
+
+  rotationLocked = true;
+}
+</script>
+</head>
+
+<body>
+<div id="square" onclick="rotateSquare()"></div>
+<div><input type="range" min="0" max="255" value="0" id="red" class="slider" oninput="updateSquare()"></div>
+<div><input type="range" min="0" max="255" value="0" id="green" class="slider" oninput="updateSquare()"></div>
+<div><input type="range" min="0" max="255" value="0" id="blue" class="slider" oninput="updateSquare()"></div>
+<div><input type="checkbox" id="showborder" onchange="updateSquare()">show border</div>
+
+<script>
+var square = document.getElementById("square");
+square.onmousedown = grabSquare;
+document.onmousemove = moveSquare;
+document.onmouseup = dropSquare;
+</script>
+</body>
+</html>
+ 

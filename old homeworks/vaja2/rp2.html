@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="rp2.css">
+  <title>Računalniški praktikum II</title>
+</head>
+
+<body>
+  <header>
+    Računalniški praktikum II
+  </header>
+
+  <nav>
+      <ul>
+        <li><a href="#">PREDAVANJA</a></li>
+        <li><a href="#">VAJE</a></li>
+        <li><a href="#">IZPITI</a></li>
+      </ul>
+  </nav>
+
+  <section>
+    <article>
+      <h1>Vaja za samostojno reševanje</h1>
+      <p>Pri drugi vaji za samostojno reševanje se boste preizkusili v oblikovanju spletnih stilov CSS. Vsebina spletne strani je že sestavljena, vaša naloga je, da ji dodate obliko. Vsebine te datoteke ne spreminjajte, vaš stil naj bo definiran v ločeni datoteki <em>rp2.css</em>.</p>
+      <p>Pri oblikovanju poskusite slediti postavitvi, kot je prikazana na priloženi sliki, dovolite pa si lahko tudi nekaj umetniške svobode. Delate lahko samostojno ali v paru.</p>
+      <p>Nekaj nasvetov:
+        <ul>
+          <li>Za natančnejše določanje razmerja med višino in širino elementov definirajte <div><code>* { box-sizing: border-box; }</code>. </div>Tako boste dosegli, da bo lastnost <em>width</em> obsegala tudi okvir in obrobo.</li>
+          <li>Primer postavitve z elementi <em>header</em>, <em>nav</em>, <em>section</em> in <em>footer</em> si lahko ogledate na <a href="https://www.w3schools.com/html/html_layout.asp">w3schools.com</a>.</li>
+          <li>Postavitev elementov bo jasno razvidna, če jim (začasno) določite unikatno barvo ozadja.</li>
+          <li>Primer oblikovanja menijev s seznami si lahko ogledate <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu">tukaj</a>.</li>
+          <li>Elementi <em>header</em>, <em>nav</em>, <em>section</em>, <em>article</em> in <em>footer</em> naj bodo plavajoči (angl. <em>float</em>).</li>
+          <li>Elemente, ki nimajo določenega razreda (angl. <em>class</em>), referencirajte hirearhično, npr. <code>aside ul { ... }</code>, <code>article ul li { ... }</code>, ...</li>
+          <li>Veliko lahko dosežete z ustreznimi razmaki <code>margin</code> in <code>padding</code>. Za vsak rob lahko določite različne vrednosti, npr. <code>padding-left</code>, <code>padding-top</code>, ...</li>
+          <li>Tudi okvir lahko prikažete le na izbranih robovih, z določanjem lastnosti <code>border-top</code>, <code>border-bottom</code>, <code>border-left</code>, <code>border-right</code>.</li>
+        </ul>
+      </p>
+    </article>
+
+    <aside>
+      <p>Dogodki:</p>
+      <ul>
+        <li>
+          <div class="datum">20. 2. 2019</div>
+          <div class="novica">Prvo predavanje.</div>
+        </li>
+        <li>
+          <div class="datum">22. 2. 2019</div>
+          <div class="novica">Vaja: Izdelava enostavne spletne strani.</div>
+        </li>
+        <li>
+          <div class="datum">27. 2. 2019</div>
+          <div class="novica">Predavanje: Spletni obrazci in ostali gradniki.</div>
+        </li>
+        <li>
+          <div class="datum">1. 3. 2019</div>
+          <div class="novica">Vaja iz zahtevnejšega oblikovanja CSS.</div>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+  <footer>
+    Univerza na Primorskem, Fakulteta za matematiko, naravoslovje in informacijske tehnologije
+  </footer>
+</body>
+</html>

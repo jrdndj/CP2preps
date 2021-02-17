@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+
+\title{Računalniški praktikum II}
+\author{Naloga za samostojno reševanje 6}
+\date{5. april 2019}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent
+Datoteka \texttt{plot.html} izrisuje graf kvadratne funkcije $f(x) = 0.01 \cdot x^2 - 100$. To počne v zelo slabi ločljivosti, saj definira samo $9$ točk, in sicer na sledeči način:
+
+\begin{verbatim}
+<script>
+var points = [
+    [-200, 300],
+    [-150, 125],
+    [-100, 0],
+    [-50, -75],
+    [0, -100],
+    [50, -75],
+    [100, 0],
+    [150, 125],
+    [200, 300]
+];
+</script>
+\end{verbatim}
+
+\bigskip\noindent
+Izris krivulje izboljšajte po sledečih enostavnih korakih:
+\begin{enumerate}
+\item Zgornjo definicijo točk nadomestite s programsko kodo PHP, tako da bo funkcija imela ločljivost vsaj 100 točk. Posamezna točka je izračunana kot $[x, \; 0.01 \cdot x - 100]$. Horizontalni razmak med točkami naj bo enakomeren, t.j. števec $x$ naj teče od $x = -200$ do $x = 200$, z enakomernim razmakom $k$.
+
+\item Splošna oblika kvadratne funkcije je
+$$
+f(x) = ax^2 + bx + c
+$$
+To pomeni, da so parametri pri zgornji krivulji enaki $a = 0.01$, $b = 0$ in $c = -100$. Omogočite nastaviteh teh treh parametrov ter ločljivosti $k$ preko povezave URL, npr.:
+$$
+\texttt{plot.php?a=0.02\&b=-10\&c=50\&k=4}
+$$
+Če kateri od parametrov ni nastavljen, naj prevzame vrednost $a = 0.01$, $b = 0$, $c = -100$ oz. $k = 50$.
+
+\item Spodnjo vrstico
+\begin{verbatim}
+f(x) = 0.01 &middot; x<sup>2</sup> + 0 &middot; x - 100
+\end{verbatim}
+dopolnite s kodo PHP, ki bo vrednosti izbranih parametrov $a$, $b$ in $c$ pravilno vstavila v zapis funkcije. Npr. funkcija s parametri $a = 0.02$, $b = -10$, in $c = 50$ bo zapisana kot
+$$
+f(x) = 0.02 \cdot x^2 - 10 \cdot x + 50
+$$
+
+\item Pod graf dodajte HTML obrazec za nastavitev parametrov $a$, $b$, $c$ in $k$, ki je izpolnjen z njihovimi trenutnimi vrednostmi. Spremembe uporabnik potrdi s klikom na gumb `Refresh', ki izriše nov graf funkcije. Vnos realnih števil lahko nastavite z lastnostjo \texttt{step}, npr.:
+\begin{verbatim}
+<input type="number" name="a"
+       min="-10" max="10" step="0.01">
+\end{verbatim}
+
+\item Prenos parametrov realizirajte še po metodi POST.
+\end{enumerate}
+
+\end{document}

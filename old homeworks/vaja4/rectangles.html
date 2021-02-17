@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rectangles</title>
+<style>
+div {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid white;
+}
+
+#green {
+	background-color: green;
+}
+
+#red {
+	background-color: red;
+}
+
+#blue {
+	background-color: blue;
+}
+
+button {
+	float: left;
+	clear: both;
+	margin: 10px;
+}
+
+table#history {
+	float: left;
+	clear: both;
+	margin: 10px;
+}
+
+table#history, table#history th, table#history td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table#history th, table#history td {
+	width: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="green"></div>
+<div id="red"></div>
+<div id="blue"></div>
+<button onclick="clearTable()">Clear</button>
+
+<p>
+<table id="history">
+<tr>
+	<th>#</th>
+	<th>color</th>
+</tr>
+</table>
+</p>
+</body>
+</html>

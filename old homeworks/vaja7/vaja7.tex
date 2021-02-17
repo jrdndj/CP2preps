@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+
+\title{Računalniški praktikum II}
+\author{Naloga za samostojno reševanje 7}
+\date{12. april 2019}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent
+Datoteka \texttt{chess.html} s pomočjo tabele izrisuje šahovnico.
+\begin{enumerate}
+\item Statični izris šahovnice zamenjajte s PHP skripto, ki izriše prazno šahovnico. Potrebna bo dvojna \emph{for} zanka -- zunanja za izris vrstic in notranja za izris stolpcev. Ne spreglejte, da so tudi oznake $A$, $B$, $C$, $1$, $2$, $3$, \ldots izrisane v poljih tabele.
+
+\item Dodajte možnost postavitve poljubne figure na polje \texttt{A2} preko metode GET. Npr.:
+\begin{verbatim}
+chess.php?A2=ckralj
+\end{verbatim}
+na polje \texttt{A2} postavi črnega kralja. Vrednost parametra \texttt{A2} povežite z ustrezno sliko figure. Slike figur dobite na Wikimediji (povezave so podane spodaj). Črnega kralja lahko torej izrišemo na sledeči način:
+\begin{verbatim}
+<img src="http://upload.wikimedia.org/wikipedia/
+          commons/e/e3/Chess_kdt60.png">
+\end{verbatim}
+
+\item Dodajte možnost postavitve poljubnih figur na poljubna polja, npr.:
+\begin{verbatim}
+chess.php?A2=ckralj&D4=bkmet&F6=bkraljica
+\end{verbatim}
+na polje \texttt{A2} postavi črnega kralja, na \texttt{D4} belega kmeta, na \texttt{F6} pa belo kraljico. Spodnji primer prikazuje možen način branja vhodnih parametrov.
+
+\begin{verbatim}
+for ($row = 1; $row <= 8; $row++) {
+    for ($col = 'A'; $col <= 'H'; $col++) {
+        $field = $col . $row;
+        if (isset($_GET[$field]))
+            echo "<div>Na polju $field je $_GET[$field]</div>\n";
+    }
+}
+\end{verbatim}
+\end{enumerate}
+
+\section*{Slike šahovskih figur}
+\texttt{http://upload.wikimedia.org/wikipedia/commons}
+
+\medskip\noindent
+\textbf{Bele figure}:
+
+\begin{tabular}{ll}
+\textit{kmet} & \texttt{/0/04/Chess\_plt60.png} \\
+\textit{lovec} & \texttt{/9/9b/Chess\_blt60.png} \\
+\textit{konj} & \texttt{/2/28/Chess\_nlt60.png} \\
+\textit{trdnjava} & \texttt{/5/5c/Chess\_rlt60.png} \\
+\textit{kralj} & \texttt{/3/3b/Chess\_klt60.png} \\
+\textit{kraljica} & \texttt{/4/49/Chess\_qlt60.png}
+\end{tabular}
+
+\medskip\noindent
+\textbf{Črne figure}:
+
+\begin{tabular}{ll}
+\textit{kmet} & \texttt{/c/cd/Chess\_pdt60.png} \\
+\textit{lovec} & \texttt{/8/81/Chess\_bdt60.png} \\
+\textit{konj} & \texttt{/f/f1/Chess\_ndt60.png} \\
+\textit{trdnjava} & \texttt{/a/a0/Chess\_rdt60.png} \\
+\textit{kralj} & \texttt{/e/e3/Chess\_kdt60.png} \\
+\textit{kraljica} & \texttt{/a/af/Chess\_qdt60.png}
+\end{tabular}
+
+\end{document}

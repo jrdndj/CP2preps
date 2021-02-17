@@ -1,0 +1,80 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Numbers</title>
+    <style>
+    table {
+      width: 300px;
+      border-collapse: collapse;
+      border: 1px solid black;
+      margin: 3px;
+    }
+    td, th {
+      border: 1px solid black;
+      text-align: center;
+    }
+    th {
+      background: yellow;
+    }
+    button {
+      width: 94px;
+      margin: 3px;
+    }
+    </style>
+    <script>
+      var timer;
+      var number = 1;
+      var running = false;
+
+      function startstop() {
+        var button = document.getElementById('startstop');
+        if (running) {
+          window.clearInterval(timer);
+          running = false;
+          button.innerHTML = "Start";
+        }
+        else {
+          timer = window.setInterval(add, 1000);
+          running = true;
+          button.innerHTML = "Stop";
+        }
+      }
+
+      function add() {
+        var table = document.getElementById('numbers');
+        var row = table.insertRow();
+        var cell = row.insertCell();
+        cell.innerHTML = number.toString();
+        number += 1;
+      }
+
+      function cleartable() {
+        var table = document.getElementById('numbers');
+        while (table.rows.length > 1)
+          table.deleteRow(1);
+        number = 1;
+      }
+
+      function foldtable() {
+        var table = document.getElementById('numbers');
+        while (table.rows.length > 1)
+          table.deleteRow(1);
+        var row = table.insertRow();
+        var cell = row.insertCell();
+        var sum = number * (number - 1) / 2;
+        cell.innerHTML = sum.toString();
+      }
+    </script>
+  </head>
+
+  <body>
+  <button onclick="startstop()" id="startstop">Start</button>
+  <button onclick="cleartable()">Clear</button>
+  <button onclick="foldtable()">Fold</button>
+  <table id="numbers">
+  <tbody><tr>
+    <th>Numbers</th>
+  </tr>
+  </tbody></table>
+  
+
+</body></html>

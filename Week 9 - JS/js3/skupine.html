@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Skupine</title>
+  <style>
+    .myform {
+      width: 200px;
+      margin: 1px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 48%;
+      margin: 1px;
+    }
+  </style>
+  <script>
+    var groupNames = ["RIN1-1skup", "RIN1-2skup", "RIN1-3skup"];
+    var names = [];
+    for (var groupName of groupNames)
+      names[groupName] = [];
+
+    function validateEntry() {
+      var value = document.getElementById("entry").value;
+      var dodaj = document.getElementById("dodaj");
+      var pattern = /^[A-ZŠČŽ][a-zščž]+(\s[A-ZŠČŽ][a-zščž]+){1,2}$/;
+      dodaj.disabled = !pattern.test(value);
+    }
+
+    function addEntry() {
+      var groupName = document.getElementById("groups").value;
+      var studentName = document.getElementById("entry").value;
+      names[groupName].push(studentName);
+      document.getElementById("entry").value = "";
+      updateNames();
+    }
+
+    function deleteEntry() {
+      var groupName = document.getElementById("groups").value;
+      var studentIndex = document.getElementById("students").selectedIndex;
+      names[groupName].splice(studentIndex, 1);
+      updateNames();
+    }
+
+    function updateNames() {
+      var groupName = document.getElementById("groups").value;
+      var students = document.getElementById("students");
+      while (students.options.length > 0)
+        students.remove(0);
+      for (var studentName of names[groupName]) {
+        var option = document.createElement("option");
+        option.text = studentName;
+        students.add(option);
+      }
+      checkStudentSelected();
+    }
+
+    function checkStudentSelected() {
+      var disable = (document.getElementById("students").selectedIndex == -1);
+      document.getElementById("brisi").disabled = disable;
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <select id="groups" class="myform" onchange="updateNames()"></select>
+  </div>
+  <div>
+    <select id="students" size="10" class="myform" onchange="checkStudentSelected()"></select>
+  </div>
+  <div>
+    <input type="text" id="entry" class="myform" oninput="validateEntry()">
+  </div>
+  <div class="myform">
+    <button id="dodaj" disabled onclick="addEntry()">Dodaj</button>
+    <button id="brisi" disabled onclick="deleteEntry()">Briši</button>
+  </div>
+
+  <script>
+    for (var groupName of groupNames) {
+      var groups = document.getElementById("groups");
+      var option = document.createElement("option");
+      option.text = groupName;
+      groups.add(option);
+    }
+  </script>
+</body>
+</html>

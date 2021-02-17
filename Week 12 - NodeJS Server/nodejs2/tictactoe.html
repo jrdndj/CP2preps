@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="tictactoe.css">
+    <script>
+      var xhttp = null;
+
+      function moveReceived() {
+        if (xhttp.readyState == 4) {
+          if (xhttp.status == 200) {
+            document.getElementById(xhttp.responseText).innerHTML = "X";
+          }
+          else {
+            window.alert("Server communication error!");
+          }
+          xhttp = null;
+        }
+      }
+
+      function serverPlay() {
+        if (xhttp == null) {
+          xhttp = new XMLHttpRequest(); // AJAX object
+          xhttp.onreadystatechange = moveReceived;
+          xhttp.open("GET", "move.txt?board=OXXO-O---", true);
+          xhttp.send();
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <table>
+    <tr><td id="cell1"></td><td id="cell2"></td><td id="cell3"></td></tr>
+    <tr><td id="cell4"></td><td id="cell5"></td><td id="cell6"></td></tr>
+    <tr><td id="cell7"></td><td id="cell8"></td><td id="cell9"></td></tr>
+    </table>
+    <p><button onclick="serverPlay()">Server play!</button><p>
+  </body>
+</html>

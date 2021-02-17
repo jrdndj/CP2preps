@@ -1,0 +1,116 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage{fullpage}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{Računalniški praktikum 2}
+\author{Node.js - samostojna vaja 1}
+\date{8. maj 2020}
+
+\begin{document}
+\maketitle
+
+\noindent
+Na predavanjih smo napisali strežniško skripto za zelo enostaven klepet. Za samostojno vajo to skripto dopolnite tako, da bo omogočala prijavo s poljubnim vzdevkom (angl. \emph{nickname}). Pred vsekim objavljenim sporočilom se tako izpiše še vzdevek avtorja sporočila. Poleg tega omejite izpis sporočil na zadnjih 20. Zgled takšnega klepeta lahko preizkusite na naslovu \url{http://2.56.215.150:8080/chat.html}.
+
+\medskip\noindent
+Strežniška skripta razume dva parametra:
+\begin{itemize}[noitemsep]
+\item \texttt{nick} - avtor sporočila,
+\item \texttt{msg} - sporočilo.
+\end{itemize}
+Zgled pravilnega URL-ja:
+$$
+\texttt{http://2.56.215.150:8080/chat.html?nick=Domen\&msg=Hello people!}
+$$
+
+\medskip\noindent
+Na podlagi podanega URL-ja prikaže eno izmed treh enostavnih HTML strani:
+\begin{enumerate}
+\item Dani URL mora zahtevati stran \texttt{chat.html}, sicer strežnik izpiše:
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RP2 Chat</title>
+</head>
+<body>
+<div>Page not found!</div>
+</body>
+</html>
+\end{verbatim}
+
+\item Če parameter \texttt{nick} ni nastavljen oz. če je prazen, strežnik izpiše prijavno stran:
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RP2 Chat</title>
+</head>
+<body>
+<form>
+<div>Nickname:</div>
+<div><input type="text" name="nick" autofocus>&nbsp;
+<button>Chat!</button></div>
+</form>
+</body>
+</html>
+\end{verbatim}
+
+\newpage
+\item Če je parameter \texttt{nick} podan, strežnik izpiše zadnjih 20 sporočil. Če je vseh sporočil manj kot 20, preostali prostor zapolni s praznimi vrsticami:
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RP2 Chat</title>
+</head>
+<body>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>Domen: Hello people!</div>
+<div>Domen: How are you?</div>
+<form>
+<input type="hidden" name="nick" value="Domen">
+<div>
+Message:&nbsp;<input type="text" name="msg" autofocus>&nbsp;
+<button>Send</button>
+</div>
+</form>
+<div><a href="/chat.html">Log out</a></div>
+</body>
+</html>
+\end{verbatim}
+Strežnik vzdevek prejme preko parametra \texttt{nick} in ga vrne že predizpolnjenega v obrazcu (glej vnosno polje z imenom \texttt{nick}). To vnosno polje je uporabniku skrito (\texttt{type="hidden"}), zato ga med klepetom načeloma ne more spreminjati (razen preko neposredne manipulacije URL-ja). Uporabnik se lahko odjavi s klikom na povezavo \texttt{log out}, ki stran naloži brez vseh parametrov.
+
+\end{enumerate}
+
+\end{document}
