@@ -1,0 +1,95 @@
+<html>
+ <head>
+  <style>
+  	.box {
+    display: flex;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.item {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background-color: seagreen;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: yellow;
+    user-select: none;
+}
+  </style>
+  <script>
+  	function itemDragStart(event){
+  		event.dataTransfer.setData("text", event.target.id);
+  	}//endfunction itemdragstart
+
+  	function itemDragOver(event){
+  		var targetBox = event.target;
+  		event.preventDefault();
+  	}//endfunction itemdragover
+
+  	function itemDrop(event){
+  		var targetBox = event.target;
+  		targetBox.style.backgroundColor = "";
+  		var draggedId = event.dataTransfer.getData("text");
+  		var draggedItem = document.getElementById(draggedId);
+  		targetBox.appendChild(draggedItem);
+  		event.preventDefault();
+  	}//endfunction itemdrop 
+
+  	function itemDragEnter(event){
+  		var targetBox = event.target;
+  		targetBox.style.backgroundColor = "silver";
+  		event.preventDefault();
+  	}//end function itemdragenter
+
+  	function itemDragLeave(event){
+  		var targetBox = event.target;
+  		targetBox.style.backgroundColor = "";
+  		event.preventDefault();
+  	}//end function itemdragleave
+  </script>
+ </head>
+ <body>
+ 	<div id="box1" class="box" ondragover="itemDragOver(event)" ondrop="itemDrop(event)">
+ 		<div id="item1" class="item" draggable="true" ondragstart="itemDragStart(event)"> A </div>	
+ 	</div>
+
+ 	<div id="box2" class="box" ondragover="itemDragOver(event)" ondrop="itemDrop(event)">
+ 		<div id="item2" class="item" draggable="true" ondragstart="itemDragStart(event)"> B </div>
+ 	</div>
+
+ 	<script>
+ 		for( nCtr = 3; nCtr <=10; nCtr++ ){
+ 			document.write(
+ 				`<div id="box${nCtr}"
+ 				class="box"
+ 				ondragover="itemDragOver(event)"
+ 				ondrop="itemDrop(event)"
+ 				ondragenter="itemDragEnter(event)"
+ 				ondragleave="itemDragLeave(event)"
+ 				></div>`); //endofdocumentwrite()
+ 		}//endfor
+ 	</script>
+ </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

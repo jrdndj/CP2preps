@@ -1,0 +1,93 @@
+Today's Lesson
+
+Javascript -
+
+drag and drop behaviours
+
+1000-1130
+
+1045 we will have a quick break 
+
+The idea will be assignment will be posted today and will be due for submission by Friday 2359 for the English group only :) 
+
+if you have issues please lemme know jordan.deja@famnit.upr.si
+
+only for this week - there will be no defense of the homework 
+
+today 1000 we have lesson
+today 1400 we have lesson for a different group 
+friday 1430 we have  lesson for a different group
+
+The second midterm 
+The second homework (project)
+
+The final exams  June 7-10 (the schedule is at sis )
+
+beginning next week
+
+18 May - we have lessons (Tuesday)
+20 May - we have the "defenses"
+
+
+
+Document Object Model (DOM) - is our way of referencing elements in a document. In this case the document is the html page
+we need to know what materials or elements are in a web page so that we can control their behaviours
+
+HTML = allows us to define the structure or elements in a webpage
+CSS = allows us to put aesthetic and other "beautiful" elements in a webapge
+JS = allows to control the behaviours of our web page
+
+what we are doing in CP2 will be very useful especially when you move to courses like System 3 - you will be deploying an information system
+
+a website that is dynamic = there is a database where we pull data from and the other understanding is that you have a webpage that has different behaviour controllers 
+
+there is a specific architecture (design pattern) that we call MVC (Model View Controller)
+
+for example:
+in instagram you have you mobile app, then there's your photos/stories, your contacts
+
+model = is the data 
+view = is the user interface
+controller = is what you can do 
+
+Drag and drop behaviours 
+
+we have elements that are draggable = DOM model 
+how it is displayed, where it is displayed = view
+where you can move it etc = controller
+
+by default, the script of HTML is JS
+
+lets have a break and lets resume at 1108
+
+javascript is a loosely-typed language
+
+unlike c where we need gto define the vars
+in JS there is no need to define 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

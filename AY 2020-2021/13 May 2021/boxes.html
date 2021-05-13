@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Boxes</title>
+<style>
+.box {
+    display: flex;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.item {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background-color: seagreen;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: yellow;
+    user-select: none;
+}
+</style>
+<script>
+function itemDragStart(event) {
+    console.log("Dragging", event.target.id);
+    event.dataTransfer.setData("text", event.target.id);
+}
+
+function itemDragOver(event) {
+    var targetBox = event.target;
+    console.log("drag over", targetBox.id);
+    event.preventDefault();
+}
+
+function itemDrop(event) {
+    console.log("dropped");
+    var targetBox = event.target;
+    targetBox.style.backgroundColor = "";
+    var draggedId = event.dataTransfer.getData("text");
+    var draggedItem = document.getElementById(draggedId);
+    targetBox.appendChild(draggedItem);
+    event.preventDefault();
+}
+
+function itemDragEnter(event) {
+    var targetBox = event.target;
+    targetBox.style.backgroundColor = "silver";
+    event.preventDefault();
+}
+
+function itemDragLeave(event) {
+    var targetBox = event.target;
+    targetBox.style.backgroundColor = "";
+    event.preventDefault();
+}
+</script>
+<body>
+
+<div id="box1" class="box" ondragover="itemDragOver(event)" ondrop="itemDrop(event)">
+    <div id="item1" class="item" draggable="true" ondragstart="itemDragStart(event)">A</div>
+</div>
+
+<div id="box2" class="box" ondragover="itemDragOver(event)" ondrop="itemDrop(event)">
+    <div id="item2" class="item" draggable="true" ondragstart="itemDragStart(event)">B</div>
+</div>
+
+<script>
+for (i = 3; i <= 10; i++) {
+    document.write(
+        `<div id="box${i}"
+        class="box"
+        ondragover="itemDragOver(event)"
+        ondrop="itemDrop(event)"
+        ondragenter="itemDragEnter(event)"
+        ondragleave="itemDragLeave(event)"
+        ></div>`
+    );
+}
+</script>
+
+</body>
+</html> 
