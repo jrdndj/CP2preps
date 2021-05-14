@@ -1,0 +1,39 @@
+Today's Lesson will be about Javascript
+We shall focus on Drag and Drop behaviours
+
+This week is a special arrangement because the exercises will not be defended. Submission is only online until 2359 tonight. Only for this week.
+
+This happens next week 
+beginning next week we shall resume with the regular sessions
+Tuesday lessons - come to class to attend the lesson and for questions. 
+Thursday laboratory defenses. - come to class to work on the exercises. In-person setup: they dont need to defend it because they have worked at their exercises here in the lab. 
+Online: they still need to defend their exercises. 
+
+Some major announcements:
+14 June is the final exam (for those who will not pass by colloquia)
+27 May presentation of the homework 2 (project)
+25 May midterm exam 2
+
+ideally the setup will be in online hybrid mode. 
+special arrangements and considerations will be given to those who will show up in person. 
+
+people who will show up in person get to present their homeworks and do their midterm exams while here in famnit. their setups will be more relaxed. 
+
+people who will do their exams online will be under stricter conditions. 
+
+will they do the same exam? well yes! 
+
+in person: you are encouraged to bring your own personal device 
+
+All codes and resources (even these text notes) will be uploaded in e-classroom and in github. 
+
+https://github.com/jrdndj/CP2preps
+
+
+Drag and Drop behaviour 
+
+
+
+
+
+
