@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Sine plot</title>
+<style>
+#canvas {
+    border: 1px solid black;
+}
+</style>
+<script>
+var offx = 0;
+var offy = 0;
+var sx = 100;
+var sy = 200;
+
+function initCanvas() {
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    context.translate(canvas.width / 2, canvas.height / 2)
+    context.scale(1, -1);
+}
+
+function drawCurve(context, f, color) {
+    context.beginPath();
+    var minx = (-canvas.width / 2 - offx) / sx;
+    var maxx = (canvas.width / 2 - offx) / sx;
+    var x0 = 0, y0sine = 0;
+    for (var x = minx; x <= maxx; x += (maxx - minx) / 1000) {
+        var y = f(x);
+        if (x > minx) {
+            context.moveTo(x0 * sx + offx, y0 * sy - offy);
+            context.lineTo(x * sx + offx, y * sy - offy);
+        }
+        x0 = x;
+        y0 = y;
+    }
+    context.strokeStyle = color;
+    context.lineWidth = 2;
+    context.stroke();
+}
+
+function drawPlot() {
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    context.clearRect(-canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
+
+    // Draw axes
+    context.beginPath();
+    context.moveTo(-canvas.width / 2, -offy);
+    context.lineTo(canvas.width / 2, -offy);
+    context.moveTo(offx, -canvas.height / 2);
+    context.lineTo(offx, canvas.height / 2);
+    context.strokeStyle = "black";
+    context.lineWidth = 1;
+    context.stroke();
+
+    // Draw the sine curve
+    drawCurve(context, Math.sin, "blue");
+    drawCurve(context, Math.cos, "red");
+}
+
+var grabx = 0, graby = 0;
+var grabbed = false;
+
+function grabPlot(event) {
+    grabx = event.offsetX;
+    graby = event.offsetY;
+    grabbed = true;
+}
+
+function releasePlot(event) {
+    grabbed = false;
+}
+
+function movePlot(event) {
+    if (!grabbed) return;
+    offx += (event.offsetX - grabx);
+    offy += (event.offsetY - graby);
+    grabx = event.offsetX;
+    graby = event.offsetY;
+    drawPlot();
+}
+
+function scalePlot(event) {
+    if (event.deltaY < 0) {
+        sx *= 1.1;
+        sy *= 1.1;
+    }
+    else {
+        sx *= 0.9;
+        sy *= 0.9;
+    }
+    drawPlot();
+}
+</script>
+
+<body>
+<canvas id="canvas" width="800" height="600"
+    onmousedown="grabPlot(event)" onmouseup="releasePlot(event)" onmousemove="movePlot(event)" onwheel="scalePlot(event)"></canvas>
+<script>
+initCanvas();
+drawPlot();
+</script>
+</body>
+</html> 
