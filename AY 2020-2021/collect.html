@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Collect</title>
+    <style>
+    button {
+      width: 50px;
+      margin: 5px;
+      font-size: 30px;
+      padding: 0;
+    }
+    .myform {
+      width: 200px;
+      margin: 1px;
+    }
+    </style>
+    <script>
+    function moveRight() {
+      var left = document.getElementById("left");
+      var right = document.getElementById("right");
+      if (left.selectedIndex >= 0) {
+        var option = document.createElement("option");
+        option.text = left.options[left.selectedIndex].text;
+        right.add(option);
+        left.remove(left.selectedIndex);
+      }
+      updateSum();
+    }
+
+    function moveLeft() {
+      var left = document.getElementById("left");
+      var right = document.getElementById("right");
+      if (right.selectedIndex >= 0) {
+        var option = document.createElement("option");
+        option.text = right.options[right.selectedIndex].text;
+        left.add(option);
+        right.remove(right.selectedIndex);
+      }
+      updateSum();
+    }
+
+    function updateSum() {
+      var right = document.getElementById("right");
+      var sum = document.getElementById("sum");
+      var n = 0;
+      for (var option of right.options) {
+        n += parseInt(option.text);
+      }
+      sum.innerHTML = "Current sum: " + n.toString();
+
+      if (n == 733) {
+        window.alert("You did it!");
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+      <table>
+        <tr>
+          <td>
+            <select id="left" size="10" class="myform"></select>
+          </td>
+          <td>
+            <div><button onclick="moveRight()">&#8680;</button></div>
+            <div><button onclick="moveLeft()">&#8678;</button></div>
+          </td>
+          <td>
+            <select id="right" size="10" class="myform"></select>
+          </td>
+        </tr>
+        <tr>
+          <td>Collect: 733</td>
+          <td></td>
+          <td id="sum">Current sum: 0</td>
+        </tr>
+      </table>
+  </body>
+
+  <script>
+  var left = document.getElementById("left");
+  for (var i = 0; i < 10; i++) {
+    var option = document.createElement("option");
+    option.text = Math.pow(2, i).toString();
+    left.add(option);
+  }
+  </script>
+</html>
