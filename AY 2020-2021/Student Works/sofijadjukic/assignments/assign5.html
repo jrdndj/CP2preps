@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- link google fonts and effects using external CSS -->
+ <link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effe
+ct=fire|neon|outline|emboss|shadow-multiple">
+ <!-- link bootstrap icons using external CSS -->
+ <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.cs
+s">
+ <style type="text/css">
+ body{
+ background-color:black;
+color:white; }
+ /*this is my internal CSS*/
+ #headerdiv{
+ background-color: gray;
+ padding: 20px;
+ margin: 50px 0px;
+ width: 100%;
+ height: 150px;
+ }
+ #logodiv{
+ margin: auto;
+ width: 10%;
+ height: 110px;
+ display:inline;
+ }
+ #titlediv{
+ padding: 35px;
+ margin: auto;
+ width: 40%;
+ height: 110px;
+ float:left;
+ }
+ #titlediv #b1 {
+ color:red;
+ }
+ #titlediv #b2 {
+ color:black;
+ }
+ #menudiv{
+ padding:35px;
+ margin:auto;
+ width: 50%;
+ height: 110px;
+ display:inline;
+ }
+ #logoimage{
+ height: 100px;
+ float:left;
+ }
+ #title {
+ margin: auto;
+ padding: 5px;
+ text-align: left;
+ letter-spacing: 5px;
+ word-spacing: 5px;
+ font-size: 40px;
+ float:left;
+ text-decoration:overline;
+ text-transform:uppercase;
+ }
+ .menuitem{
+ margin: 10px;
+ padding: 5px 10px;
+ width: 50px;
+ display:inline;
+ }
+ a:hover{
+color:red;
+text-decoration:overline;
+text-shadow: 2px 2px red;
+}
+ .contentdiv{
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 50px;
+ padding: 10px;
+ max-width: 90%;
+ max-height: 50%;
+ border:5px solid white;
+ }
+ #headgame{
+ padding: 10px;
+ background-color:gray;
+ border:2px solid red;
+ text-shadow: 2px 2px red;
+ }
+ #image{
+ height: 400px;
+ padding: 10px;
+ border:2px solid white;
+
+ 
+ }
+ #content{
+ padding: 10px;
+ height: 400px;
+ border:2px solid white;
+ overflow: scroll;
+ max-width:50%;
+ max-height:50%;
+ float:right;
+ overflow-x: hidden; 
+ overflow-y: scroll;
+ margin:5px;
+ }
+ input{
+position: absolute;
+top: 0;
+left:10px;
+}
+
+input[type=text]:focus {
+  width: 70%;
+  background-color:red;
+  color: yellow;
+  
+}
+#setdiv{
+background-color:red;
+bottom: 0;
+position:relative;
+left: 90%;
+width:130px;
+margin:30px
+}
+ </style>
+ <title>
+
+ </title>
+</head>
+<body>
+<div id="headerdiv">
+ <div id=logodiv>
+ <img id="logoimage" src="logo.png">
+ </div>
+ <div id=titlediv>
+ <h2 id="title"><b id="b1">L</b>ife <b id="b2">G</b>ames</h2>
+ </div>
+ <div id="menudiv">
+ <h2 class="menuitem"><a class="font-effect-neon"
+href=""> Gallery</a> <i class="glyphicon glyphicon-camera"></i></h2>
+ <h2 class="menuitem"><a class="font-effect-neon"
+href=""> Blog + </a> <i class="glyphicon glyphicon-bookmark"></i></h2>
+ <h2 class="menuitem"><a class="font-effect-neon"
+href=""> Store + </a><i class="glyphicon glyphicon-shoppingcart"></i></h2>
+ </div>
+</div>
+<div class="contentdiv">
+ <h2 id="headgame">Minecraft</h2> <img id="image"
+src="minecraft.jpg">
+ <p id="content">Minecraft is a sandbox video game developed by
+Mojang. The game was created by Markus "Notch" Persson in the Java
+programming language. Following several early test versions, it was
+released as a paid public alpha for personal computers in 2009 before 
+releasing in November 2011, with Jens Bergensten taking over development.
+Minecraft has since been ported to several other platforms and is the
+best-selling video game of all time, with 200 million copies sold and 126
+million monthly active users as of 2020. In Minecraft, players explore a
+blocky, procedurally-generated 3D world with infinite terrain, and may
+discover and extract raw materials, craft tools and items, and build
+structures or earthworks. Depending on game mode, players can fight
+computer-controlled "mobs", as well as cooperate with or compete against
+other players in the same world. Game modes include a survival mode, in
+which players must acquire resources to build the world and maintain
+health, and a creative mode, where players have unlimited resources.
+Players can modify the game to create new gameplay mechanics, items, and
+assets. Minecraft has been critically acclaimed, winning several awards
+and being cited as one of the greatest video games of all time. Social
+media, parodies, adaptations, merchandise, and the annual MineCon
+conventions played large roles in popularizing the game. It has also been
+used in educational environments, especially in the realm of computing
+systems, as virtual computers and hardware devices have been built in it.
+In 2014, Mojang and the Minecraft intellectual property were purchased by
+Microsoft for US$2.5 billion. A number of spin-off games have also been
+produced, such as Minecraft: Story Mode, Minecraft Dungeons, and Minecraft
+Earth.</p>
+</div>
+ <div id="searchdiv">
+ <form action="/action_page.php">
+ <input id="search" type="text" name="search"
+placeholder="Search">
+ </form>
+ </div>
+ <div id="setdiv">
+ <h3>Settings <i class="glyphicon glyphicon-camera"></i></h3>
+ </div>
+</body>
+</html>

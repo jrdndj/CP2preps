@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function mulFunc(rows,cols){
+			document.write('<table border="0" cellspacing="0" id="multable" style="width:50%;">');
+
+			for (var i = 1; i < rows; i++) {
+				document.write('<tr>');
+				for (var j = 1; j < cols; j++) {
+					document.write("<td onclick='answer("+123+","+(256 - i)+","+(22+i)+")' style='background-color: rgb(123, " + (256 - i) + ", " + (22+i) + ")'></td>");
+				}
+				document.write('</tr>');
+			}
+			document.write('</table>');
+
+		}
+
+		mulFunc(256,2);
+
+		function answer(i,j,k){
+			window.alert(" Red: "+i+" Blue: "+j+" Green: "+k);
+		}
+
+	</script>
+</head>
+<body>
+</body>
+</html>

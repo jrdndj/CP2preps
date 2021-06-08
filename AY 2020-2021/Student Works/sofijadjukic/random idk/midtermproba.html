@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body
+	{
+		background-image: linear-gradient(to right, blue , skyblue);
+		margin: 30px;
+	}
+	#center{
+		text-align: center;
+		color: white;
+	}
+	#under{
+		color: skyblue;
+	}
+	button{
+		background-color: seagreen;
+		color: white;
+		border-radius: 180px;
+		height: 100px;
+		width: 100px;
+		cursor: pointer
+		font-size: 20px;
+	}
+	button:hover{
+		transform: scale(1.2);
+	}
+	#button{
+  margin: 30px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);	
+	}
+	#around_button{
+		padding: 40px;
+		height: 100px;
+  position: relative;
+	}
+
+	#text1,#text2{
+		color: palegreen;
+		text-align: center;
+		margin-right: 35%;
+		margin-left: 35%;
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+	#end{
+		margin: 10px;
+		text-align:center;
+		color: black;
+	}
+	img{
+		height: 70px;
+		width: 70px;
+		position: relative;
+		bottom: 20px;
+		right: 20px;
+	}
+	h1{
+font-size: 60px;
+	}
+
+	h2{
+	font-size: 35px;
+	}
+#end::after {
+content: " -next page";
+color: hotpink;
+}
+
+
+	</style>
+</head>
+<body>
+<div id="center">
+<h1>SDJ</h1>
+<h2>User Inyerface</h2>
+<p id="under">a bagaar frustration</p>
+</div>
+<p id="text1">
+Hi and welcome to User Inyerface,
+a challenging exploration of
+user interactions and design patterns.
+</p>
+<p id="text2">
+To play the game, simply fill in the form
+as fast and accurate as possible.	
+</p>
+<div id="around_button">
+<div id="button">
+<button>NO</button>
+</div>
+</div>
+<p id="end">Please <a href="https://userinyerface.com/">click</a> HERE to GO to the next page </p>
+<a href="https://userinyerface.com/"><img src="slikica.jpeg"> </a>
+</body>
+</html>

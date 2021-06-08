@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+	select,input{
+		width: 300px;
+	}
+	div{
+		margin: 10px;
+	}
+
+
+</style>
+
+<script type="text/javascript">
+	function validate(){
+		var correct=0
+		var name=document.getElementById("input").value;
+		var split=name.split(" ");
+		if (split.length=2){ 
+
+			for (var i=0;i<2;i++) {
+			var first=split[i].charAt(0);
+			var upp=first.toUpperCase();
+			if (first!=upp){
+				color();
+			}
+			else {correct=correct+1;}
+		} 
+		}
+		if (correct==2) {
+			add(name);
+		}
+		 else {color();}
+		}
+	
+
+	function add(name){
+		var to_this=document.getElementById("box")
+		var option=document.createElement("option")
+		option.text=name;
+		to_this.add(option);
+	}
+
+	function color(){
+		var block=document.getElementById("input");
+		block.style.backgroundColor="red";
+	}
+
+	function clear() {
+		var from_this=document.getElementById("box");
+		var option=document.createElement("option");
+		if (from_this.selectedIndex>=0){
+			from_this.remove(from_this.selectedIndex);
+		}
+		
+	}
+
+</script>
+</head>
+
+
+
+<body>
+	<form>
+<div><select id="box" size="5"> </select> </div>
+<div><input type="text" id="input"> </div>
+</form>
+<div>
+<button onclick="validate()">Add</button>
+<button onclick="clear()"> Check</button> </div>
+
+
+</body>
+</html>
