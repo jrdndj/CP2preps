@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.this{
+      width: 200px;
+      margin: 1px;
+    }
+    button {
+      width: 40%;
+    }
+
+</style>
+
+<script>
+      
+	  function checkName() {
+	  
+	  var gr = document.getElementById("groups");
+      var groupName = gr.value;
+	  
+      var studentName = document.getElementById("putName").value;
+	  
+	  var option = document.createElement("option");
+				option.text = studentName;
+				gr.add(option);
+	  
+	  
+      document.getElementById("putName").value = "";
+	  
+	  
+	 var enter=document.getElementById("putName");
+      var str = enter.value;
+	  var split= str.split(" ");
+	  
+	  var len=split.length;
+	   if (len != 2) {
+	  enter.style.backgroundColor="red";}
+	  
+	  
+	  var one=split[0].charCodeAt(0);
+	  var two=split[1].charCodeAt(0);
+	 if ( ((one < 65) || (one > 90))&&((two < 65) || (two> 90)){
+	 enter.style.background-color:"red";
+	 }
+	 else addName(); 
+    }
+	  
+	  
+
+   /* function addName() {
+	var gr = document.getElementById("groups");
+      var groupName = gr.value;
+	  
+      var studentName = document.getElementById("putName").value;
+	  
+	  var option = document.createElement("option");
+				option.text = studentName;
+				gr.add(option);
+	  
+	  
+      document.getElementById("putName").value = "";
+    } */
+	
+	</script>
+
+
+
+</head>
+<body>
+<div>
+    <select id="groups" class="this">
+	<option>Sofija Djukic</option>
+	<option>Coleen Waters</option>
+	<option>Parker Sparks</option>
+	</select>
+  </div>
+  
+  
+  
+  <div >
+    <input type="text" id="putName" class="this">
+  </div>
+  
+  
+  <div class="this">
+    <button id="add" onclick="checkName()">Add</button>
+    <button id="clear">Clear</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function posalji() {
+			var meni=document.getElementById('first');
+			var ovde=document.getElementById("second");
+			if (meni.selectedIndex>=0) {
+				if (meni.selectedIndex==0) {
+					var option=document.createElement("option");
+					option.text="Sofija";
+					ovde.add(option);
+					var option=document.createElement("option");
+					option.text="Djukic";
+					ovde.add(option);
+				}
+				if (meni.selectedIndex==1){
+					var option=document.createElement("option");
+					option.text="Andjela";
+					ovde.add(option); 
+				}
+			}
+
+		}
+	</script>
+</head>
+<body onload="posalji()">
+<form>
+	<div>
+<div>
+<label>Name</label>
+<input type="text">
+</div>
+<div></div>
+<label>First Name</label>
+<input type="text">
+</div>
+<div>
+<label> bday</label>
+<input type="date" name="">
+</div> 
+</div>
+<label>Study Level</label>
+<div>
+<div>
+<select id="first">
+	<option> Undergrad</option>
+	<option> Master</option>
+	<option> PHD</option>
+</select>
+</div>
+
+<div>
+<select id="second">
+	</select>
+	</div>
+</form>
+
+</body>
+</html>	

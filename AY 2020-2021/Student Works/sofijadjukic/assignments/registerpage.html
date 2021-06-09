@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+</head>
+<body style="background-color:#DBC7BE">
+
+<h1>Register Page</h1>
+<fieldset> <legend><h3> General Information </h3> </legend>
+<form action="savepage.html" method="post">
+<label for="fname">First name: </label>
+<input type="text" name="fname" id="fname"><br> 
+<label for="laname">First name: </label>
+<input type="text" name="laname" id="laname"> <br>
+<label for="laname">Select your birthday </label>
+<input type="date" name="bday" id="bday" max="2002-01-01" min="1940-01-01">
+
+<label for ="gen">  select your gender </label> <br>
+<label for="male">male </label>
+<input type="radio" name="gender" id="male"><br>
+<label for="female">female </label>
+<input type="radio" name="gender" id="female"> <br>
+<label for="female">something else </label>
+<input type="radio" name="gender" id="other"> <br>
+</fieldset>
+
+<fieldset> <legend><h3> Login Information </h3> </legend>
+<label for="uname">username: </label>
+<input type="text" name="uname" id="uname"> <br>
+<label>Enter password </label><br> 
+<input type="password" name="pass" id="pass"> <br>
+<label for="conpass">Confirm password </label><br> 
+<input type="password" name="conpass" id="conpass"> <br>
+<label for="myemail">email adress: </label> <br>
+<input type="email" name="myemail" id="myemail"> <br>
+<label for="confmail">confirm email: </label> <br>
+<input type="email" name="confmail" id="confmail"> <br>
+</fieldset>
+<fieldset> <legend><h3> Additional Information </h3> </legend>
+<textarea name="mycomments" id="mycomments" rows="10" cols="30">Why do you want to create an account? </textarea>
+<input type="submit" name="submitbtn" id="submitbtn">
+<br><br><br><br>
+</fieldset>
+<nav>
+  <ul>
+    <li><a href="homepage.html" target="_blank">Home Page</a></li>
+    <li><a href="registerpage.html" >Register Page</a></li>
+    <li><a href="memepage.html" target="_blank">Meme Page</a></li>
+  </ul>
+</nav>
+</form>
+</body>
+</html>

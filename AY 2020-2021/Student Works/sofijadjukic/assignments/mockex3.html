@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title></title>
+<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+
+		th,td {
+			width: 100px;
+		}
+
+		table,button{
+			float: left;
+			clear: both;
+			margin: 5px;
+		}
+
+
+	</style>
+</head>
+<body>
+<h1> Palindrome Finder! </h1>
+<div> Phrase: <input id="phrase" type="text" size="70" /> </div>
+<br>
+<div> <button id="find" onclick="getInputVal();" > Find Palindromes </button> </div>
+<table id="modify">
+		<tr>
+			<th>#</th>
+			<th>word</th>
+		</tr>
+	</table>
+<div id="count"></div>
+<script>
+function getInputVal(){
+var inputVal=document.getElementById("phrase").value;
+}
+
+
+function addCells(inputVal){
+			var mytable = document.getElementById("modify");
+			var n = mytable.rows.length;
+
+			var row = mytable.insertRow(n);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+
+			 cell1.innerHTML = n;
+			 cell2.innerHTML = inputVal;
+
+
+		}
+</script>
+</body>
+</html>

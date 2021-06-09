@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>Triangle</title>
+<style>
+div {
+float: left;
+width: 15px;
+height: 15px;
+margin: 1px;
+background-color: red;
+}
+p {
+clear: left;
+}
+</style>
+
+<script>
+function Rep(){
+var a=document.getElementById("first").value;
+var b=document.getElementById("second").value;
+var c=document.getElementById("third").value; 
+for (var i=0; i<=100; i++){
+document.getElementById("out").innerHTML =a;
+document.getElementById("out").innerHTML =b;
+document.getElementById("out").innerHTML =c;
+}
+}
+</script> 
+<body>
+<p id="first"><div></div></p>
+<p id="second"><div></div><div></div></p>
+<p id="third"><div></div><div></div><div></div></p>
+<button onclick="Rep()"> click </button>
+ 
+ <p id="out"> </p>
+</body>
+</html>
